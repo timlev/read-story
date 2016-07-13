@@ -1,0 +1,10 @@
+td {
+	font-family: 'Didact Gothic', sans-serif;
+	padding: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+td:hover {
+    cursor: pointer;
+}
