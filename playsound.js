@@ -1,13 +1,24 @@
 function play(obj){
 	var audioTag = document.getElementById('player');
 	audioTag.src = parseId(obj.id);
-	obj.style.backgroundColor = "yellow";
+	audioTag.addEventListener("canplaythrough", colorBackground(obj));
 	audioTag.addEventListener("canplaythrough", function(){
 		audioTag.play();
 	});
 	audioTag.addEventListener("ended", function(){
-		obj.style.backgroundColor = "transparent";;
+		obj.style.backgroundColor = "transparent";
+		audioTagClone = audioTag.cloneNode(true);
+		audioTag.parentNode.replaceChild(audioTagClone, audioTag);
 	});
+	
+	audioTag.addEventListener("error", function(){
+		obj.style.backgroundColor = "transparent";
+		audioTagClone = audioTag.cloneNode(true);
+		audioTag.parentNode.replaceChild(audioTagClone, audioTag);
+	});
+}
+function colorBackground(obj){
+	obj.style.backgroundColor = "yellow";
 }
 
 function parseId(id){
