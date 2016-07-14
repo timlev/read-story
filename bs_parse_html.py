@@ -13,7 +13,7 @@ header.insert(0, script)
 
 body = soup.find('body')
 arguments = [('id','player')]
-audio = soup.new_tag("audio", id="player")
+audio = soup.new_tag("audio", id="player", type="audio/mpeg")
 body.insert(0, audio)
 
 def buildSpan(word, token, pnum, wnum):
