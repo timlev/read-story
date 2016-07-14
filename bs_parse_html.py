@@ -8,18 +8,18 @@ paragraphs = soup.findAll('p')
 
 header = soup.find('head')
 arguments = [('src', "playsound.js")]
-script = soup.new_tag("script", arguments)
+script = soup.new_tag("script", src="playsound.js")
 header.insert(0, script)
 
 body = soup.find('body')
 arguments = [('id','player')]
-audio = soup.new_tag("audio", arguments)
+audio = soup.new_tag("audio", id="player")
 body.insert(0, audio)
 
 def buildSpan(word, token, pnum, wnum):
-    arguments = [("id", str(pnum) + str(wnum) + "_"+ token), ("onclick","play(this)")]
-    tag = soup.new_tag("span", arguments)
-    tag.insert(0, word)
+    spanID = str(pnum) + str(wnum) + "_" + token
+    tag = soup.new_tag("span", id=spanID, onclick="play(this)")
+    tag.insert(0, word.encode('ascii','ignore'))
     return tag
 
 master_word_list = []
@@ -27,22 +27,32 @@ master_word_list = []
 for pnum, p in enumerate(paragraphs):
     words = p.text.replace("\n"," ").split(" ")
     p.string = ""
+    if p.find("img"):
+		img_tag = p.find("img").extract()
+		print p, img_tag.name
+    
     for wnum, word in enumerate(words):
         token = word.lower()
         token = "".join([x for x in token if x in string.ascii_letters])
         master_word_list.append(token)
         p.insert(wnum, buildSpan(word, token, pnum, wnum))
     #print p
-print soup
+#print soup
 
 #Write out new html file
 newfile = "new_" + filename
+print "Saving new file ..."
+with open(newfile, "wb") as wb:
+  wb.write(soup.prettify(formatter="html"))
+print "File saved at", newfile
 
-#with open(newfile, "wb") as wb:
-#  wb.write(soup.prettify())
+
 
 master_word_list = list(set(master_word_list))
+print master_word_list
 problem_words = []
+
+
 import download_dict_sound_rough, os
 soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
 
@@ -68,4 +78,5 @@ missing_words = "\n".join([word for word in master_word_list if word not in soun
 
 with open("missing_words.txt","wb") as wb:
     wb.write(missing_words)
+
 
