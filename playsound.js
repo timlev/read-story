@@ -1,6 +1,7 @@
 function play(obj){
 	var audioTag = document.getElementById('player');
 	audioTag.src = parseId(obj.id);
+	audioTag.play();
 	audioTag.addEventListener("canplaythrough", colorBackground(obj));
 	audioTag.addEventListener("canplaythrough", function(){
 		audioTag.play();
