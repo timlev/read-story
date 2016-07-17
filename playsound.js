@@ -1,30 +1,22 @@
 function play(obj){
-	var audioTag = document.getElementById('player');
-	audioTag.src = parseId(obj.id);
+	var audioTagId = parseId(obj.id);
+	var audioTag = document.getElementById(audioTagId);
+	colorBackground(obj);
 	audioTag.play();
-	audioTag.addEventListener("canplaythrough", colorBackground(obj));
-	audioTag.addEventListener("canplaythrough", function(){
-		audioTag.play();
-	});
+
+
 	audioTag.addEventListener("ended", function(){
 		obj.style.backgroundColor = "transparent";
-		audioTagClone = audioTag.cloneNode(true);
-		audioTag.parentNode.replaceChild(audioTagClone, audioTag);
 	});
 	
-	audioTag.addEventListener("error", function(){
-		obj.style.backgroundColor = "transparent";
-		audioTagClone = audioTag.cloneNode(true);
-		audioTag.parentNode.replaceChild(audioTagClone, audioTag);
-	});
 }
-function colorBackground(obj){
-	obj.style.backgroundColor = "yellow";
+
+function colorBackground(obj, color){
+	obj.style.backgroundColor = color;
 }
 
 function parseId(id){
-	var audioFile = "./sounds/"
-	audioFile += id.slice(id.indexOf("_") + 1);
-	audioFile += ".mp3";
-	return audioFile;
+	var audioTagId = id.slice(id.indexOf("_") + 1);
+	audioTagId += "_audio";
+	return audioTagId;
 }
