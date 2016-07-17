@@ -33,7 +33,7 @@ def buildAllAudio(master_word_list):
     for token in master_word_list:
         audioID = token + "_audio"
         source = "sounds/" + token + ".mp3"
-        audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")
+        audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto", oncanplaythrough="console.log(this)")
         print audio
         body.append(audio)
 
