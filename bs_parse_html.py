@@ -13,15 +13,39 @@ header.insert(0, script)
 
 body = soup.find('body')
 arguments = [('id','player')]
-audio = soup.new_tag("audio", id="player", type="audio/mpeg")
+audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 body.insert(0, audio)
 
+def stripID(audioID):
+    chunk = audioID[audioID.index("_") + 1:]
+    return chunk
+
+def tokenize_word(word):
+    token = word.lower()
+    token = "".join([x for x in token if x in string.ascii_letters])
+    if token != "":
+        return token
+    else:
+        return False
+
+
+def buildAllAudio(master_word_list):
+    for token in master_word_list:
+        audioID = token + "_audio"
+        source = "sounds/" + token + ".mp3"
+        audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")
+        print audio
+        body.append(audio)
+
+    
 def buildSpan(word, token, pnum, wnum):
     spanID = str(pnum) + str(wnum) + "_" + token
     tag = soup.new_tag("span", id=spanID, onclick="play(this)")
     tag.insert(0, word.encode('ascii','ignore'))
     return tag
 
+
+#Build Master Word List
 master_word_list = []
 
 for pnum, p in enumerate(paragraphs):
@@ -32,12 +56,14 @@ for pnum, p in enumerate(paragraphs):
 		print p, img_tag.name
     
     for wnum, word in enumerate(words):
-        token = word.lower()
-        token = "".join([x for x in token if x in string.ascii_letters])
-        master_word_list.append(token)
-        p.insert(wnum, buildSpan(word, token, pnum, wnum))
-    #print p
-#print soup
+        token = tokenize_word(word)
+        if token != False:
+            master_word_list.append(token)
+            p.insert(wnum, buildSpan(word, token, pnum, wnum))
+
+
+master_word_list = list(set(master_word_list))
+buildAllAudio(master_word_list)
 
 #Write out new html file
 newfile = "new_" + filename
@@ -47,9 +73,7 @@ with open(newfile, "wb") as wb:
 print "File saved at", newfile
 
 
-
-master_word_list = list(set(master_word_list))
-print master_word_list
+#Download Words
 problem_words = []
 
 
