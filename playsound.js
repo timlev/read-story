@@ -1,7 +1,7 @@
 function play(obj){
 	var audioTagId = parseId(obj.id);
 	var audioTag = document.getElementById(audioTagId);
-	colorBackground(obj);
+	colorBackground(obj, "yellow");
 	audioTag.play();
 
 
