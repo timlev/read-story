@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup, Tag
 import string
-filename = "The Animals at the Minnesota Zoo.html"
-soup = BeautifulSoup(open(filename), "lxml")
+filename = "ApartmentManagerConversation.html"
+#soup = BeautifulSoup(open(filename), "lxml")
+soup = BeautifulSoup(open(filename))
 
 
 paragraphs = soup.findAll('p')
