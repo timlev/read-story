@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup, Tag
 import string
-filename = "ApartmentManagerConversation.html"
+filename = "the_crab.html"
+#filename = "ApartmentManagerConversation.html"
 #soup = BeautifulSoup(open(filename), "lxml")
 soup = BeautifulSoup(open(filename))
 
@@ -77,7 +78,7 @@ print "File saved at", newfile
 #Download Words
 problem_words = []
 
-
+print "Downloading sound files ..."
 import download_dict_sound_rough, os
 soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
 
