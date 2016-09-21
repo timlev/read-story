@@ -12,6 +12,9 @@ header = soup.find('head')
 arguments = [('src', "playsound.js")]
 script = soup.new_tag("script", src="playsound.js")
 header.insert(0, script)
+arguments = [('style', 'word-wrap: normal;')]
+style = soup.new_tag('style', 'word-wrap: normal;')
+header.insert(0,style)
 
 body = soup.find('body')
 arguments = [('id','player')]
