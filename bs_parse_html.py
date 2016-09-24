@@ -22,6 +22,11 @@ body = soup.find('body')
 audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 body.insert(0, audio)
 
+fspimg = soup.new_tag("img", src="plus-800px.png", onclick='increaseFont()')
+fsmimg = soup.new_tag("img", src="minus-800px.png", onclick='decreaseFont()')
+body.insert(0,fsmimg)
+body.insert(0,fspimg)
+
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
     return chunk

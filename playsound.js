@@ -20,3 +20,33 @@ function parseId(id){
 	audioTagId += "_audio";
 	return audioTagId;
 }
+
+function increaseFont(){
+  var fs = document.body.style.fontSize;
+  console.log(fs);
+  if (fs == ""){
+	  document.body.style.fontSize = "1em";
+  }
+  else {
+	  fs = fs.replace("em","");
+	  fs = Number(fs);
+	  fs += .2;
+	  document.body.style.fontSize = fs.toString() + "em";
+	  console.log(fs);
+  }
+}
+
+function decreaseFont(){
+  var fs = document.body.style.fontSize;
+  console.log(fs);
+  if (fs == ""){
+	  document.body.style.fontSize = "1em";
+  }
+  else {
+	  fs = fs.replace("em","");
+	  fs = Number(fs);
+	  fs -= .2;
+	  document.body.style.fontSize = fs.toString() + "em";
+	  console.log(fs);
+  }
+}
