@@ -1,23 +1,24 @@
+# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
 import string
-filename = "the_crab.html"
+filename = "prefixes.html"
 #filename = "ApartmentManagerConversation.html"
-#soup = BeautifulSoup(open(filename), "lxml")
-soup = BeautifulSoup(open(filename))
+soup = BeautifulSoup(open(filename), "lxml")
+#soup = BeautifulSoup(open(filename))
 
 
 paragraphs = soup.findAll('p')
 
 header = soup.find('head')
-arguments = [('src', "playsound.js")]
+#arguments = [('src', "playsound.js")]
 script = soup.new_tag("script", src="playsound.js")
 header.insert(0, script)
-arguments = [('style', 'word-wrap: normal;')]
+#arguments = [('style', 'word-wrap: normal;')]
 style = soup.new_tag('style', 'word-wrap: normal;')
 header.insert(0,style)
 
 body = soup.find('body')
-arguments = [('id','player')]
+#arguments = [('id','player')]
 audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 body.insert(0, audio)
 
@@ -38,7 +39,7 @@ def buildAllAudio(master_word_list):
     for token in master_word_list:
         audioID = token + "_audio"
         source = "sounds/" + token + ".mp3"
-        audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto", oncanplaythrough="console.log(this)")
+        audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")#, oncanplaythrough="console.log(this)")
         print audio
         body.append(audio)
 
@@ -46,7 +47,7 @@ def buildAllAudio(master_word_list):
 def buildSpan(word, token, pnum, wnum):
     spanID = str(pnum) + str(wnum) + "_" + token
     tag = soup.new_tag("span", id=spanID, onclick="play(this)")
-    tag.insert(0, word.encode('ascii','ignore'))
+    tag.insert(0, word)
     return tag
 
 
@@ -55,7 +56,10 @@ master_word_list = []
 
 for pnum, p in enumerate(paragraphs):
     words = p.text.replace("\n"," ").split(" ")
+    if "<b>" in p:
+		print p
     p.string = ""
+    words = [x.encode('ascii',errors='ignore') for x in words]
     if p.find("img"):
 		img_tag = p.find("img").extract()
 		print p, img_tag.name
@@ -107,5 +111,6 @@ missing_words = "\n".join([word for word in master_word_list if word not in soun
 
 with open("missing_words.txt","wb") as wb:
     wb.write(missing_words)
+
 
 

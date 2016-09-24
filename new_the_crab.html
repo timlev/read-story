@@ -3,6 +3,37 @@
  <head>
   <script src="playsound.js">
   </script>
+  <script>
+  function increaseFont(){
+	  var fs = document.body.style.fontSize;
+	  console.log(fs);
+	  if (fs == ""){
+		  document.body.style.fontSize = "1em";
+	  }
+	  else {
+		  fs = fs.replace("em","");
+		  fs = Number(fs);
+		  fs += .2;
+		  document.body.style.fontSize = fs.toString() + "em";
+		  console.log(fs);
+	  }
+  }
+
+  function decreaseFont(){
+	  var fs = document.body.style.fontSize;
+	  console.log(fs);
+	  if (fs == ""){
+		  document.body.style.fontSize = "1em";
+	  }
+	  else {
+		  fs = fs.replace("em","");
+		  fs = Number(fs);
+		  fs -= .2;
+		  document.body.style.fontSize = fs.toString() + "em";
+		  console.log(fs);
+	  }
+  }
+  </script>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <title>
   </title>
@@ -11,6 +42,8 @@
   <meta content="2016-09-21T10:00:34.974132429" name="changed"/>
  </head>
  <body dir="ltr" lang="en-US" style="word-wrap: normal;">
+	<img onclick='increaseFont()' src='plus-800px.png'/>
+	<img onclick='decreaseFont()' src='minus-800px.png'/>
   <audio id="player" preload="auto" type="audio/mpeg">
   </audio>
   <p align="center" style="margin-bottom: 0in; line-height: 100%">
