@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
-import string
-filename = "prefixes.html"
+import string,re
+#filename = "prefixes.html"
 #filename = "ApartmentManagerConversation.html"
 soup = BeautifulSoup(open(filename), "lxml")
 #soup = BeautifulSoup(open(filename))
@@ -13,11 +13,18 @@ header = soup.find('head')
 #arguments = [('src', "playsound.js")]
 script = soup.new_tag("script", src="playsound.js")
 header.insert(0, script)
+print header.find_all('style')
 #arguments = [('style', 'word-wrap: normal;')]
 style = soup.new_tag('style', 'word-wrap: normal;')
+styles = soup.findAll('style')
+
+for style in styles:
+	if "font-size" in style.string:
+		style.string = re.sub("font-size\s*?:.*?;","font-size:1em;", style.string)
 header.insert(0,style)
 
 body = soup.find('body')
+body['style'] = "font-size:1em"
 #arguments = [('id','player')]
 audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 body.insert(0, audio)
