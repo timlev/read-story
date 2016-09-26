@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
 import string,re
-#filename = "prefixes.html"
+filename = "prefixes.html"
 #filename = "ApartmentManagerConversation.html"
 soup = BeautifulSoup(open(filename), "lxml")
 #soup = BeautifulSoup(open(filename))
@@ -13,6 +13,7 @@ header = soup.find('head')
 #arguments = [('src', "playsound.js")]
 script = soup.new_tag("script", src="playsound.js")
 header.insert(0, script)
+header.title.string = filename.replace(".html","")
 print header.find_all('style')
 #arguments = [('style', 'word-wrap: normal;')]
 style = soup.new_tag('style', 'word-wrap: normal;')
