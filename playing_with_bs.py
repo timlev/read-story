@@ -9,12 +9,20 @@ soup = BeautifulSoup(open(filename), "lxml")
 
 paragraphs = soup.findAll('p')
 
+"""for s in soup('span'):
+	if s.string != None:
+		print [x.encode(errors='ignore') for x in s.string.split(" ")]
+"""
 for p in paragraphs:
-	for item in p.contents:
-		print item
+	print p.string
+	#for item in p.descendants:
+		#print item
+"""
+	#for item in p.contents:
+		#print item.find_all("span")
 		#print item.extract()
 			#print item.unwrap()
-"""
+
 	for item in p.contents:
 		print item.string
 		if item.string != None:
