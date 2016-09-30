@@ -14,7 +14,12 @@ paragraphs = soup.findAll('p')
 		print [x.encode(errors='ignore') for x in s.string.split(" ")]
 """
 for p in paragraphs:
-	print p.string
+	if p.text.encode(errors="ignore") != "":
+		p.string = " ".join([x.encode(errors="ignore") for x in p.text.split(" ")])
+	else:
+		p.extract()
+print paragraphs
+	#print [x.encode(errors="ignore") for x in p.contents]
 	#for item in p.descendants:
 		#print item
 """

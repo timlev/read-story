@@ -69,13 +69,11 @@ master_word_list = []
 
 for pnum, p in enumerate(paragraphs):
     words = p.text.replace("\n"," ").split(" ")
-    if "<b>" in p:
-		print p
     p.string = ""
-    words = [x.encode('ascii',errors='ignore') for x in words]
-    if p.find("img"):
-		img_tag = p.find("img").extract()
-		print p, img_tag.name
+    words = [x.encode(errors='ignore') for x in words]
+    #if p.find("img"):
+		#img_tag = p.find("img").extract()
+		#print p, img_tag.name
     
     for wnum, word in enumerate(words):
         token = tokenize_word(word)
