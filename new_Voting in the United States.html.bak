@@ -1,18 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
  <head>
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
-  <style>
-   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
- span:hover {cursor: pointer;}
-  </style>
   <style type="text/css">
+   p {font-family: 'Didact Gothic', sans-serif;}
+   span:hover {cursor: pointer;}
    @page { margin: 0.79in }
-		p { margin-bottom: 0.1in;  }
+		p { margin-bottom: 0.1in; line-height: 120% }
 		a:link { so-language: zxx }
   </style>
-  <style>
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
   <script src="playsound.js">
   </script>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
@@ -28,7 +24,7 @@
   <img onclick="decreaseFont()" src="minus-800px.png"/>
   <audio id="player" preload="auto" type="audio/mpeg">
   </audio>
-  <p align="center" style="margin-bottom: 0in; ">
+  <p align="center" style="margin-bottom: 0in; line-height: 100%">
    <span id="00_voting" onclick="play(this)">
     Voting
    </span>
@@ -45,7 +41,7 @@
     States
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="10_can" onclick="play(this)">
     Can
    </span>
@@ -63,11 +59,7 @@
    </span>
    <span id="15_are" onclick="play(this)">
     are
-   </span>
-   <span id="16_18" onclick="play(this)">
-    18
-   </span>
-   <span id="17_years" onclick="play(this)">
+   </span> 18  <span id="17_years" onclick="play(this)">
     years
    </span>
    <span id="18_or" onclick="play(this)">
@@ -101,7 +93,7 @@
     can.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="20_americans" onclick="play(this)">
     Americans
    </span>
@@ -119,11 +111,7 @@
    </span>
    <span id="25_until" onclick="play(this)">
     Until
-   </span>
-   <span id="26_1776" onclick="play(this)">
-    1776,
-   </span>
-   <span id="27_great" onclick="play(this)">
+   </span> 1776,  <span id="27_great" onclick="play(this)">
     Great
    </span>
    <span id="28_britain" onclick="play(this)">
@@ -200,10 +188,7 @@
    </span>
    <span id="232_in" onclick="play(this)">
     In
-   </span>
-   <span id="233_1776" onclick="play(this)">
-    1776,
-   </span>
+   </span> 1776, 
    <span id="234_they" onclick="play(this)">
     they
    </span>
@@ -234,11 +219,11 @@
    <span id="243_became" onclick="play(this)">
     became
    </span>
-   <span id="244_possibleat" onclick="play(this)">
-    possibleat
+   <span id="244_possible" onclick="play(this)">
+    possible
    </span>
    <span id="245_least" onclick="play(this)">
-    least,
+    -- at least,
    </span>
    <span id="246_for" onclick="play(this)">
     for
@@ -247,7 +232,7 @@
     some.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="30_the" onclick="play(this)">
     The
    </span>
@@ -286,11 +271,7 @@
    </span>
    <span id="312_least" onclick="play(this)">
     least
-   </span>
-   <span id="313_21" onclick="play(this)">
-    21
-   </span>
-   <span id="314_years" onclick="play(this)">
+   </span> 21 <span id="314_years" onclick="play(this)">
     years
    </span>
    <span id="315_old" onclick="play(this)">
@@ -310,10 +291,7 @@
    </span>
    <span id="320_in" onclick="play(this)">
     in
-   </span>
-   <span id="321_1820" onclick="play(this)">
-    1820,
-   </span>
+   </span> 1820 
    <span id="322_the" onclick="play(this)">
     the
    </span>
@@ -337,10 +315,7 @@
    </span>
    <span id="329_males" onclick="play(this)">
     males
-   </span>
-   <span id="330_21" onclick="play(this)">
-    21
-   </span>
+   </span> 21 
    <span id="331_years" onclick="play(this)">
     years
    </span>
@@ -364,10 +339,7 @@
    </span>
    <span id="338_in" onclick="play(this)">
     In
-   </span>
-   <span id="339_1872" onclick="play(this)">
-    1872,
-   </span>
+   </span> 1872, 
    <span id="340_the" onclick="play(this)">
     the
    </span>
@@ -411,7 +383,7 @@
     vote.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="40_women" onclick="play(this)">
     Women
    </span>
@@ -480,11 +452,7 @@
    </span>
    <span id="422_in" onclick="play(this)">
     in
-   </span>
-   <span id="423_1920" onclick="play(this)">
-    1920,
-   </span>
-   <span id="424_women" onclick="play(this)">
+   </span> 1920,  <span id="424_women" onclick="play(this)">
     women
    </span>
    <span id="425_got" onclick="play(this)">
@@ -522,10 +490,7 @@
    </span>
    <span id="436_over" onclick="play(this)">
     over
-   </span>
-   <span id="437_21" onclick="play(this)">
-    21
-   </span>
+   </span> 21 
    <span id="438_years" onclick="play(this)">
     years
    </span>
@@ -533,20 +498,16 @@
     old.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="50_in" onclick="play(this)">
     In
-   </span>
-   <span id="51_1924" onclick="play(this)">
-    1924,
-   </span>
-   <span id="52_native" onclick="play(this)">
+   </span> 1924,   <span id="52_native" onclick="play(this)">
     Native
    </span>
    <span id="53_americans" onclick="play(this)">
     Americans
    </span>
-   <span id="54_gained" onclick="play(this)">
+   <span id="54_gained" style="text-decoration: underline;" onclick="play(this)">
     gained
    </span>
    <span id="55_citizenship" onclick="play(this)">
@@ -567,7 +528,7 @@
    <span id="510_the" onclick="play(this)">
     the
    </span>
-   <span id="511_1960s" onclick="play(this)">
+   <span id="511_s" onclick="play(this)">
     1960s,
    </span>
    <span id="512_however" onclick="play(this)">
@@ -599,10 +560,7 @@
    </span>
    <span id="521_in" onclick="play(this)">
     In
-   </span>
-   <span id="522_1971" onclick="play(this)">
-    1971,
-   </span>
+   </span> 1971, 
    <span id="523_the" onclick="play(this)">
     the
    </span>
@@ -612,7 +570,7 @@
    <span id="525_was" onclick="play(this)">
     was
    </span>
-   <span id="526_amended" onclick="play(this)">
+   <span id="526_amended" style="text-decoration: underline;" onclick="play(this)">
     amended
    </span>
    <span id="527_to" onclick="play(this)">
@@ -632,10 +590,7 @@
    </span>
    <span id="532_to" onclick="play(this)">
     to
-   </span>
-   <span id="533_18" onclick="play(this)">
-    18.
-   </span>
+   </span> 18.
    <span id="534_now" onclick="play(this)">
     Now
    </span>
@@ -658,7 +613,7 @@
     vote!
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="60_over" onclick="play(this)">
     Over
    </span>
@@ -732,7 +687,7 @@
     people
    </span>
    <span id="624_dont" onclick="play(this)">
-    dont
+    don't
    </span>
    <span id="625_bother" onclick="play(this)">
     bother
@@ -748,11 +703,7 @@
    </span>
    <span id="629_the" onclick="play(this)">
     the
-   </span>
-   <span id="630_2012" onclick="play(this)">
-    2012
-   </span>
-   <span id="631_presidential" onclick="play(this)">
+   </span> 2012  <span id="631_presidential" onclick="play(this)">
     presidential
    </span>
    <span id="632_election" onclick="play(this)">
@@ -760,10 +711,7 @@
    </span>
    <span id="633_only" onclick="play(this)">
     only
-   </span>
-   <span id="634_62" onclick="play(this)">
-    62%
-   </span>
+   </span> 62%
    <span id="635_of" onclick="play(this)">
     of
    </span>
@@ -782,7 +730,7 @@
    <span id="640_than" onclick="play(this)">
     than
    </span>
-   <span id="641_one-third" onclick="play(this)">
+   <span id="641_onethird" onclick="play(this)">
     one-third
    </span>
    <span id="642_of" onclick="play(this)">
@@ -804,7 +752,7 @@
     vote!
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="70_why" onclick="play(this)">
     Why
    </span>
@@ -884,7 +832,7 @@
     important.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="80_actually" onclick="play(this)">
     Actually,
    </span>
@@ -991,7 +939,7 @@
     country.
    </span>
   </p>
-  <p align="left" style="margin-bottom: 0in; ">
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
    <span id="90_voting" onclick="play(this)">
     Voting
    </span>
@@ -1092,7 +1040,7 @@
     when
    </span>
    <span id="933_youre" onclick="play(this)">
-    youre
+    you're
    </span>
    <span id="934_old" onclick="play(this)">
     old
@@ -1125,13 +1073,7 @@
   </audio>
   <audio id="its_audio" preload="auto" src="sounds/its.mp3" type="audio/mpeg">
   </audio>
-  <audio id="1776_audio" preload="auto" src="sounds/1776.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="21_audio" preload="auto" src="sounds/21.mp3" type="audio/mpeg">
-  </audio>
   <audio id="eligible_audio" preload="auto" src="sounds/eligible.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="much_audio" preload="auto" src="sounds/much.mp3" type="audio/mpeg">
   </audio>
   <audio id="had_audio" preload="auto" src="sounds/had.mp3" type="audio/mpeg">
   </audio>
@@ -1149,8 +1091,6 @@
   </audio>
   <audio id="citizen_audio" preload="auto" src="sounds/citizen.mp3" type="audio/mpeg">
   </audio>
-  <audio id="2012_audio" preload="auto" src="sounds/2012.mp3" type="audio/mpeg">
-  </audio>
   <audio id="then_audio" preload="auto" src="sounds/then.mp3" type="audio/mpeg">
   </audio>
   <audio id="amended_audio" preload="auto" src="sounds/amended.mp3" type="audio/mpeg">
@@ -1160,6 +1100,8 @@
   <audio id="males_audio" preload="auto" src="sounds/males.mp3" type="audio/mpeg">
   </audio>
   <audio id="possible_audio" preload="auto" src="sounds/possible.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="were_audio" preload="auto" src="sounds/were.mp3" type="audio/mpeg">
   </audio>
   <audio id="every_audio" preload="auto" src="sounds/every.mp3" type="audio/mpeg">
   </audio>
@@ -1175,17 +1117,15 @@
   </audio>
   <audio id="presidential_audio" preload="auto" src="sounds/presidential.mp3" type="audio/mpeg">
   </audio>
+  <audio id="onethird_audio" preload="auto" src="sounds/onethird.mp3" type="audio/mpeg">
+  </audio>
   <audio id="did_audio" preload="auto" src="sounds/did.mp3" type="audio/mpeg">
   </audio>
   <audio id="always_audio" preload="auto" src="sounds/always.mp3" type="audio/mpeg">
   </audio>
-  <audio id="1820_audio" preload="auto" src="sounds/1820.mp3" type="audio/mpeg">
-  </audio>
   <audio id="taxes_audio" preload="auto" src="sounds/taxes.mp3" type="audio/mpeg">
   </audio>
   <audio id="honor_audio" preload="auto" src="sounds/honor.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="1872_audio" preload="auto" src="sounds/1872.mp3" type="audio/mpeg">
   </audio>
   <audio id="mean_audio" preload="auto" src="sounds/mean.mp3" type="audio/mpeg">
   </audio>
@@ -1205,13 +1145,7 @@
   </audio>
   <audio id="some_audio" preload="auto" src="sounds/some.mp3" type="audio/mpeg">
   </audio>
-  <audio id="1960s_audio" preload="auto" src="sounds/1960s.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="1920_audio" preload="auto" src="sounds/1920.mp3" type="audio/mpeg">
-  </audio>
   <audio id="decided_audio" preload="auto" src="sounds/decided.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="1924_audio" preload="auto" src="sounds/1924.mp3" type="audio/mpeg">
   </audio>
   <audio id="are_audio" preload="auto" src="sounds/are.mp3" type="audio/mpeg">
   </audio>
@@ -1243,9 +1177,7 @@
   </audio>
   <audio id="do_audio" preload="auto" src="sounds/do.mp3" type="audio/mpeg">
   </audio>
-  <audio id="one-third_audio" preload="auto" src="sounds/one-third.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="were_audio" preload="auto" src="sounds/were.mp3" type="audio/mpeg">
+  <audio id="men_audio" preload="auto" src="sounds/men.mp3" type="audio/mpeg">
   </audio>
   <audio id="however_audio" preload="auto" src="sounds/however.mp3" type="audio/mpeg">
   </audio>
@@ -1257,7 +1189,7 @@
   </audio>
   <audio id="male_audio" preload="auto" src="sounds/male.mp3" type="audio/mpeg">
   </audio>
-  <audio id="many_audio" preload="auto" src="sounds/many.mp3" type="audio/mpeg">
+  <audio id="of_audio" preload="auto" src="sounds/of.mp3" type="audio/mpeg">
   </audio>
   <audio id="could_audio" preload="auto" src="sounds/could.mp3" type="audio/mpeg">
   </audio>
@@ -1278,8 +1210,6 @@
   <audio id="dont_audio" preload="auto" src="sounds/dont.mp3" type="audio/mpeg">
   </audio>
   <audio id="owned_audio" preload="auto" src="sounds/owned.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="62_audio" preload="auto" src="sounds/62.mp3" type="audio/mpeg">
   </audio>
   <audio id="right_audio" preload="auto" src="sounds/right.mp3" type="audio/mpeg">
   </audio>
@@ -1305,7 +1235,7 @@
   </audio>
   <audio id="their_audio" preload="auto" src="sounds/their.mp3" type="audio/mpeg">
   </audio>
-  <audio id="of_audio" preload="auto" src="sounds/of.mp3" type="audio/mpeg">
+  <audio id="much_audio" preload="auto" src="sounds/much.mp3" type="audio/mpeg">
   </audio>
   <audio id="too_audio" preload="auto" src="sounds/too.mp3" type="audio/mpeg">
   </audio>
@@ -1329,6 +1259,8 @@
   </audio>
   <audio id="concerning_audio" preload="auto" src="sounds/concerning.mp3" type="audio/mpeg">
   </audio>
+  <audio id="freedom_audio" preload="auto" src="sounds/freedom.mp3" type="audio/mpeg">
+  </audio>
   <audio id="teenagers_audio" preload="auto" src="sounds/teenagers.mp3" type="audio/mpeg">
   </audio>
   <audio id="because_audio" preload="auto" src="sounds/because.mp3" type="audio/mpeg">
@@ -1347,8 +1279,6 @@
   </audio>
   <audio id="rights_audio" preload="auto" src="sounds/rights.mp3" type="audio/mpeg">
   </audio>
-  <audio id="18_audio" preload="auto" src="sounds/18.mp3" type="audio/mpeg">
-  </audio>
   <audio id="bother_audio" preload="auto" src="sounds/bother.mp3" type="audio/mpeg">
   </audio>
   <audio id="say_audio" preload="auto" src="sounds/say.mp3" type="audio/mpeg">
@@ -1359,7 +1289,7 @@
   </audio>
   <audio id="can_audio" preload="auto" src="sounds/can.mp3" type="audio/mpeg">
   </audio>
-  <audio id="freedom_audio" preload="auto" src="sounds/freedom.mp3" type="audio/mpeg">
+  <audio id="many_audio" preload="auto" src="sounds/many.mp3" type="audio/mpeg">
   </audio>
   <audio id="property_audio" preload="auto" src="sounds/property.mp3" type="audio/mpeg">
   </audio>
@@ -1403,6 +1333,8 @@
   </audio>
   <audio id="when_audio" preload="auto" src="sounds/when.mp3" type="audio/mpeg">
   </audio>
+  <audio id="s_audio" preload="auto" src="sounds/s.mp3" type="audio/mpeg">
+  </audio>
   <audio id="how_audio" preload="auto" src="sounds/how.mp3" type="audio/mpeg">
   </audio>
   <audio id="other_audio" preload="auto" src="sounds/other.mp3" type="audio/mpeg">
@@ -1421,8 +1353,6 @@
   </audio>
   <audio id="important_audio" preload="auto" src="sounds/important.mp3" type="audio/mpeg">
   </audio>
-  <audio id="men_audio" preload="auto" src="sounds/men.mp3" type="audio/mpeg">
-  </audio>
   <audio id="law_audio" preload="auto" src="sounds/law.mp3" type="audio/mpeg">
   </audio>
   <audio id="why_audio" preload="auto" src="sounds/why.mp3" type="audio/mpeg">
@@ -1436,8 +1366,6 @@
   <audio id="age_audio" preload="auto" src="sounds/age.mp3" type="audio/mpeg">
   </audio>
   <audio id="youre_audio" preload="auto" src="sounds/youre.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="1971_audio" preload="auto" src="sounds/1971.mp3" type="audio/mpeg">
   </audio>
   <audio id="think_audio" preload="auto" src="sounds/think.mp3" type="audio/mpeg">
   </audio>

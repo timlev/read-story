@@ -1,17 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
  <head>
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
-  <style>
-   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
- span:hover {cursor: pointer;}
-  </style>
   <style type="text/css">
+   p {font-family: 'Didact Gothic', sans-serif;
+	  line-height: 1.5;
+	  text-indent: 5%}
+   span:hover {cursor: pointer;}
    @page { margin: 0.79in }
-		p { margin-bottom: 0.1in;  }
+		p { margin-bottom: 0.1in;}
   </style>
-  <style>
-  </style>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
   <script src="playsound.js">
   </script>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>

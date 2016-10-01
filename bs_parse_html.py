@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
 import string,re
-filename = "Voting in the United States.html"
+filename = "Spider and the Sun.html"
 #filename = "ApartmentManagerConversation.html"
 soup = BeautifulSoup(open(filename), "lxml")
 #soup = BeautifulSoup(open(filename))
@@ -17,15 +17,24 @@ header.title.string = filename.replace(".html","")
 print header.find_all('style')
 #arguments = [('style', 'word-wrap: normal;')]
 style = soup.new_tag('style', 'word-wrap: normal;')
+ 
 styles = soup.findAll('style')
-
+header.insert(0,style)
 for style in styles:
 	if "font-size" in style.string:
-		style.string = re.sub("font-size\s*?:.*?;","font-size:1em;", style.string)
-header.insert(0,style)
+		style.string = re.sub("font-size\s*?:.*?;","font-size:2em;", style.string)
+	if "line-height" in style.string:
+		style.string = re.sub("line-height\s*?:.*?%","", style.string)
+	header.insert(0,style)
+
+font = soup.new_tag('link', href="https://fonts.googleapis.com/css?family=Didact+Gothic", rel="stylesheet")
+fontstyles = soup.new_tag('style')
+fontstyles.string = "p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}\n span:hover {cursor: pointer;}"
+header.insert(0, fontstyles)
+header.insert(0, font)
 
 body = soup.find('body')
-body['style'] = "font-size:1em"
+body['style'] = "font-size:2em"
 #arguments = [('id','player')]
 audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 body.insert(0, audio)
@@ -41,7 +50,7 @@ def stripID(audioID):
 
 def tokenize_word(word):
     token = word.lower()
-    token = "".join([x for x in token if x in string.ascii_letters])
+    token = "".join([x for x in token if x in string.ascii_letters + string.digits 	+ "-" +"'"])
     if token != "":
         return token
     else:
@@ -74,7 +83,9 @@ for pnum, p in enumerate(paragraphs):
     #if p.find("img"):
 		#img_tag = p.find("img").extract()
 		#print p, img_tag.name
-    
+    if "line-height" in p['style']:
+        print p['style']
+        p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
     for wnum, word in enumerate(words):
         token = tokenize_word(word)
         if token != False:
