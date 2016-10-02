@@ -103,6 +103,19 @@ with open(newfile, "wb") as wb:
   wb.write(soup.prettify(formatter="html"))
 print "File saved at", newfile
 
+#Add to Index
+index = BeautifulSoup(open('index.html'), "lxml")
+new_link = index.new_tag('a', href = newfile)
+new_link.string = filename
+index.body.append(index.new_tag('br'))
+index.body.append(new_link)
+
+#Write Index file
+print "Updating index.html..."
+with open("index.html", "wb") as wb:
+  wb.write(index.prettify(formatter="html"))
+print "File saved at index.html"
+
 
 #Download Words
 problem_words = []
