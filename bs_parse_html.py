@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
 import string,re
-filename = "Gary Paulsen.html"
+filename = "The Inuit Keep Their Traditions Alive.html"
 #filename = "Healing Paws.html"
 #filename = "ApartmentManagerConversation.html"
 soup = BeautifulSoup(open(filename), "lxml")

@@ -11,7 +11,9 @@ paragraphs = soup.findAll('p')
 
 
 for p in paragraphs:
-	print p
+	print str(p).split(" ")
+	#in each p, 
+
 
 """for s in soup('span'):
 	if s.string != None:
