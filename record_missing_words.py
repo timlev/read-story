@@ -24,8 +24,10 @@ def record(word):
     os.system("rec " + word + ".wav")
 def convert(word):
     os.system("avconv -i " + word + ".wav " + word + ".mp3")
+def remove_wave(filename):
+	os.remove(filename)
 
 for word in missing_words:
-    #record(word)
+    record(word)
     convert(word)
-
+    remove_wave(word + ".wav")
