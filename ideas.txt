@@ -1,0 +1,13 @@
+Keep track of which words students click
+	Categorize words by sight words, spelling patterns, academic vocabulary, proper nouns
+
+
+Continue to work on missing characters
+	' , " , --
+
+Work on leaving tags intact
+	imgs, <b>, text style underlined
+
+Work on normalizing/leveling sounds
+
+Find another source of sounds
