@@ -5,9 +5,9 @@ import string,re
 #filename = "Healing Paws.html"
 #filename = "ApartmentManagerConversation.html"
 #allfilenames = ["Stage Fright.html","A Trip to Remember: Climbing the Snow King.html","A Trip to Remember: Montenegro.html","Knitting Circle.html","Senator Kidd.html","Grandma Moses.html","Selling Corn.html","George Washington.html"]
-allfilenames = ["Anton van Leeuwenhoek, Not the Father of the Microscope.html"]
-allfilenames = ["Louis Pasteur.html"]
-
+#allfilenames = ["Anton van Leeuwenhoek, Not the Father of the Microscope.html"]
+#allfilenames = ["Louis Pasteur.html"]
+allfilenames = ["Stage Fright.html"]
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
     return chunk
@@ -26,7 +26,7 @@ def buildAllAudio(master_word_list):
         audioID = token + "_audio"
         source = "sounds/" + token + ".mp3"
         audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")#, oncanplaythrough="console.log(this)")
-        print audio
+        #print audio
         body.append(audio)
 
     
@@ -46,7 +46,7 @@ for filename in allfilenames:
 	script = soup.new_tag("script", src="playsound.js")
 	header.insert(0, script)
 	header.title.string = filename.replace(".html","")
-	print header.find_all('style')
+	#print header.find_all('style')
 	#arguments = [('style', 'word-wrap: normal;')]
 	style = soup.new_tag('style', 'word-wrap: normal;')
 	 
@@ -83,13 +83,19 @@ for filename in allfilenames:
 
 	for pnum, p in enumerate(paragraphs):
 		words = p.text.replace("\n"," ").split(" ")
+		#print words
 		p.string = ""
-		words = [x.encode(errors='ignore') for x in words]
-		#if p.find("img"):
-			#img_tag = p.find("img").extract()
-			#print p, img_tag.name
+		#print words
+		for pos, word in enumerate(words):
+			if u'\u2019' in word:
+				words[pos] = word.replace(u'\u2019', "'")
+		words = [x.encode('ascii', errors='ignore') for x in words]
+
+
+		#words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
+		#print words
 		if "line-height" in p['style']:
-			print p['style']
+			#print p['style']
 			p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
 		for wnum, word in enumerate(words):
 			token = tokenize_word(word)
