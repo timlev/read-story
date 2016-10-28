@@ -7,7 +7,7 @@ import string,re
 #allfilenames = ["Stage Fright.html","A Trip to Remember: Climbing the Snow King.html","A Trip to Remember: Montenegro.html","Knitting Circle.html","Senator Kidd.html","Grandma Moses.html","Selling Corn.html","George Washington.html"]
 #allfilenames = ["Anton van Leeuwenhoek, Not the Father of the Microscope.html"]
 #allfilenames = ["Louis Pasteur.html"]
-allfilenames = ["Stage Fright.html"]
+allfilenames = ["Boys Choir of Harlem.html", "Saving Hawaiian Monk Seals.html"]
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
     return chunk
