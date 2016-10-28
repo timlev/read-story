@@ -44,7 +44,7 @@ def get_wiki(word, directory="./"):
         print "Writing file ..."
         ofp.write(getogg.read())
         ofp.close()
-        return 0
+        return os.path.join(directory, word + ".ogg")
     except:
         print "Could not download:", word
         return 2
@@ -56,8 +56,19 @@ def get_wiki(word, directory="./"):
 """
 #convert ogg to mp3
 
-def convert_ogg_to_mp3(mp3):
-	print mp3
+def convert_ogg_to_mp3(oggfile, remove_ogg = False):
+    oggpath = os.path.abspath(oggfile)
+    ogg_dir = os.path.dirname(oggfile)
+    oggfile = os.path.basename(oggfile)
+    mp3file = oggfile.replace(".ogg", ".mp3")
+    mp3path = oggpath.replace(".ogg",".mp3")
+    if platform.system() == 'Linux':
+        os.system('avconv -i "' + oggpath + '" "' + mp3path + '"')
+    if remove_ogg:
+        os.remove(oggpath)
+    return mp3path
+    
 if __name__ == "__main__":
-	get_wiki("i'm")
-	print "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg" == "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg"
+    if get_wiki("i'm") == 0:
+        convert_ogg_to_mp3("i'm" + ".ogg", True)
+    print "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg" == "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg"

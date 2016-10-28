@@ -132,7 +132,7 @@ for filename in allfilenames:
 	problem_words = []
 
 	print "Downloading sound files ..."
-	import download_dict_sound_rough, os
+	import download_wiktionary_word, os
 	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
 
 	for word in [word for word in master_word_list if word not in soundfiles]:
@@ -145,8 +145,12 @@ for filename in allfilenames:
 
 	for word in [word for word in master_word_list if word not in soundfiles]:
 		try:
-			download_dict_sound_rough.download_wiktionary(word, "./sounds/")
-			download_dict_sound_rough.convert_ogg_to_mp3(os.path.join(os.path.relpath("./sounds/"), word + ".ogg"), remove_ogg = True)
+			oggpath = download_wiktionary_word.get_wiki(word, "./sounds/")
+			if oggpath != 2:
+				download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
+			#download_dict_sound_rough.download_wiktionary(word, "./sounds/")
+			#download_dict_sound_rough.convert_ogg_to_mp3(os.path.join(os.path.relpath("./sounds/"), word + ".ogg"), remove_ogg = True)
+			
 		except:
 			print "Could't convert", word
 
