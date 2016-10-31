@@ -25,7 +25,7 @@ def get_wiki(word, directory="./"):
         return 1
     oggsource = ""
     for line in response:
-        if "src" in line and ".ogg" in line:
+        if "src" in line and "n-us" in line and ".ogg" in line:
             print line
             start = line.find("""src="//""") + len("""src="//""")
             end = line.find(".ogg") + len(".ogg")
@@ -69,6 +69,6 @@ def convert_ogg_to_mp3(oggfile, remove_ogg = False):
     return mp3path
     
 if __name__ == "__main__":
-    if get_wiki("i'm") == 0:
+    if get_wiki("joyful") == 0:
         convert_ogg_to_mp3("i'm" + ".ogg", True)
     print "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg" == "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg"
