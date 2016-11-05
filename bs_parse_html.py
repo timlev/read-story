@@ -23,7 +23,7 @@ def tokenize_word(word):
 def buildAllAudio(master_word_list):
     for token in master_word_list:
         audioID = token + "_audio"
-        source = "sounds/" + token + ".mp3"
+        source = "../sounds/" + token + ".mp3"
         audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")#, oncanplaythrough="console.log(this)")
         #print audio
         body.append(audio)
@@ -37,22 +37,27 @@ def buildSpan(word, token, pnum, wnum):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--input", nargs='*', required=True)
+parser.add_argument("input", nargs='+')
+parser.add_argument("--output_dir", default="./html_output")
+parser.add_argument("--index", default="./index.html")
 args = parser.parse_args(sys.argv[1:])
 
 allfilenames = args.input
 print "Files to analyze: {}".format(allfilenames)
 
 for filename in allfilenames:
+        base_name = os.path.basename(filename)
+        short_name = os.path.splitext(base_name)[0]
+
 	soup = BeautifulSoup(open(filename), "lxml")
 	#soup = BeautifulSoup(open(filename))
 	paragraphs = soup.findAll('p')
 
 	header = soup.find('head')
 	#arguments = [('src', "playsound.js")]
-	script = soup.new_tag("script", src="playsound.js")
+	script = soup.new_tag("script", src="../js/playsound.js")
 	header.insert(0, script)
-	header.title.string = filename.replace(".html","")
+	header.title.string = short_name
 	#print header.find_all('style')
 	#arguments = [('style', 'word-wrap: normal;')]
 	style = soup.new_tag('style', 'word-wrap: normal;')
@@ -78,8 +83,8 @@ for filename in allfilenames:
 	audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
 	body.insert(0, audio)
 
-	fspimg = soup.new_tag("img", src="plus-800px.png", onclick='increaseFont()')
-	fsmimg = soup.new_tag("img", src="minus-800px.png", onclick='decreaseFont()')
+	fspimg = soup.new_tag("img", src="../images/plus-800px.png", onclick='increaseFont()')
+	fsmimg = soup.new_tag("img", src="../images/minus-800px.png", onclick='decreaseFont()')
 	body.insert(0,fsmimg)
 	body.insert(0,fspimg)
 
@@ -115,22 +120,22 @@ for filename in allfilenames:
 	buildAllAudio(master_word_list)
 
 	#Write out new html file
-	newfile = "new_" + filename
+	newfile = args.output_dir + "/new_" + base_name
 	print "Saving new file ..."
 	with open(newfile, "wb") as wb:
 	  wb.write(soup.prettify(formatter="html"))
 	print "File saved at", newfile
 
 	#Add to Index
-	index = BeautifulSoup(open('index.html'), "lxml")
+	index = BeautifulSoup(open(args.index), "lxml")
 	new_link = index.new_tag('a', href = newfile)
-	new_link.string = filename
+	new_link.string = short_name
 	index.body.append(index.new_tag('br'))
 	index.body.append(new_link)
 
 	#Write Index file
 	print "Updating index.html..."
-	with open("index.html", "wb") as wb:
+	with open(args.index, "wb") as wb:
 	  wb.write(index.prettify(formatter="html"))
 	print "File saved at index.html"
 
@@ -165,7 +170,7 @@ for filename in allfilenames:
 
 	missing_words = "\n".join([word for word in master_word_list if word not in soundfiles])
 
-	with open(filename +"_missing_words.txt","wb") as wb:
+	with open("missing_words/" + base_name + "_missing_words.txt","wb") as wb:
 		wb.write(missing_words)
 
 
