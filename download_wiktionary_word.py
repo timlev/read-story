@@ -2,6 +2,7 @@ import urllib2
 import os
 import tempfile
 import platform
+
 def check_downloaded_word(word, directory="./"):
     soundfiles = os.listdir(directory)
     #strip extension
@@ -14,15 +15,16 @@ def check_downloaded_word(word, directory="./"):
 def get_wiki(word, directory="./"):
     if check_downloaded_word(word, directory):
         return 0
-#search for wiktionary word
-    base = "http://en.wiktionary.org/wiki/"
-    query = base + word
+    #search for wiktionary word
+    base = "https://en.wiktionary.org/wiki/"
+    query = base + urllib2.quote(word)
     print query
     try:
         response = urllib2.urlopen(query)
     except:
         print "Couldn't find", word
         return 1
+    print "Processing response"
     oggsource = ""
     for line in response:
         if "src" in line and "n-us" in line and ".ogg" in line:
