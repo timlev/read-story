@@ -35,11 +35,24 @@ def buildSpan(word, token, pnum, wnum):
     tag.insert(0, word)
     return tag
 
+def download_sound_files(master_word_list):
+	print "Downloading sound files ..."
+	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
+
+	for word in [word for word in master_word_list if word not in soundfiles]:
+		try:
+			oggpath = download_wiktionary_word.get_wiki(word, "./sounds/")
+			if oggpath != 2:
+				download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
+		except:
+			print "Could't convert", word
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("input", nargs='+')
 parser.add_argument("--output_dir", default="./html_output")
 parser.add_argument("--index", default="./index.html")
+parser.add_argument("--skip_sounds", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
 allfilenames = args.input
@@ -139,39 +152,12 @@ for filename in allfilenames:
 	  wb.write(index.prettify(formatter="html"))
 	print "File saved at index.html"
 
-
 	#Download Words
-	problem_words = []
-
-	print "Downloading sound files ..."
-	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
-
-	for word in [word for word in master_word_list if word not in soundfiles]:
-		try: download_dict_sound_rough.dictionary_rough_search(word,"./sounds/")
-		except:
-			problem_words.append(word)
-				
+	if not args.skip_sounds:
+		download_sound_files(master_word_list)
 
 	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
-
-	for word in [word for word in master_word_list if word not in soundfiles]:
-		try:
-			oggpath = download_wiktionary_word.get_wiki(word, "./sounds/")
-			if oggpath != 2:
-				download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
-			#download_dict_sound_rough.download_wiktionary(word, "./sounds/")
-			#download_dict_sound_rough.convert_ogg_to_mp3(os.path.join(os.path.relpath("./sounds/"), word + ".ogg"), remove_ogg = True)
-			
-		except:
-			print "Could't convert", word
-
-	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
-
-
 	missing_words = "\n".join([word for word in master_word_list if word not in soundfiles])
 
 	with open("missing_words/" + base_name + "_missing_words.txt","wb") as wb:
 		wb.write(missing_words)
-
-
-
