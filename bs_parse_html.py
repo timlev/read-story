@@ -6,6 +6,7 @@ import argparse
 import sys
 import os
 import download_wiktionary_word
+import copy
 
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
@@ -59,6 +60,8 @@ allfilenames = args.input
 print "Files to analyze: {}".format(allfilenames)
 
 for filename in allfilenames:
+	print "Processing {} ...".format(filename)
+
         base_name = os.path.basename(filename)
         short_name = os.path.splitext(base_name)[0]
 
@@ -66,15 +69,18 @@ for filename in allfilenames:
 	#soup = BeautifulSoup(open(filename))
 	paragraphs = soup.findAll('p')
 
-	header = soup.find('head')
-	#arguments = [('src', "playsound.js")]
+	orig_header = soup.find('head')
+	if orig_header is None:
+		new_header = soup.new_tag("head")
+	else:
+		new_header = copy.copy(orig_header)
 	script = soup.new_tag("script", src="../js/playsound.js")
-	header.insert(0, script)
-	header.title.string = short_name
-	#print header.find_all('style')
-	#arguments = [('style', 'word-wrap: normal;')]
+	new_header.insert(0, script)
+	if new_header.find("title") is None:
+		new_header.insert(0, soup.new_tag("title"))
+	new_header.title.string = short_name
 	style = soup.new_tag('style', 'word-wrap: normal;')
-	header.insert(0,style)
+	new_header.insert(0, style)
 
 	styles = soup.findAll('style')
 	for style in styles:
@@ -82,13 +88,19 @@ for filename in allfilenames:
 			style.string = re.sub("font-size\s*?:.*?;","font-size:2em;", style.string)
 		if style.string is not None and "line-height" in style.string:
 			style.string = re.sub("line-height\s*?:.*?%","", style.string)
-		header.insert(0,style)
+		new_header.insert(0, style)
 
 	font = soup.new_tag('link', href="https://fonts.googleapis.com/css?family=Didact+Gothic", rel="stylesheet")
+	new_header.insert(0, font)
+
 	fontstyles = soup.new_tag('style')
 	fontstyles.string = "p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}\n span:hover {cursor: pointer;}"
-	header.insert(0, fontstyles)
-	header.insert(0, font)
+	new_header.insert(0, fontstyles)
+
+	if orig_header is None:
+		soup.insert(0, new_header)
+	else:
+		orig_header.replace_with(new_header)
 
 	body = soup.find('body')
 	body['style'] = "font-size:2em"
@@ -100,8 +112,6 @@ for filename in allfilenames:
 	fsmimg = soup.new_tag("img", src="../images/minus-800px.png", onclick='decreaseFont()')
 	body.insert(0,fsmimg)
 	body.insert(0,fspimg)
-
-
 
 	#Build Master Word List
 	master_word_list = []
@@ -119,7 +129,7 @@ for filename in allfilenames:
 
 		#words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
 		#print words
-		if "line-height" in p['style']:
+		if 'style' in p and "line-height" in p['style']:
 			#print p['style']
 			p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
 		for wnum, word in enumerate(words):
