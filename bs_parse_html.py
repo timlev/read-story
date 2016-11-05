@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup, Tag
 import string
 import re
+import argparse
 import sys
 import os
 import download_wiktionary_word
@@ -34,7 +35,13 @@ def buildSpan(word, token, pnum, wnum):
     tag.insert(0, word)
     return tag
 
-allfilenames = ["A Time for Growing.html", "Jumping In.html", "Made to Live in Water.html"]
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--input", nargs='*', required=True)
+args = parser.parse_args(sys.argv[1:])
+
+allfilenames = args.input
+print "Files to analyze: {}".format(allfilenames)
 
 for filename in allfilenames:
 	soup = BeautifulSoup(open(filename), "lxml")
