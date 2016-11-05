@@ -49,13 +49,13 @@ for filename in allfilenames:
 	#print header.find_all('style')
 	#arguments = [('style', 'word-wrap: normal;')]
 	style = soup.new_tag('style', 'word-wrap: normal;')
-	 
-	styles = soup.findAll('style')
 	header.insert(0,style)
+
+	styles = soup.findAll('style')
 	for style in styles:
-		if "font-size" in style.string:
+		if style.string is not None and "font-size" in style.string:
 			style.string = re.sub("font-size\s*?:.*?;","font-size:2em;", style.string)
-		if "line-height" in style.string:
+		if style.string is not None and "line-height" in style.string:
 			style.string = re.sub("line-height\s*?:.*?%","", style.string)
 		header.insert(0,style)
 
