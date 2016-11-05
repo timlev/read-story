@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
-import string,re
-#filename = "Unit 1 - Writing Prompt.html"
-#filename = "Healing Paws.html"
-#filename = "ApartmentManagerConversation.html"
-#allfilenames = ["Stage Fright.html","A Trip to Remember: Climbing the Snow King.html","A Trip to Remember: Montenegro.html","Knitting Circle.html","Senator Kidd.html","Grandma Moses.html","Selling Corn.html","George Washington.html"]
-#allfilenames = ["Anton van Leeuwenhoek, Not the Father of the Microscope.html"]
-#allfilenames = ["Louis Pasteur.html"]
-#allfilenames = ["Early Birds.html", "The One That Got Away.html"]
-allfilenames = ["A Time for Growing.html", "Jumping In.html", "Made to Live in Water.html"]
+import string
+import re
+import sys
+import os
+import download_wiktionary_word
 
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
@@ -37,6 +33,8 @@ def buildSpan(word, token, pnum, wnum):
     tag = soup.new_tag("span", id=spanID, onclick="play(this)")
     tag.insert(0, word)
     return tag
+
+allfilenames = ["A Time for Growing.html", "Jumping In.html", "Made to Live in Water.html"]
 
 for filename in allfilenames:
 	soup = BeautifulSoup(open(filename), "lxml")
@@ -134,7 +132,6 @@ for filename in allfilenames:
 	problem_words = []
 
 	print "Downloading sound files ..."
-	import download_wiktionary_word, os
 	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
 
 	for word in [word for word in master_word_list if word not in soundfiles]:
