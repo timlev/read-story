@@ -133,11 +133,17 @@ for filename in allfilenames:
         for pos, word in enumerate(words):
             if u'\u2019' in word:
                 words[pos] = word.replace(u'\u2019', "'")
+            if u'\u201c' in word:
+                words[pos] = word.replace(u'\u201c', '"')
+            if u'\u201d' in word:
+                words[pos] = word.replace(u'\u201d', '"')
+            if u'\u2014' in word:
+                words[pos] = word.replace(u'\u2014', '--')
         words = [x.encode('ascii', errors='ignore') for x in words]
 
 
         #words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
-        #print words
+        print words
         if 'style' in p and "line-height" in p['style']:
             #print p['style']
             p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
