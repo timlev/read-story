@@ -1,10 +1,26 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
  <head>
-  <script src="playsound.js">
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; ; text-align: left; orphans: 2; widows: 2 }
+		p.western { font-size: 12pt }
+		p.cjk { font-size:2em; so-language: zh-CN }
+		p.ctl { font-size: 12pt }
+		a:link { so-language: zxx }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
   </script>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <title>
+   The Animals at the Minnesota Zoo
   </title>
   <meta content="LibreOffice 5.1.0.3 (Linux)" name="generator"/>
   <meta content="Jennifer" name="author"/>
@@ -26,7 +42,9 @@
 		a:link { so-language: zxx }
   </style>
  </head>
- <body dir="ltr" lang="en-US">
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
   <audio id="player" preload="auto" type="audio/mpeg">
   </audio>
   <p align="center" class="western" style="margin-bottom: 0in; line-height: 100%">
@@ -88,9 +106,13 @@
    <span id="211_trip" onclick="play(this)">
     trip.
    </span>
-   <span id="212_thirtytwo" onclick="play(this)">
+   <span id="212_thirty-two" onclick="play(this)">
     Thirty-two
-   </span>   <span id="214_students" onclick="play(this)">
+   </span>
+   <span id="213_32" onclick="play(this)">
+    (32)
+   </span>
+   <span id="214_students" onclick="play(this)">
     students
    </span>
    <span id="215_and" onclick="play(this)">
@@ -98,6 +120,9 @@
    </span>
    <span id="216_four" onclick="play(this)">
     four
+   </span>
+   <span id="217_4" onclick="play(this)">
+    (4)
    </span>
    <span id="218_teachers" onclick="play(this)">
     teachers.
@@ -894,203 +919,207 @@
     END
    </span>
   </p>
-  <audio id="all_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/all.mp3" type="audio/mpeg">
+  <audio id="all_audio" preload="auto" src="../sounds/all.mp3" type="audio/mpeg">
   </audio>
-  <audio id="seals_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/seals.mp3" type="audio/mpeg">
+  <audio id="seals_audio" preload="auto" src="../sounds/seals.mp3" type="audio/mpeg">
   </audio>
-  <audio id="four_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/four.mp3" type="audio/mpeg">
+  <audio id="four_audio" preload="auto" src="../sounds/four.mp3" type="audio/mpeg">
   </audio>
-  <audio id="looks_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/looks.mp3" type="audio/mpeg">
+  <audio id="looks_audio" preload="auto" src="../sounds/looks.mp3" type="audio/mpeg">
   </audio>
-  <audio id="go_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/go.mp3" type="audio/mpeg">
+  <audio id="go_audio" preload="auto" src="../sounds/go.mp3" type="audio/mpeg">
   </audio>
-  <audio id="birds_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/birds.mp3" type="audio/mpeg">
+  <audio id="birds_audio" preload="auto" src="../sounds/birds.mp3" type="audio/mpeg">
   </audio>
-  <audio id="sharks_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/sharks.mp3" type="audio/mpeg">
+  <audio id="sharks_audio" preload="auto" src="../sounds/sharks.mp3" type="audio/mpeg">
   </audio>
-  <audio id="field_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/field.mp3" type="audio/mpeg">
+  <audio id="field_audio" preload="auto" src="../sounds/field.mp3" type="audio/mpeg">
   </audio>
-  <audio id="young_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/young.mp3" type="audio/mpeg">
+  <audio id="young_audio" preload="auto" src="../sounds/young.mp3" type="audio/mpeg">
   </audio>
-  <audio id="late_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/late.mp3" type="audio/mpeg">
+  <audio id="late_audio" preload="auto" src="../sounds/late.mp3" type="audio/mpeg">
   </audio>
-  <audio id="to_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/to.mp3" type="audio/mpeg">
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
   </audio>
-  <audio id="under_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/under.mp3" type="audio/mpeg">
+  <audio id="4_audio" preload="auto" src="../sounds/4.mp3" type="audio/mpeg">
   </audio>
-  <audio id="smart_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/smart.mp3" type="audio/mpeg">
+  <audio id="under_audio" preload="auto" src="../sounds/under.mp3" type="audio/mpeg">
   </audio>
-  <audio id="then_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/then.mp3" type="audio/mpeg">
+  <audio id="smart_audio" preload="auto" src="../sounds/smart.mp3" type="audio/mpeg">
   </audio>
-  <audio id="they_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/they.mp3" type="audio/mpeg">
+  <audio id="do_audio" preload="auto" src="../sounds/do.mp3" type="audio/mpeg">
   </audio>
-  <audio id="not_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/not.mp3" type="audio/mpeg">
+  <audio id="they_audio" preload="auto" src="../sounds/they.mp3" type="audio/mpeg">
   </audio>
-  <audio id="one_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/one.mp3" type="audio/mpeg">
+  <audio id="not_audio" preload="auto" src="../sounds/not.mp3" type="audio/mpeg">
   </audio>
-  <audio id="rebecca_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/rebecca.mp3" type="audio/mpeg">
+  <audio id="one_audio" preload="auto" src="../sounds/one.mp3" type="audio/mpeg">
   </audio>
-  <audio id="monkeys_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/monkeys.mp3" type="audio/mpeg">
+  <audio id="rebecca_audio" preload="auto" src="../sounds/rebecca.mp3" type="audio/mpeg">
   </audio>
-  <audio id="school_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/school.mp3" type="audio/mpeg">
+  <audio id="monkeys_audio" preload="auto" src="../sounds/monkeys.mp3" type="audio/mpeg">
   </audio>
-  <audio id="like_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/like.mp3" type="audio/mpeg">
+  <audio id="school_audio" preload="auto" src="../sounds/school.mp3" type="audio/mpeg">
   </audio>
-  <audio id="lost_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/lost.mp3" type="audio/mpeg">
+  <audio id="like_audio" preload="auto" src="../sounds/like.mp3" type="audio/mpeg">
   </audio>
-  <audio id="minnesota_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/minnesota.mp3" type="audio/mpeg">
+  <audio id="lost_audio" preload="auto" src="../sounds/lost.mp3" type="audio/mpeg">
   </audio>
-  <audio id="penguins_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/penguins.mp3" type="audio/mpeg">
+  <audio id="minnesota_audio" preload="auto" src="../sounds/minnesota.mp3" type="audio/mpeg">
   </audio>
-  <audio id="everyone_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/everyone.mp3" type="audio/mpeg">
+  <audio id="penguins_audio" preload="auto" src="../sounds/penguins.mp3" type="audio/mpeg">
   </audio>
-  <audio id="says_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/says.mp3" type="audio/mpeg">
+  <audio id="everyone_audio" preload="auto" src="../sounds/everyone.mp3" type="audio/mpeg">
   </audio>
-  <audio id="tired_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/tired.mp3" type="audio/mpeg">
+  <audio id="says_audio" preload="auto" src="../sounds/says.mp3" type="audio/mpeg">
   </audio>
-  <audio id="fish_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/fish.mp3" type="audio/mpeg">
+  <audio id="tired_audio" preload="auto" src="../sounds/tired.mp3" type="audio/mpeg">
   </audio>
-  <audio id="some_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/some.mp3" type="audio/mpeg">
+  <audio id="fish_audio" preload="auto" src="../sounds/fish.mp3" type="audio/mpeg">
   </audio>
-  <audio id="back_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/back.mp3" type="audio/mpeg">
+  <audio id="some_audio" preload="auto" src="../sounds/some.mp3" type="audio/mpeg">
   </audio>
-  <audio id="lion_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/lion.mp3" type="audio/mpeg">
+  <audio id="back_audio" preload="auto" src="../sounds/back.mp3" type="audio/mpeg">
   </audio>
-  <audio id="are_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/are.mp3" type="audio/mpeg">
+  <audio id="lion_audio" preload="auto" src="../sounds/lion.mp3" type="audio/mpeg">
   </audio>
-  <audio id="home_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/home.mp3" type="audio/mpeg">
+  <audio id="are_audio" preload="auto" src="../sounds/are.mp3" type="audio/mpeg">
   </audio>
-  <audio id="joan_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/joan.mp3" type="audio/mpeg">
+  <audio id="home_audio" preload="auto" src="../sounds/home.mp3" type="audio/mpeg">
   </audio>
-  <audio id="for_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/for.mp3" type="audio/mpeg">
+  <audio id="joan_audio" preload="auto" src="../sounds/joan.mp3" type="audio/mpeg">
   </audio>
-  <audio id="children_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/children.mp3" type="audio/mpeg">
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
   </audio>
-  <audio id="looking_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/looking.mp3" type="audio/mpeg">
+  <audio id="children_audio" preload="auto" src="../sounds/children.mp3" type="audio/mpeg">
   </audio>
-  <audio id="goes_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/goes.mp3" type="audio/mpeg">
+  <audio id="looking_audio" preload="auto" src="../sounds/looking.mp3" type="audio/mpeg">
   </audio>
-  <audio id="we_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/we.mp3" type="audio/mpeg">
+  <audio id="goes_audio" preload="auto" src="../sounds/goes.mp3" type="audio/mpeg">
   </audio>
-  <audio id="do_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/do.mp3" type="audio/mpeg">
+  <audio id="we_audio" preload="auto" src="../sounds/we.mp3" type="audio/mpeg">
   </audio>
-  <audio id="missing_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/missing.mp3" type="audio/mpeg">
+  <audio id="missing_audio" preload="auto" src="../sounds/missing.mp3" type="audio/mpeg">
   </audio>
-  <audio id="men_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/men.mp3" type="audio/mpeg">
+  <audio id="men_audio" preload="auto" src="../sounds/men.mp3" type="audio/mpeg">
   </audio>
-  <audio id="job_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/job.mp3" type="audio/mpeg">
+  <audio id="job_audio" preload="auto" src="../sounds/job.mp3" type="audio/mpeg">
   </audio>
-  <audio id="come_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/come.mp3" type="audio/mpeg">
+  <audio id="come_audio" preload="auto" src="../sounds/come.mp3" type="audio/mpeg">
   </audio>
-  <audio id="teacher_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/teacher.mp3" type="audio/mpeg">
+  <audio id="teacher_audio" preload="auto" src="../sounds/teacher.mp3" type="audio/mpeg">
   </audio>
-  <audio id="on_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/on.mp3" type="audio/mpeg">
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
   </audio>
-  <audio id="oh_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/oh.mp3" type="audio/mpeg">
+  <audio id="oh_audio" preload="auto" src="../sounds/oh.mp3" type="audio/mpeg">
   </audio>
-  <audio id="many_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/many.mp3" type="audio/mpeg">
+  <audio id="32_audio" preload="auto" src="../sounds/32.mp3" type="audio/mpeg">
   </audio>
-  <audio id="wolf_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/wolf.mp3" type="audio/mpeg">
+  <audio id="wolf_audio" preload="auto" src="../sounds/wolf.mp3" type="audio/mpeg">
   </audio>
-  <audio id="or_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/or.mp3" type="audio/mpeg">
+  <audio id="or_audio" preload="auto" src="../sounds/or.mp3" type="audio/mpeg">
   </audio>
-  <audio id="first_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/first.mp3" type="audio/mpeg">
+  <audio id="first_audio" preload="auto" src="../sounds/first.mp3" type="audio/mpeg">
   </audio>
-  <audio id="walk_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/walk.mp3" type="audio/mpeg">
+  <audio id="walk_audio" preload="auto" src="../sounds/walk.mp3" type="audio/mpeg">
   </audio>
-  <audio id="bats_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/bats.mp3" type="audio/mpeg">
+  <audio id="bats_audio" preload="auto" src="../sounds/bats.mp3" type="audio/mpeg">
   </audio>
-  <audio id="names_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/names.mp3" type="audio/mpeg">
+  <audio id="names_audio" preload="auto" src="../sounds/names.mp3" type="audio/mpeg">
   </audio>
-  <audio id="learning_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/learning.mp3" type="audio/mpeg">
+  <audio id="learning_audio" preload="auto" src="../sounds/learning.mp3" type="audio/mpeg">
   </audio>
-  <audio id="jenn_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/jenn.mp3" type="audio/mpeg">
+  <audio id="jenn_audio" preload="auto" src="../sounds/jenn.mp3" type="audio/mpeg">
   </audio>
-  <audio id="goats_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/goats.mp3" type="audio/mpeg">
+  <audio id="goats_audio" preload="auto" src="../sounds/goats.mp3" type="audio/mpeg">
   </audio>
-  <audio id="two_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/two.mp3" type="audio/mpeg">
+  <audio id="two_audio" preload="auto" src="../sounds/two.mp3" type="audio/mpeg">
   </audio>
-  <audio id="next_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/next.mp3" type="audio/mpeg">
+  <audio id="next_audio" preload="auto" src="../sounds/next.mp3" type="audio/mpeg">
   </audio>
-  <audio id="their_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/their.mp3" type="audio/mpeg">
+  <audio id="their_audio" preload="auto" src="../sounds/their.mp3" type="audio/mpeg">
   </audio>
-  <audio id="call_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/call.mp3" type="audio/mpeg">
+  <audio id="call_audio" preload="auto" src="../sounds/call.mp3" type="audio/mpeg">
   </audio>
-  <audio id="club_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/club.mp3" type="audio/mpeg">
+  <audio id="club_audio" preload="auto" src="../sounds/club.mp3" type="audio/mpeg">
   </audio>
-  <audio id="bus_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/bus.mp3" type="audio/mpeg">
+  <audio id="bus_audio" preload="auto" src="../sounds/bus.mp3" type="audio/mpeg">
   </audio>
-  <audio id="but_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/but.mp3" type="audio/mpeg">
+  <audio id="but_audio" preload="auto" src="../sounds/but.mp3" type="audio/mpeg">
   </audio>
-  <audio id="yeah_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/yeah.mp3" type="audio/mpeg">
+  <audio id="yeah_audio" preload="auto" src="../sounds/yeah.mp3" type="audio/mpeg">
   </audio>
-  <audio id="tiger_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/tiger.mp3" type="audio/mpeg">
+  <audio id="tiger_audio" preload="auto" src="../sounds/tiger.mp3" type="audio/mpeg">
   </audio>
-  <audio id="adult_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/adult.mp3" type="audio/mpeg">
+  <audio id="adult_audio" preload="auto" src="../sounds/adult.mp3" type="audio/mpeg">
   </audio>
-  <audio id="with_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/with.mp3" type="audio/mpeg">
+  <audio id="with_audio" preload="auto" src="../sounds/with.mp3" type="audio/mpeg">
   </audio>
-  <audio id="he_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/he.mp3" type="audio/mpeg">
+  <audio id="he_audio" preload="auto" src="../sounds/he.mp3" type="audio/mpeg">
   </audio>
-  <audio id="count_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/count.mp3" type="audio/mpeg">
+  <audio id="count_audio" preload="auto" src="../sounds/count.mp3" type="audio/mpeg">
   </audio>
-  <audio id="animals_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/animals.mp3" type="audio/mpeg">
+  <audio id="animals_audio" preload="auto" src="../sounds/animals.mp3" type="audio/mpeg">
   </audio>
-  <audio id="look_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/look.mp3" type="audio/mpeg">
+  <audio id="look_audio" preload="auto" src="../sounds/look.mp3" type="audio/mpeg">
   </audio>
-  <audio id="ride_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/ride.mp3" type="audio/mpeg">
+  <audio id="ride_audio" preload="auto" src="../sounds/ride.mp3" type="audio/mpeg">
   </audio>
-  <audio id="tree_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/tree.mp3" type="audio/mpeg">
+  <audio id="tree_audio" preload="auto" src="../sounds/tree.mp3" type="audio/mpeg">
   </audio>
-  <audio id="see_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/see.mp3" type="audio/mpeg">
+  <audio id="see_audio" preload="auto" src="../sounds/see.mp3" type="audio/mpeg">
   </audio>
-  <audio id="teachers_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/teachers.mp3" type="audio/mpeg">
+  <audio id="teachers_audio" preload="auto" src="../sounds/teachers.mp3" type="audio/mpeg">
   </audio>
-  <audio id="and_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/and.mp3" type="audio/mpeg">
+  <audio id="many_audio" preload="auto" src="../sounds/many.mp3" type="audio/mpeg">
   </audio>
-  <audio id="thirtytwo_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/thirtytwo.mp3" type="audio/mpeg">
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
   </audio>
-  <audio id="is_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/is.mp3" type="audio/mpeg">
+  <audio id="then_audio" preload="auto" src="../sounds/then.mp3" type="audio/mpeg">
   </audio>
-  <audio id="deer_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/deer.mp3" type="audio/mpeg">
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
   </audio>
-  <audio id="roseville_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/roseville.mp3" type="audio/mpeg">
+  <audio id="deer_audio" preload="auto" src="../sounds/deer.mp3" type="audio/mpeg">
   </audio>
-  <audio id="at_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/at.mp3" type="audio/mpeg">
+  <audio id="roseville_audio" preload="auto" src="../sounds/roseville.mp3" type="audio/mpeg">
   </audio>
-  <audio id="want_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/want.mp3" type="audio/mpeg">
+  <audio id="at_audio" preload="auto" src="../sounds/at.mp3" type="audio/mpeg">
   </audio>
-  <audio id="in_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/in.mp3" type="audio/mpeg">
+  <audio id="want_audio" preload="auto" src="../sounds/want.mp3" type="audio/mpeg">
   </audio>
-  <audio id="trip_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/trip.mp3" type="audio/mpeg">
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
   </audio>
-  <audio id="again_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/again.mp3" type="audio/mpeg">
+  <audio id="trip_audio" preload="auto" src="../sounds/trip.mp3" type="audio/mpeg">
   </audio>
-  <audio id="end_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/end.mp3" type="audio/mpeg">
+  <audio id="again_audio" preload="auto" src="../sounds/again.mp3" type="audio/mpeg">
   </audio>
-  <audio id="no_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/no.mp3" type="audio/mpeg">
+  <audio id="end_audio" preload="auto" src="../sounds/end.mp3" type="audio/mpeg">
   </audio>
-  <audio id="zoo_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/zoo.mp3" type="audio/mpeg">
+  <audio id="no_audio" preload="auto" src="../sounds/no.mp3" type="audio/mpeg">
   </audio>
-  <audio id="tim_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/tim.mp3" type="audio/mpeg">
+  <audio id="zoo_audio" preload="auto" src="../sounds/zoo.mp3" type="audio/mpeg">
   </audio>
-  <audio id="take_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/take.mp3" type="audio/mpeg">
+  <audio id="tim_audio" preload="auto" src="../sounds/tim.mp3" type="audio/mpeg">
   </audio>
-  <audio id="okay_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/okay.mp3" type="audio/mpeg">
+  <audio id="take_audio" preload="auto" src="../sounds/take.mp3" type="audio/mpeg">
   </audio>
-  <audio id="students_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/students.mp3" type="audio/mpeg">
+  <audio id="okay_audio" preload="auto" src="../sounds/okay.mp3" type="audio/mpeg">
   </audio>
-  <audio id="director_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/director.mp3" type="audio/mpeg">
+  <audio id="students_audio" preload="auto" src="../sounds/students.mp3" type="audio/mpeg">
   </audio>
-  <audio id="student_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/student.mp3" type="audio/mpeg">
+  <audio id="thirty-two_audio" preload="auto" src="../sounds/thirty-two.mp3" type="audio/mpeg">
   </audio>
-  <audio id="a_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/a.mp3" type="audio/mpeg">
+  <audio id="director_audio" preload="auto" src="../sounds/director.mp3" type="audio/mpeg">
   </audio>
-  <audio id="center_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/center.mp3" type="audio/mpeg">
+  <audio id="student_audio" preload="auto" src="../sounds/student.mp3" type="audio/mpeg">
   </audio>
-  <audio id="drive_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/drive.mp3" type="audio/mpeg">
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
   </audio>
-  <audio id="the_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/the.mp3" type="audio/mpeg">
+  <audio id="center_audio" preload="auto" src="../sounds/center.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="drive_audio" preload="auto" src="../sounds/drive.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
   </audio>
  </body>
 </html>

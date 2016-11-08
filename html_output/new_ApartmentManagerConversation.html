@@ -3,11 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
  <!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.-->
  <head profile="http://dublincore.org/documents/dcmi-terms/">
-  <script src="playsound.js">
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:2em;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:2em; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.P1 { color:#000000; font-size:2em; font-style:normal; font-weight:normal; ; margin-bottom:0in; margin-left:0in; margin-right:0in; margin-top:0in; text-align:left ! important; text-indent:0in; font-family:Arial; text-decoration:none ! important; writing-mode:page; }
+	.P2 { color:#000000; font-size:2em; font-style:normal; font-weight:normal; ; margin-bottom:0in; margin-left:0in; margin-right:0in; margin-top:0in; text-align:left ! important; text-indent:0in; font-family:Arial; text-decoration:none ! important; writing-mode:page; }
+	.P3 { color:#000000; font-size:2em; font-style:normal; font-weight:normal; ; margin-bottom:0in; margin-left:0in; margin-right:0in; margin-top:0in; text-align:left ! important; text-indent:0.5in; font-family:Arial; text-decoration:none ! important; writing-mode:page; }
+	.P4 { color:#000000; font-size:2em; font-style:normal; font-weight:normal; ; margin-bottom:0in; margin-left:0in; margin-right:0in; margin-top:0in; text-align:left ! important; text-indent:0in; font-family:Arial; text-decoration:none ! important; writing-mode:page; }
+	<!-- ODF styles with no properties representable as CSS -->
+	 { }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
   </script>
   <meta content="application/xhtml+xml; charset=utf-8" http-equiv="Content-Type"/>
   <title xml:lang="en-US">
-   - no title specified
+   ApartmentManagerConversation
   </title>
   <meta content="" name="DCTERMS.title" xml:lang="en-US"/>
   <meta content="en-US" name="DCTERMS.language" scheme="DCTERMS.RFC4646"/>
@@ -38,7 +64,9 @@
 	 { }
   </style>
  </head>
- <body dir="ltr" style="max-width:8.5in;margin-top:1in; margin-bottom:1in; margin-left:1in; margin-right:1in; background-color:#ffffff; writing-mode:lr-tb; ">
+ <body dir="ltr" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
   <audio id="player" preload="auto" type="audio/mpeg">
   </audio>
   <p class="P2">
@@ -61,7 +89,7 @@
   <p class="P1">
   </p>
   <p class="P3">
-   <span id="20_whats" onclick="play(this)">
+   <span id="20_what's" onclick="play(this)">
     What's
    </span>
    <span id="21_the" onclick="play(this)">
@@ -76,7 +104,7 @@
   <p class="P4">
    <span id="40_the" onclick="play(this)">
     The
-   </span> ___________   <span id="42_is" onclick="play(this)">
+   </span>   <span id="42_is" onclick="play(this)">
     is
    </span>
    <span id="43_broken" onclick="play(this)">
@@ -101,7 +129,7 @@
   </p>
   <p class="P1">
   </p>
-  <p class="P1">
+  <p class="P3">
    <span id="80_my" onclick="play(this)">
     My
    </span>
@@ -110,11 +138,11 @@
    </span>
    <span id="82_is" onclick="play(this)">
     is
-   </span> ____________
+   </span>
   </p>
   <p class="P1">
   </p>
-  <p class="P3">
+  <p class="P1">
    <span id="100_i" onclick="play(this)">
     I
    </span>
@@ -126,13 +154,13 @@
    </span>
    <span id="103_in" onclick="play(this)">
     in
-   </span> _____  <span id="105_days" onclick="play(this)">
+   </span>   <span id="105_days" onclick="play(this)">
     days.
    </span>
   </p>
   <p class="P1">
   </p>
-  <p class="P1">
+  <p class="P3">
    <span id="120_please" onclick="play(this)">
     Please
    </span>
@@ -145,7 +173,7 @@
   </p>
   <p class="P1">
   </p>
-  <p class="P3">
+  <p class="P4">
    <span id="140_i" onclick="play(this)">
     I
    </span>
@@ -154,13 +182,13 @@
    </span>
    <span id="142_send" onclick="play(this)">
     send
-   </span> ___________  <span id="144_now" onclick="play(this)">
+   </span>   <span id="144_now" onclick="play(this)">
     now.
    </span>
   </p>
   <p class="P1">
   </p>
-  <p class="P1">
+  <p class="P3">
    <span id="160_thank" onclick="play(this)">
     Thank
    </span>
@@ -170,58 +198,58 @@
   </p>
   <p class="P1">
   </p>
-  <p class="P3">
+  <p class="P1">
    <span id="180_goodbye" onclick="play(this)">
     Goodbye.
    </span>
   </p>
-  <audio id="whats_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/whats.mp3" type="audio/mpeg">
+  <audio id="house_audio" preload="auto" src="../sounds/house.mp3" type="audio/mpeg">
   </audio>
-  <audio id="house_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/house.mp3" type="audio/mpeg">
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
   </audio>
-  <audio id="is_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/is.mp3" type="audio/mpeg">
+  <audio id="soon_audio" preload="auto" src="../sounds/soon.mp3" type="audio/mpeg">
   </audio>
-  <audio id="soon_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/soon.mp3" type="audio/mpeg">
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
   </audio>
-  <audio id="in_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/in.mp3" type="audio/mpeg">
+  <audio id="your_audio" preload="auto" src="../sounds/your.mp3" type="audio/mpeg">
   </audio>
-  <audio id="your_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/your.mp3" type="audio/mpeg">
+  <audio id="what_audio" preload="auto" src="../sounds/what.mp3" type="audio/mpeg">
   </audio>
-  <audio id="what_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/what.mp3" type="audio/mpeg">
+  <audio id="thank_audio" preload="auto" src="../sounds/thank.mp3" type="audio/mpeg">
   </audio>
-  <audio id="thank_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/thank.mp3" type="audio/mpeg">
+  <audio id="please_audio" preload="auto" src="../sounds/please.mp3" type="audio/mpeg">
   </audio>
-  <audio id="please_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/please.mp3" type="audio/mpeg">
+  <audio id="send_audio" preload="auto" src="../sounds/send.mp3" type="audio/mpeg">
   </audio>
-  <audio id="send_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/send.mp3" type="audio/mpeg">
+  <audio id="you_audio" preload="auto" src="../sounds/you.mp3" type="audio/mpeg">
   </audio>
-  <audio id="you_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/you.mp3" type="audio/mpeg">
+  <audio id="has_audio" preload="auto" src="../sounds/has.mp3" type="audio/mpeg">
   </audio>
-  <audio id="has_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/has.mp3" type="audio/mpeg">
+  <audio id="what's_audio" preload="auto" src="../sounds/what's.mp3" type="audio/mpeg">
   </audio>
-  <audio id="broken_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/broken.mp3" type="audio/mpeg">
+  <audio id="broken_audio" preload="auto" src="../sounds/broken.mp3" type="audio/mpeg">
   </audio>
-  <audio id="address_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/address.mp3" type="audio/mpeg">
+  <audio id="address_audio" preload="auto" src="../sounds/address.mp3" type="audio/mpeg">
   </audio>
-  <audio id="now_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/now.mp3" type="audio/mpeg">
+  <audio id="now_audio" preload="auto" src="../sounds/now.mp3" type="audio/mpeg">
   </audio>
-  <audio id="come_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/come.mp3" type="audio/mpeg">
+  <audio id="come_audio" preload="auto" src="../sounds/come.mp3" type="audio/mpeg">
   </audio>
-  <audio id="the_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/the.mp3" type="audio/mpeg">
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
   </audio>
-  <audio id="a_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/a.mp3" type="audio/mpeg">
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
   </audio>
-  <audio id="i_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/i.mp3" type="audio/mpeg">
+  <audio id="i_audio" preload="auto" src="../sounds/i.mp3" type="audio/mpeg">
   </audio>
-  <audio id="days_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/days.mp3" type="audio/mpeg">
+  <audio id="days_audio" preload="auto" src="../sounds/days.mp3" type="audio/mpeg">
   </audio>
-  <audio id="will_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/will.mp3" type="audio/mpeg">
+  <audio id="will_audio" preload="auto" src="../sounds/will.mp3" type="audio/mpeg">
   </audio>
-  <audio id="goodbye_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/goodbye.mp3" type="audio/mpeg">
+  <audio id="goodbye_audio" preload="auto" src="../sounds/goodbye.mp3" type="audio/mpeg">
   </audio>
-  <audio id="problem_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/problem.mp3" type="audio/mpeg">
+  <audio id="problem_audio" preload="auto" src="../sounds/problem.mp3" type="audio/mpeg">
   </audio>
-  <audio id="my_audio" oncanplaythrough="console.log(this)" preload="auto" src="sounds/my.mp3" type="audio/mpeg">
+  <audio id="my_audio" preload="auto" src="../sounds/my.mp3" type="audio/mpeg">
   </audio>
  </body>
 </html>

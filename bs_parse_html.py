@@ -7,6 +7,7 @@ import sys
 import os
 import download_wiktionary_word
 import copy
+import glob
 
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
@@ -57,6 +58,7 @@ parser.add_argument("--skip_sounds", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
 allfilenames = args.input
+
 print "Files to analyze: {}".format(allfilenames)
 
 for filename in allfilenames:
