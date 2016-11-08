@@ -1,5 +1,3 @@
-halves
-blowhole
 shuts
 dives
 signals
@@ -8,4 +6,3 @@ swims
 water's
 stays
 rests
-automatically

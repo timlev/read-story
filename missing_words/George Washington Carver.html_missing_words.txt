@@ -1,5 +1,4 @@
 1943
-enrich
 american's
 potatoes
 horse's
@@ -11,11 +10,6 @@ shells
 1864
 african-american
 tuskegee
-carver
-educator
-paintbrush
-fertilizer
 vines
-booker
 african
 alabama

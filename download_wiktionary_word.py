@@ -48,7 +48,7 @@ def get_wiki(word, directory="./"):
         ofp.close()
         return os.path.join(directory, word + ".ogg")
     except:
-        print "Could not download:", word
+        #print "Could not download:", word
         return 2
 """
 
@@ -56,6 +56,30 @@ def get_wiki(word, directory="./"):
 
 
 """
+def download_gstatic(word, directory="./"):
+    if check_downloaded_word(word, directory):
+        return 0
+    base = "https://ssl.gstatic.com/dictionary/static/sounds/de/0/"
+    query = base + word + ".mp3"
+    print query
+    try:
+        response = urllib2.urlopen(query)
+    except:
+        print "Couldn't find", word
+        return 1
+    try:
+        print "Getting mp3..."
+        getmp3 = urllib2.urlopen(query)
+        print "Saving file ..."
+        ofp = open(os.path.join(directory, word + ".mp3"),'wb')
+        print "Writing file ..."
+        ofp.write(getmp3.read())
+        ofp.close()
+        return os.path.join(directory, word + ".mp3")
+    except:
+        #print "Could not download:", word
+        return 2 
+
 #convert ogg to mp3
 
 def convert_ogg_to_mp3(oggfile, remove_ogg = False):
@@ -71,6 +95,8 @@ def convert_ogg_to_mp3(oggfile, remove_ogg = False):
     return mp3path
     
 if __name__ == "__main__":
-    if get_wiki("joyful") == 0:
-        convert_ogg_to_mp3("i'm" + ".ogg", True)
-    print "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg" == "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-I%27m.ogg"
+    #if get_wiki("joyful") == 0:
+    #    convert_ogg_to_mp3("i'm" + ".ogg", True)
+    print download_gstatic("blowhole")
+    #print download_gstatic("myword")
+    
