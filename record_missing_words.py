@@ -1,7 +1,7 @@
 import os
 
 #filename = "missing_words.txt"
-filename = "words_to_record.txt"
+filename = "missing_words/The One That Got Away.html_missing_words.txt"
 soundsdir = "/home/levtim/GitProjects/read-story/sounds"
 
 soundlist = os.listdir(soundsdir)
@@ -20,14 +20,25 @@ wordlist = [x.rstrip() for x in wordlist if not x.startswith(".")]
 missing_words = [x for x in wordlist if x not in soundlist]
 
 print missing_words
-def record(word):
-    os.system("rec " + word + ".wav")
-def convert(word):
-    os.system("avconv -i " + word + ".wav " + word + ".mp3")
-def remove_wave(filename):
-	os.remove(filename)
+
+def record(word, directory = "./"):
+    os.system('rec "' + os.path.join(directory, word) + '.wav"')
+def convert(word, directory = "./"):
+    os.system('avconv -i "' + os.path.join(directory, word) + '.wav" "' + os.path.join(directory, word) + '.mp3"')
+def remove_wave(filename, directory = "./"):
+    os.remove(os.path.join(directory, filename))
+    print "rm " + filename
 
 for word in missing_words:
-    record(word)
-    convert(word)
-    remove_wave(word + ".wav")
+    print "\n\n\n\n\n"
+    print word
+    print "**********************************************"
+    print "\n\n\n\n\n"
+    record(word, soundsdir)
+
+
+for word in missing_words:
+    convert(word, soundsdir)
+
+for word in missing_words:
+    remove_wave(word + ".wav", soundsdir)
