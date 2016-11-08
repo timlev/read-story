@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup, Tag
-import string,re
-#filename = "Unit 1 - Writing Prompt.html"
-#filename = "Healing Paws.html"
-#filename = "ApartmentManagerConversation.html"
-#allfilenames = ["Stage Fright.html","A Trip to Remember: Climbing the Snow King.html","A Trip to Remember: Montenegro.html","Knitting Circle.html","Senator Kidd.html","Grandma Moses.html","Selling Corn.html","George Washington.html"]
-#allfilenames = ["Anton van Leeuwenhoek, Not the Father of the Microscope.html"]
-#allfilenames = ["Louis Pasteur.html"]
-#allfilenames = ["Early Birds.html", "The One That Got Away.html"]
-allfilenames = ["A Time for Growing.html", "Jumping In.html", "Made to Live in Water.html"]
+import string
+import re
+import argparse
+import sys
+import os
+import download_wiktionary_word
+import copy
 
 def stripID(audioID):
     chunk = audioID[audioID.index("_") + 1:]
@@ -16,7 +14,7 @@ def stripID(audioID):
 
 def tokenize_word(word):
     token = word.lower()
-    token = "".join([x for x in token if x in string.ascii_letters + string.digits 	+ "-" +"'"])
+    token = "".join([x for x in token if x in string.ascii_letters + string.digits     + "-" +"'"])
     if token != "":
         return token
     else:
@@ -26,7 +24,7 @@ def tokenize_word(word):
 def buildAllAudio(master_word_list):
     for token in master_word_list:
         audioID = token + "_audio"
-        source = "sounds/" + token + ".mp3"
+        source = "../sounds/" + token + ".mp3"
         audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")#, oncanplaythrough="console.log(this)")
         #print audio
         body.append(audio)
@@ -38,131 +36,138 @@ def buildSpan(word, token, pnum, wnum):
     tag.insert(0, word)
     return tag
 
+def download_sound_files(master_word_list):
+    print "Downloading sound files ..."
+    soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
+
+    for word in [word for word in master_word_list if word not in soundfiles]:
+        try:
+            oggpath = download_wiktionary_word.get_wiki(word, "./sounds/")
+            if oggpath != 2:
+                download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
+        except:
+            print "Could't convert", word
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("input", nargs='+')
+parser.add_argument("--output_dir", default="./html_output")
+parser.add_argument("--index", default="./index.html")
+parser.add_argument("--skip_sounds", action="store_true")
+args = parser.parse_args(sys.argv[1:])
+
+allfilenames = args.input
+print "Files to analyze: {}".format(allfilenames)
+
 for filename in allfilenames:
-	soup = BeautifulSoup(open(filename), "lxml")
-	#soup = BeautifulSoup(open(filename))
-	paragraphs = soup.findAll('p')
+    print "Processing {} ...".format(filename)
 
-	header = soup.find('head')
-	#arguments = [('src', "playsound.js")]
-	script = soup.new_tag("script", src="playsound.js")
-	header.insert(0, script)
-	header.title.string = filename.replace(".html","")
-	#print header.find_all('style')
-	#arguments = [('style', 'word-wrap: normal;')]
-	style = soup.new_tag('style', 'word-wrap: normal;')
-	 
-	styles = soup.findAll('style')
-	header.insert(0,style)
-	for style in styles:
-		if "font-size" in style.string:
-			style.string = re.sub("font-size\s*?:.*?;","font-size:2em;", style.string)
-		if "line-height" in style.string:
-			style.string = re.sub("line-height\s*?:.*?%","", style.string)
-		header.insert(0,style)
+    base_name = os.path.basename(filename)
+    short_name = os.path.splitext(base_name)[0]
 
-	font = soup.new_tag('link', href="https://fonts.googleapis.com/css?family=Didact+Gothic", rel="stylesheet")
-	fontstyles = soup.new_tag('style')
-	fontstyles.string = "p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}\n span:hover {cursor: pointer;}"
-	header.insert(0, fontstyles)
-	header.insert(0, font)
+    soup = BeautifulSoup(open(filename), "lxml")
+    #soup = BeautifulSoup(open(filename))
+    paragraphs = soup.findAll('p')
 
-	body = soup.find('body')
-	body['style'] = "font-size:2em"
-	#arguments = [('id','player')]
-	audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
-	body.insert(0, audio)
+    orig_header = soup.find('head')
+    if orig_header is None:
+        new_header = soup.new_tag("head")
+    else:
+        new_header = copy.copy(orig_header)
+    script = soup.new_tag("script", src="../js/playsound.js")
+    new_header.insert(0, script)
+    if new_header.find("title") is None:
+        new_header.insert(0, soup.new_tag("title"))
+    new_header.title.string = short_name
+    style = soup.new_tag('style', 'word-wrap: normal;')
+    new_header.insert(0, style)
 
-	fspimg = soup.new_tag("img", src="plus-800px.png", onclick='increaseFont()')
-	fsmimg = soup.new_tag("img", src="minus-800px.png", onclick='decreaseFont()')
-	body.insert(0,fsmimg)
-	body.insert(0,fspimg)
+    styles = soup.findAll('style')
+    for style in styles:
+        if style.string is not None and "font-size" in style.string:
+            style.string = re.sub("font-size\s*?:.*?;","font-size:2em;", style.string)
+        if style.string is not None and "line-height" in style.string:
+            style.string = re.sub("line-height\s*?:.*?%","", style.string)
+        new_header.insert(0, style)
 
+    font = soup.new_tag('link', href="https://fonts.googleapis.com/css?family=Didact+Gothic", rel="stylesheet")
+    new_header.insert(0, font)
 
+    fontstyles = soup.new_tag('style')
+    fontstyles.string = "p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}\n span:hover {cursor: pointer;}"
+    new_header.insert(0, fontstyles)
 
-	#Build Master Word List
-	master_word_list = []
+    if orig_header is None:
+        soup.insert(0, new_header)
+    else:
+        orig_header.replace_with(new_header)
 
-	for pnum, p in enumerate(paragraphs):
-		words = p.text.replace("\n"," ").split(" ")
-		#print words
-		p.string = ""
-		#print words
-		for pos, word in enumerate(words):
-			if u'\u2019' in word:
-				words[pos] = word.replace(u'\u2019', "'")
-		words = [x.encode('ascii', errors='ignore') for x in words]
+    body = soup.find('body')
+    body['style'] = "font-size:2em"
+    #arguments = [('id','player')]
+    audio = soup.new_tag("audio", id="player", type="audio/mpeg", preload="auto")
+    body.insert(0, audio)
 
+    fspimg = soup.new_tag("img", src="../images/plus-800px.png", onclick='increaseFont()')
+    fsmimg = soup.new_tag("img", src="../images/minus-800px.png", onclick='decreaseFont()')
+    body.insert(0,fsmimg)
+    body.insert(0,fspimg)
 
-		#words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
-		#print words
-		if "line-height" in p['style']:
-			#print p['style']
-			p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
-		for wnum, word in enumerate(words):
-			token = tokenize_word(word)
-			if token != False:
-				master_word_list.append(token)
-				p.insert(wnum, buildSpan(word, token, pnum, wnum))
+    #Build Master Word List
+    master_word_list = []
 
-
-	master_word_list = list(set(master_word_list))
-	buildAllAudio(master_word_list)
-
-	#Write out new html file
-	newfile = "new_" + filename
-	print "Saving new file ..."
-	with open(newfile, "wb") as wb:
-	  wb.write(soup.prettify(formatter="html"))
-	print "File saved at", newfile
-
-	#Add to Index
-	index = BeautifulSoup(open('index.html'), "lxml")
-	new_link = index.new_tag('a', href = newfile)
-	new_link.string = filename
-	index.body.append(index.new_tag('br'))
-	index.body.append(new_link)
-
-	#Write Index file
-	print "Updating index.html..."
-	with open("index.html", "wb") as wb:
-	  wb.write(index.prettify(formatter="html"))
-	print "File saved at index.html"
+    for pnum, p in enumerate(paragraphs):
+        words = p.text.replace("\n"," ").split(" ")
+        #print words
+        p.string = ""
+        #print words
+        for pos, word in enumerate(words):
+            if u'\u2019' in word:
+                words[pos] = word.replace(u'\u2019', "'")
+        words = [x.encode('ascii', errors='ignore') for x in words]
 
 
-	#Download Words
-	problem_words = []
-
-	print "Downloading sound files ..."
-	import download_wiktionary_word, os
-	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
-
-	for word in [word for word in master_word_list if word not in soundfiles]:
-		try: download_dict_sound_rough.dictionary_rough_search(word,"./sounds/")
-		except:
-			problem_words.append(word)
-				
-
-	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
-
-	for word in [word for word in master_word_list if word not in soundfiles]:
-		try:
-			oggpath = download_wiktionary_word.get_wiki(word, "./sounds/")
-			if oggpath != 2:
-				download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
-			#download_dict_sound_rough.download_wiktionary(word, "./sounds/")
-			#download_dict_sound_rough.convert_ogg_to_mp3(os.path.join(os.path.relpath("./sounds/"), word + ".ogg"), remove_ogg = True)
-			
-		except:
-			print "Could't convert", word
-
-	soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
+        #words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
+        #print words
+        if 'style' in p and "line-height" in p['style']:
+            #print p['style']
+            p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
+        for wnum, word in enumerate(words):
+            token = tokenize_word(word)
+            if token != False:
+                master_word_list.append(token)
+                p.insert(wnum, buildSpan(word, token, pnum, wnum))
 
 
-	missing_words = "\n".join([word for word in master_word_list if word not in soundfiles])
+    master_word_list = list(set(master_word_list))
+    buildAllAudio(master_word_list)
 
-	with open(filename +"_missing_words.txt","wb") as wb:
-		wb.write(missing_words)
+    #Write out new html file
+    newfile = args.output_dir + "/new_" + base_name
+    print "Saving new file ..."
+    with open(newfile, "wb") as wb:
+      wb.write(soup.prettify(formatter="html"))
+    print "File saved at", newfile
 
+    #Add to Index
+    index = BeautifulSoup(open(args.index), "lxml")
+    new_link = index.new_tag('a', href = newfile)
+    new_link.string = short_name
+    index.body.append(index.new_tag('br'))
+    index.body.append(new_link)
 
+    #Write Index file
+    print "Updating index.html..."
+    with open(args.index, "wb") as wb:
+      wb.write(index.prettify(formatter="html"))
+    print "File saved at index.html"
 
+    #Download Words
+    if not args.skip_sounds:
+        download_sound_files(master_word_list)
+
+    soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
+    missing_words = "\n".join([word for word in master_word_list if word not in soundfiles])
+
+    with open("missing_words/" + base_name + "_missing_words.txt","wb") as wb:
+        wb.write(missing_words)
