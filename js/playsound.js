@@ -1,4 +1,13 @@
+clickedWords = [];
+
 function play(obj){
+	word = obj.id;
+	word = word.slice(word.indexOf("_") + 1);
+	if (clickedWords.indexOf(word) == -1){
+		clickedWords.push(word);
+		console.log(clickedWords);
+		console.log(clickedWords.length);
+	}
 	var audioTagId = parseId(obj.id);
 	var audioTag = document.getElementById(audioTagId);
 	colorBackground(obj, "yellow");
