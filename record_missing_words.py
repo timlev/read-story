@@ -1,7 +1,12 @@
 import os
 
 #filename = "missing_words.txt"
-filename = "missing_words/The One That Got Away.html_missing_words.txt"
+#filename = "missing_words/The One That Got Away.html_missing_words.txt"
+#filename = "missing_words/Jumping In.html_missing_words.txt"
+#filename = "missing_words/George Washington Carver.html_missing_words.txt"
+#filename = "missing_words/Early Birds.html_missing_words.txt"
+#filename = "missing_words/The One That Got Away.html_missing_words.txt"
+filename = "missing_words/A Time for Growing.html_missing_words.txt"
 soundsdir = "/home/levtim/GitProjects/read-story/sounds"
 
 soundlist = os.listdir(soundsdir)
@@ -34,11 +39,14 @@ for word in missing_words:
     print word
     print "**********************************************"
     print "\n\n\n\n\n"
-    record(word, soundsdir)
+    #record(word, soundsdir)
+    record(word)
 
 
 for word in missing_words:
-    convert(word, soundsdir)
+    #convert(word, soundsdir)
+    convert(word)
 
 for word in missing_words:
-    remove_wave(word + ".wav", soundsdir)
+    #remove_wave(word + ".wav", soundsdir)
+    remove_wave(word + ".wav")
