@@ -1,5 +1,5 @@
 clickedWords = [];
-
+originalTitle = "";
 function play(obj){
 	word = obj.id;
 	word = word.slice(word.indexOf("_") + 1);
@@ -7,6 +7,11 @@ function play(obj){
 		clickedWords.push(word);
 		console.log(clickedWords);
 		console.log(clickedWords.length);
+		if (document.title.indexOf("---") == -1){
+			originalTitle = document.title;
+		}
+		
+		document.title = clickedWords.length.toString() + "---" + originalTitle;
 	}
 	var audioTagId = parseId(obj.id);
 	var audioTag = document.getElementById(audioTagId);
