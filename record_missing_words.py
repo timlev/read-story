@@ -6,7 +6,7 @@ import os
 #filename = "missing_words/George Washington Carver.html_missing_words.txt"
 #filename = "missing_words/Early Birds.html_missing_words.txt"
 #filename = "missing_words/The One That Got Away.html_missing_words.txt"
-filename = "missing_words/A Time for Growing.html_missing_words.txt"
+filename = "/home/levtim/GitProjects/read-story/missing_words/Why Sybil Is Sleeping.html_missing_words.txt"
 soundsdir = "/home/levtim/GitProjects/read-story/sounds"
 
 soundlist = os.listdir(soundsdir)
