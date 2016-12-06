@@ -165,18 +165,17 @@ for filename in allfilenames:
     print "File saved at", newfile
 
     #Add to Index
-    index = BeautifulSoup(open(args.index), "lxml")
-    new_link = index.new_tag('a', href = newfile)
-    new_link.string = short_name
-    index.body.append(index.new_tag('br'))
-    index.body.append(new_link)
+    #index = BeautifulSoup(open(args.index), "lxml")
+    #new_link = index.new_tag('a', href = newfile)
+    #new_link.string = short_name
+    #index.body.append(index.new_tag('br'))
+    #index.body.append(new_link)
 
     #Write Index file
-    print "Updating index.html..."
-    with open(args.index, "wb") as wb:
-      wb.write(index.prettify(formatter="html"))
-    print "File saved at index.html"
-
+    #print "Updating index.html..."
+    #with open(args.index, "wb") as wb:
+      #wb.write(index.prettify(formatter="html"))
+    #print "File saved at index.html"
     #Download Words
     if not args.skip_sounds:
         download_sound_files(master_word_list)
