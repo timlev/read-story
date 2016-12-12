@@ -1,30 +1,13 @@
-import os
+# -*- coding: utf-8 -*-
 
-#filename = "missing_words.txt"
-#filename = "missing_words/The One That Got Away.html_missing_words.txt"
-#filename = "missing_words/Jumping In.html_missing_words.txt"
-#filename = "missing_words/George Washington Carver.html_missing_words.txt"
-#filename = "missing_words/Early Birds.html_missing_words.txt"
-#filename = "missing_words/The One That Got Away.html_missing_words.txt"
-filename = "/home/levtim/GitProjects/read-story/missing_words/Why Sybil Is Sleeping.html_missing_words.txt"
-soundsdir = "/home/levtim/GitProjects/read-story/sounds"
+import os, argparse, sys
 
-soundlist = os.listdir(soundsdir)
+parser = argparse.ArgumentParser()
+parser.add_argument("input", nargs='+')
+#parser.add_argument("--skip_sounds", action="store_true")
+args = parser.parse_args(sys.argv[1:])
 
-
-soundlist = [x.replace(".mp3","") for x in soundlist if not x.startswith(".")]
-
-wordlist = []
-
-with open(filename, "rb") as fp:
-    wordlist = fp.readlines()
-
-wordlist = [x.rstrip() for x in wordlist if not x.startswith(".")]
-
-
-missing_words = [x for x in wordlist if x not in soundlist]
-
-print missing_words
+print args.input
 
 def record(word, directory = "./"):
     os.system('rec "' + os.path.join(directory, word) + '.wav"')
@@ -34,19 +17,47 @@ def remove_wave(filename, directory = "./"):
     os.remove(os.path.join(directory, filename))
     print "rm " + filename
 
-for word in missing_words:
-    print "\n\n\n\n\n"
-    print word
-    print "**********************************************"
-    print "\n\n\n\n\n"
-    #record(word, soundsdir)
-    record(word)
+
+#filename = "missing_words.txt"
+#filename = "missing_words/The One That Got Away.html_missing_words.txt"
+#filename = "missing_words/Jumping In.html_missing_words.txt"
+#filename = "missing_words/George Washington Carver.html_missing_words.txt"
+#filename = "missing_words/Early Birds.html_missing_words.txt"
+#filename = "missing_words/The One That Got Away.html_missing_words.txt"
+allfilenames = args.input
+for filename in allfilenames:
+    soundsdir = "/home/levtim/GitProjects/read-story/sounds"
+
+    soundlist = os.listdir(soundsdir)
 
 
-for word in missing_words:
-    #convert(word, soundsdir)
-    convert(word)
+    soundlist = [x.replace(".mp3","") for x in soundlist if not x.startswith(".")]
 
-for word in missing_words:
-    #remove_wave(word + ".wav", soundsdir)
-    remove_wave(word + ".wav")
+    wordlist = []
+
+    with open(filename, "rb") as fp:
+        wordlist = fp.readlines()
+
+    wordlist = [x.rstrip() for x in wordlist if not x.startswith(".")]
+
+
+    missing_words = [x for x in wordlist if x not in soundlist]
+
+    print missing_words
+
+    for word in missing_words:
+        print "\n\n\n\n\n"
+        print word
+        print "**********************************************"
+        print "\n\n\n\n\n"
+        #record(word, soundsdir)
+        record(word)
+
+
+    for word in missing_words:
+        #convert(word, soundsdir)
+        convert(word)
+
+    for word in missing_words:
+        #remove_wave(word + ".wav", soundsdir)
+        remove_wave(word + ".wav")
