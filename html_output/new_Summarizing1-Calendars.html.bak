@@ -1,0 +1,1119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Summarizing1-Calendars
+  </title>
+  <meta content="LibreOffice 5.2.2.2 (Linux)" name="generator"/>
+  <meta content="2016-12-10T16:53:16.388157849" name="created"/>
+  <meta content="2016-12-10T16:54:56.069377905" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p align="center" style="margin-bottom: 0in; font-variant: normal; font-style: normal; line-height: 138%; text-decoration: none">
+   <span id="01_calendars" onclick="play(this)">
+    Calendars
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="21_the" onclick="play(this)">
+    The
+   </span>
+   <span id="22_western" onclick="play(this)">
+    Western
+   </span>
+   <span id="23_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="24_that" onclick="play(this)">
+    that
+   </span>
+   <span id="25_we" onclick="play(this)">
+    we
+   </span>
+   <span id="26_use" onclick="play(this)">
+    use
+   </span>
+   <span id="27_today" onclick="play(this)">
+    today
+   </span>
+   <span id="28_began" onclick="play(this)">
+    began
+   </span>
+   <span id="29_in" onclick="play(this)">
+    in
+   </span>
+   <span id="210_rome" onclick="play(this)">
+    Rome
+   </span>
+   <span id="211_more" onclick="play(this)">
+    more
+   </span>
+   <span id="212_than" onclick="play(this)">
+    than
+   </span>
+   <span id="213_2000" onclick="play(this)">
+    2,000
+   </span>
+   <span id="214_years" onclick="play(this)">
+    years
+   </span>
+   <span id="215_ago" onclick="play(this)">
+    ago.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; line-height: 138%">
+   <span id="40_the" onclick="play(this)">
+    The
+   </span>
+   <span id="41_western" onclick="play(this)">
+    Western
+   </span>
+   <span id="42_calendar" onclick="play(this)">
+    Calendar
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="51_1" onclick="play(this)">
+    1
+   </span>
+   <span id="52_around" onclick="play(this)">
+    Around
+   </span>
+   <span id="53_45" onclick="play(this)">
+    45
+   </span>
+   <span id="54_bce" onclick="play(this)">
+    B.C.E.,
+   </span>
+   <span id="55_julius" onclick="play(this)">
+    Julius
+   </span>
+   <span id="56_caesar" onclick="play(this)">
+    Caesar
+   </span>
+   <span id="57_was" onclick="play(this)">
+    was
+   </span>
+   <span id="58_the" onclick="play(this)">
+    the
+   </span>
+   <span id="59_ruler" onclick="play(this)">
+    ruler
+   </span>
+   <span id="510_of" onclick="play(this)">
+    of
+   </span>
+   <span id="511_rome" onclick="play(this)">
+    Rome.
+   </span>
+   <span id="512_he" onclick="play(this)">
+    He
+   </span>
+   <span id="513_called" onclick="play(this)">
+    called
+   </span>
+   <span id="514_for" onclick="play(this)">
+    for
+   </span>
+   <span id="515_a" onclick="play(this)">
+    a
+   </span>
+   <span id="516_new" onclick="play(this)">
+    new
+   </span>
+   <span id="517_calendar" onclick="play(this)">
+    calendar.
+   </span>
+   <span id="518_it" onclick="play(this)">
+    It
+   </span>
+   <span id="519_was" onclick="play(this)">
+    was
+   </span>
+   <span id="520_called" onclick="play(this)">
+    called
+   </span>
+   <span id="521_the" onclick="play(this)">
+    the
+   </span>
+   <span id="522_julian" onclick="play(this)">
+    Julian
+   </span>
+   <span id="523_calendar" onclick="play(this)">
+    calendar.
+   </span>
+   <span id="524_it" onclick="play(this)">
+    It
+   </span>
+   <span id="525_was" onclick="play(this)">
+    was
+   </span>
+   <span id="526_based" onclick="play(this)">
+    based
+   </span>
+   <span id="527_on" onclick="play(this)">
+    on
+   </span>
+   <span id="528_the" onclick="play(this)">
+    the
+   </span>
+   <span id="529_lunar" onclick="play(this)">
+    lunar
+   </span>
+   <span id="530_cycle" onclick="play(this)">
+    cycle,
+   </span>
+   <span id="531_or" onclick="play(this)">
+    or
+   </span>
+   <span id="532_the" onclick="play(this)">
+    the
+   </span>
+   <span id="533_time" onclick="play(this)">
+    time
+   </span>
+   <span id="534_it" onclick="play(this)">
+    it
+   </span>
+   <span id="535_takes" onclick="play(this)">
+    takes
+   </span>
+   <span id="536_the" onclick="play(this)">
+    the
+   </span>
+   <span id="537_moon" onclick="play(this)">
+    moon
+   </span>
+   <span id="538_to" onclick="play(this)">
+    to
+   </span>
+   <span id="539_orbit" onclick="play(this)">
+    orbit
+   </span>
+   <span id="540_earth" onclick="play(this)">
+    Earth.
+   </span>
+   <span id="541_it" onclick="play(this)">
+    It
+   </span>
+   <span id="542_is" onclick="play(this)">
+    is
+   </span>
+   <span id="543_also" onclick="play(this)">
+    also
+   </span>
+   <span id="544_the" onclick="play(this)">
+    the
+   </span>
+   <span id="545_time" onclick="play(this)">
+    time
+   </span>
+   <span id="546_it" onclick="play(this)">
+    it
+   </span>
+   <span id="547_takes" onclick="play(this)">
+    takes
+   </span>
+   <span id="548_the" onclick="play(this)">
+    the
+   </span>
+   <span id="549_moon" onclick="play(this)">
+    moon
+   </span>
+   <span id="550_to" onclick="play(this)">
+    to
+   </span>
+   <span id="551_go" onclick="play(this)">
+    go
+   </span>
+   <span id="552_from" onclick="play(this)">
+    from
+   </span>
+   <span id="553_a" onclick="play(this)">
+    a
+   </span>
+   <span id="554_new" onclick="play(this)">
+    new
+   </span>
+   <span id="555_moon" onclick="play(this)">
+    moon
+   </span>
+   <span id="556_to" onclick="play(this)">
+    to
+   </span>
+   <span id="557_a" onclick="play(this)">
+    a
+   </span>
+   <span id="558_full" onclick="play(this)">
+    full
+   </span>
+   <span id="559_moon" onclick="play(this)">
+    moon
+   </span>
+   <span id="560_and" onclick="play(this)">
+    and
+   </span>
+   <span id="561_back" onclick="play(this)">
+    back
+   </span>
+   <span id="562_to" onclick="play(this)">
+    to
+   </span>
+   <span id="563_a" onclick="play(this)">
+    a
+   </span>
+   <span id="564_new" onclick="play(this)">
+    new
+   </span>
+   <span id="565_moon" onclick="play(this)">
+    moon
+   </span>
+   <span id="566_again" onclick="play(this)">
+    again.
+   </span>
+   <span id="567_that" onclick="play(this)">
+    That
+   </span>
+   <span id="568_is" onclick="play(this)">
+    is
+   </span>
+   <span id="569_about" onclick="play(this)">
+    about
+   </span>
+   <span id="570_291" onclick="play(this)">
+    291
+   </span>
+   <span id="571_2" onclick="play(this)">
+    2
+   </span>
+   <span id="572_days" onclick="play(this)">
+    days.
+   </span>
+   <span id="573_a" onclick="play(this)">
+    A
+   </span>
+   <span id="574_year" onclick="play(this)">
+    year
+   </span>
+   <span id="575_in" onclick="play(this)">
+    in
+   </span>
+   <span id="576_the" onclick="play(this)">
+    the
+   </span>
+   <span id="577_julian" onclick="play(this)">
+    Julian
+   </span>
+   <span id="578_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="579_measures" onclick="play(this)">
+    measures
+   </span>
+   <span id="580_the" onclick="play(this)">
+    the
+   </span>
+   <span id="581_days" onclick="play(this)">
+    days
+   </span>
+   <span id="582_by" onclick="play(this)">
+    by
+   </span>
+   <span id="583_one" onclick="play(this)">
+    one
+   </span>
+   <span id="584_orbit" onclick="play(this)">
+    orbit
+   </span>
+   <span id="585_of" onclick="play(this)">
+    of
+   </span>
+   <span id="586_earth" onclick="play(this)">
+    Earth
+   </span>
+   <span id="587_around" onclick="play(this)">
+    around
+   </span>
+   <span id="588_the" onclick="play(this)">
+    the
+   </span>
+   <span id="589_sun" onclick="play(this)">
+    sun.
+   </span>
+   <span id="590_that" onclick="play(this)">
+    That
+   </span>
+   <span id="591_is" onclick="play(this)">
+    is
+   </span>
+   <span id="592_about" onclick="play(this)">
+    about
+   </span>
+   <span id="593_365" onclick="play(this)">
+    365
+   </span>
+   <span id="594_days" onclick="play(this)">
+    days.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="71_2" onclick="play(this)">
+    2
+   </span>
+   <span id="72_the" onclick="play(this)">
+    The
+   </span>
+   <span id="73_julian" onclick="play(this)">
+    Julian
+   </span>
+   <span id="74_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="75_was" onclick="play(this)">
+    was
+   </span>
+   <span id="76_fairly" onclick="play(this)">
+    fairly
+   </span>
+   <span id="77_accurate" onclick="play(this)">
+    accurate.
+   </span>
+   <span id="78_but" onclick="play(this)">
+    But
+   </span>
+   <span id="79_it" onclick="play(this)">
+    it
+   </span>
+   <span id="710_lost" onclick="play(this)">
+    lost
+   </span>
+   <span id="711_one" onclick="play(this)">
+    one
+   </span>
+   <span id="712_day" onclick="play(this)">
+    day
+   </span>
+   <span id="713_every" onclick="play(this)">
+    every
+   </span>
+   <span id="714_128" onclick="play(this)">
+    128
+   </span>
+   <span id="715_years" onclick="play(this)">
+    years.
+   </span>
+   <span id="716_by" onclick="play(this)">
+    By
+   </span>
+   <span id="717_1582" onclick="play(this)">
+    1582,
+   </span>
+   <span id="718_it" onclick="play(this)">
+    it
+   </span>
+   <span id="719_was" onclick="play(this)">
+    was
+   </span>
+   <span id="720_ten" onclick="play(this)">
+    ten
+   </span>
+   <span id="721_days" onclick="play(this)">
+    days
+   </span>
+   <span id="722_off" onclick="play(this)">
+    off.
+   </span>
+   <span id="723_pope" onclick="play(this)">
+    Pope
+   </span>
+   <span id="724_gregory" onclick="play(this)">
+    Gregory
+   </span>
+   <span id="725_xiii" onclick="play(this)">
+    XIII
+   </span>
+   <span id="726_corrected" onclick="play(this)">
+    corrected
+   </span>
+   <span id="727_it" onclick="play(this)">
+    it
+   </span>
+   <span id="728_by" onclick="play(this)">
+    by
+   </span>
+   <span id="729_adding" onclick="play(this)">
+    adding
+   </span>
+   <span id="730_an" onclick="play(this)">
+    an
+   </span>
+   <span id="731_extra" onclick="play(this)">
+    extra
+   </span>
+   <span id="732_day" onclick="play(this)">
+    day
+   </span>
+   <span id="733_to" onclick="play(this)">
+    to
+   </span>
+   <span id="734_the" onclick="play(this)">
+    the
+   </span>
+   <span id="735_month" onclick="play(this)">
+    month
+   </span>
+   <span id="736_of" onclick="play(this)">
+    of
+   </span>
+   <span id="737_february" onclick="play(this)">
+    February
+   </span>
+   <span id="738_every" onclick="play(this)">
+    every
+   </span>
+   <span id="739_four" onclick="play(this)">
+    four
+   </span>
+   <span id="740_years" onclick="play(this)">
+    years.
+   </span>
+   <span id="741_this" onclick="play(this)">
+    This
+   </span>
+   <span id="742_is" onclick="play(this)">
+    is
+   </span>
+   <span id="743_what" onclick="play(this)">
+    what
+   </span>
+   <span id="744_we" onclick="play(this)">
+    we
+   </span>
+   <span id="745_call" onclick="play(this)">
+    call
+   </span>
+   <span id="746_a" onclick="play(this)">
+    a
+   </span>
+   <span id="747_leap" onclick="play(this)">
+    "leap
+   </span>
+   <span id="748_year" onclick="play(this)">
+    year."
+   </span>
+   <span id="749_this" onclick="play(this)">
+    This
+   </span>
+   <span id="750_new" onclick="play(this)">
+    new
+   </span>
+   <span id="751_system" onclick="play(this)">
+    system
+   </span>
+   <span id="752_was" onclick="play(this)">
+    was
+   </span>
+   <span id="753_called" onclick="play(this)">
+    called
+   </span>
+   <span id="754_the" onclick="play(this)">
+    the
+   </span>
+   <span id="755_gregorian" onclick="play(this)">
+    Gregorian
+   </span>
+   <span id="756_calendar" onclick="play(this)">
+    calendar.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; line-height: 138%">
+   <span id="90_other" onclick="play(this)">
+    Other
+   </span>
+   <span id="91_calendars" onclick="play(this)">
+    Calendars
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="101_3" onclick="play(this)">
+    3
+   </span>
+   <span id="102_different" onclick="play(this)">
+    Different
+   </span>
+   <span id="103_calendars" onclick="play(this)">
+    calendars
+   </span>
+   <span id="104_are" onclick="play(this)">
+    are
+   </span>
+   <span id="105_used" onclick="play(this)">
+    used
+   </span>
+   <span id="106_by" onclick="play(this)">
+    by
+   </span>
+   <span id="107_people" onclick="play(this)">
+    people
+   </span>
+   <span id="108_around" onclick="play(this)">
+    around
+   </span>
+   <span id="109_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1010_world" onclick="play(this)">
+    world.
+   </span>
+   <span id="1011_they" onclick="play(this)">
+    They
+   </span>
+   <span id="1012_include" onclick="play(this)">
+    include
+   </span>
+   <span id="1013_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1014_chinese" onclick="play(this)">
+    Chinese,
+   </span>
+   <span id="1015_islamic" onclick="play(this)">
+    Islamic,
+   </span>
+   <span id="1016_and" onclick="play(this)">
+    and
+   </span>
+   <span id="1017_hebrew" onclick="play(this)">
+    Hebrew
+   </span>
+   <span id="1018_calendars" onclick="play(this)">
+    calendars.
+   </span>
+   <span id="1019_all" onclick="play(this)">
+    All
+   </span>
+   <span id="1020_three" onclick="play(this)">
+    three
+   </span>
+   <span id="1021_are" onclick="play(this)">
+    are
+   </span>
+   <span id="1022_based" onclick="play(this)">
+    based
+   </span>
+   <span id="1023_on" onclick="play(this)">
+    on
+   </span>
+   <span id="1024_lunar" onclick="play(this)">
+    lunar
+   </span>
+   <span id="1025_cycles" onclick="play(this)">
+    cycles.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="121_4" onclick="play(this)">
+    4
+   </span>
+   <span id="122_the" onclick="play(this)">
+    The
+   </span>
+   <span id="123_chinese" onclick="play(this)">
+    Chinese
+   </span>
+   <span id="124_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="125_has" onclick="play(this)">
+    has
+   </span>
+   <span id="126_12" onclick="play(this)">
+    12
+   </span>
+   <span id="127_or" onclick="play(this)">
+    or
+   </span>
+   <span id="128_13" onclick="play(this)">
+    13
+   </span>
+   <span id="129_months" onclick="play(this)">
+    months
+   </span>
+   <span id="1210_each" onclick="play(this)">
+    each
+   </span>
+   <span id="1211_year" onclick="play(this)">
+    year.
+   </span>
+   <span id="1212_the" onclick="play(this)">
+    The
+   </span>
+   <span id="1213_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="1214_goes" onclick="play(this)">
+    goes
+   </span>
+   <span id="1215_for" onclick="play(this)">
+    for
+   </span>
+   <span id="1216_60" onclick="play(this)">
+    60
+   </span>
+   <span id="1217_years" onclick="play(this)">
+    years.
+   </span>
+   <span id="1218_then" onclick="play(this)">
+    Then
+   </span>
+   <span id="1219_it" onclick="play(this)">
+    it
+   </span>
+   <span id="1220_begins" onclick="play(this)">
+    begins
+   </span>
+   <span id="1221_again" onclick="play(this)">
+    again.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="141_5" onclick="play(this)">
+    5
+   </span>
+   <span id="142_the" onclick="play(this)">
+    The
+   </span>
+   <span id="143_islamic" onclick="play(this)">
+    Islamic,
+   </span>
+   <span id="144_or" onclick="play(this)">
+    or
+   </span>
+   <span id="145_muslim" onclick="play(this)">
+    Muslim,
+   </span>
+   <span id="146_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="147_goes" onclick="play(this)">
+    goes
+   </span>
+   <span id="148_for" onclick="play(this)">
+    for
+   </span>
+   <span id="149_three" onclick="play(this)">
+    three
+   </span>
+   <span id="1410_years" onclick="play(this)">
+    years
+   </span>
+   <span id="1411_and" onclick="play(this)">
+    and
+   </span>
+   <span id="1412_then" onclick="play(this)">
+    then
+   </span>
+   <span id="1413_begins" onclick="play(this)">
+    begins
+   </span>
+   <span id="1414_again" onclick="play(this)">
+    again.
+   </span>
+   <span id="1415_it" onclick="play(this)">
+    It
+   </span>
+   <span id="1416_has" onclick="play(this)">
+    has
+   </span>
+   <span id="1417_12" onclick="play(this)">
+    12
+   </span>
+   <span id="1418_months" onclick="play(this)">
+    months.
+   </span>
+   <span id="1419_each" onclick="play(this)">
+    Each
+   </span>
+   <span id="1420_month" onclick="play(this)">
+    month
+   </span>
+   <span id="1421_has" onclick="play(this)">
+    has
+   </span>
+   <span id="1422_either" onclick="play(this)">
+    either
+   </span>
+   <span id="1423_29" onclick="play(this)">
+    29
+   </span>
+   <span id="1424_or" onclick="play(this)">
+    or
+   </span>
+   <span id="1425_30" onclick="play(this)">
+    30
+   </span>
+   <span id="1426_days" onclick="play(this)">
+    days.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="161_6" onclick="play(this)">
+    6
+   </span>
+   <span id="162_the" onclick="play(this)">
+    The
+   </span>
+   <span id="163_hebrew" onclick="play(this)">
+    Hebrew
+   </span>
+   <span id="164_calendar" onclick="play(this)">
+    calendar
+   </span>
+   <span id="165_has" onclick="play(this)">
+    has
+   </span>
+   <span id="166_12" onclick="play(this)">
+    12
+   </span>
+   <span id="167_months" onclick="play(this)">
+    months
+   </span>
+   <span id="168_each" onclick="play(this)">
+    each
+   </span>
+   <span id="169_year" onclick="play(this)">
+    year.
+   </span>
+   <span id="1610_each" onclick="play(this)">
+    Each
+   </span>
+   <span id="1611_month" onclick="play(this)">
+    month
+   </span>
+   <span id="1612_has" onclick="play(this)">
+    has
+   </span>
+   <span id="1613_29" onclick="play(this)">
+    29
+   </span>
+   <span id="1614_or" onclick="play(this)">
+    or
+   </span>
+   <span id="1615_30" onclick="play(this)">
+    30
+   </span>
+   <span id="1616_days" onclick="play(this)">
+    days.
+   </span>
+   <span id="1617_in" onclick="play(this)">
+    In
+   </span>
+   <span id="1618_leap" onclick="play(this)">
+    leap
+   </span>
+   <span id="1619_years" onclick="play(this)">
+    years,
+   </span>
+   <span id="1620_an" onclick="play(this)">
+    an
+   </span>
+   <span id="1621_extra" onclick="play(this)">
+    extra
+   </span>
+   <span id="1622_month" onclick="play(this)">
+    month
+   </span>
+   <span id="1623_of" onclick="play(this)">
+    of
+   </span>
+   <span id="1624_29" onclick="play(this)">
+    29
+   </span>
+   <span id="1625_days" onclick="play(this)">
+    days
+   </span>
+   <span id="1626_is" onclick="play(this)">
+    is
+   </span>
+   <span id="1627_added" onclick="play(this)">
+    added.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+  </p>
+  <audio id="all_audio" preload="auto" src="../sounds/all.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pope_audio" preload="auto" src="../sounds/pope.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="accurate_audio" preload="auto" src="../sounds/accurate.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="years_audio" preload="auto" src="../sounds/years.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="four_audio" preload="auto" src="../sounds/four.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="go_audio" preload="auto" src="../sounds/go.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="earth_audio" preload="auto" src="../sounds/earth.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="adding_audio" preload="auto" src="../sounds/adding.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="based_audio" preload="auto" src="../sounds/based.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="chinese_audio" preload="auto" src="../sounds/chinese.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="3_audio" preload="auto" src="../sounds/3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="other_audio" preload="auto" src="../sounds/other.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="4_audio" preload="auto" src="../sounds/4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="include_audio" preload="auto" src="../sounds/include.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="then_audio" preload="auto" src="../sounds/then.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="around_audio" preload="auto" src="../sounds/around.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ruler_audio" preload="auto" src="../sounds/ruler.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="calendars_audio" preload="auto" src="../sounds/calendars.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="12_audio" preload="auto" src="../sounds/12.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="every_audio" preload="auto" src="../sounds/every.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="they_audio" preload="auto" src="../sounds/they.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="128_audio" preload="auto" src="../sounds/128.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="world_audio" preload="auto" src="../sounds/world.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="month_audio" preload="auto" src="../sounds/month.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="day_audio" preload="auto" src="../sounds/day.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="february_audio" preload="auto" src="../sounds/february.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lost_audio" preload="auto" src="../sounds/lost.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="julius_audio" preload="auto" src="../sounds/julius.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="either_audio" preload="auto" src="../sounds/either.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="each_audio" preload="auto" src="../sounds/each.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cycles_audio" preload="auto" src="../sounds/cycles.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="291_audio" preload="auto" src="../sounds/291.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ten_audio" preload="auto" src="../sounds/ten.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="people_audio" preload="auto" src="../sounds/people.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="back_audio" preload="auto" src="../sounds/back.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="added_audio" preload="auto" src="../sounds/added.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="are_audio" preload="auto" src="../sounds/are.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="year_audio" preload="auto" src="../sounds/year.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="calendar_audio" preload="auto" src="../sounds/calendar.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="what_audio" preload="auto" src="../sounds/what.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sun_audio" preload="auto" src="../sounds/sun.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="moon_audio" preload="auto" src="../sounds/moon.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="leap_audio" preload="auto" src="../sounds/leap.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lunar_audio" preload="auto" src="../sounds/lunar.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="goes_audio" preload="auto" src="../sounds/goes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="new_audio" preload="auto" src="../sounds/new.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="365_audio" preload="auto" src="../sounds/365.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="we_audio" preload="auto" src="../sounds/we.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="full_audio" preload="auto" src="../sounds/full.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="muslim_audio" preload="auto" src="../sounds/muslim.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="gregorian_audio" preload="auto" src="../sounds/gregorian.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="by_audio" preload="auto" src="../sounds/by.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="about_audio" preload="auto" src="../sounds/about.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="of_audio" preload="auto" src="../sounds/of.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="months_audio" preload="auto" src="../sounds/months.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="days_audio" preload="auto" src="../sounds/days.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="gregory_audio" preload="auto" src="../sounds/gregory.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="or_audio" preload="auto" src="../sounds/or.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="extra_audio" preload="auto" src="../sounds/extra.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="one_audio" preload="auto" src="../sounds/one.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="60_audio" preload="auto" src="../sounds/60.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="use_audio" preload="auto" src="../sounds/use.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="from_audio" preload="auto" src="../sounds/from.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="takes_audio" preload="auto" src="../sounds/takes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1582_audio" preload="auto" src="../sounds/1582.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="system_audio" preload="auto" src="../sounds/system.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2_audio" preload="auto" src="../sounds/2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="call_audio" preload="auto" src="../sounds/call.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="6_audio" preload="auto" src="../sounds/6.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="was_audio" preload="auto" src="../sounds/was.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="today_audio" preload="auto" src="../sounds/today.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="more_audio" preload="auto" src="../sounds/more.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ago_audio" preload="auto" src="../sounds/ago.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="that_audio" preload="auto" src="../sounds/that.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="corrected_audio" preload="auto" src="../sounds/corrected.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="but_audio" preload="auto" src="../sounds/but.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="western_audio" preload="auto" src="../sounds/western.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="than_audio" preload="auto" src="../sounds/than.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="he_audio" preload="auto" src="../sounds/he.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="begins_audio" preload="auto" src="../sounds/begins.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="13_audio" preload="auto" src="../sounds/13.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="has_audio" preload="auto" src="../sounds/has.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="this_audio" preload="auto" src="../sounds/this.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="three_audio" preload="auto" src="../sounds/three.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="called_audio" preload="auto" src="../sounds/called.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="30_audio" preload="auto" src="../sounds/30.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="julian_audio" preload="auto" src="../sounds/julian.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hebrew_audio" preload="auto" src="../sounds/hebrew.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="it_audio" preload="auto" src="../sounds/it.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="an_audio" preload="auto" src="../sounds/an.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="xiii_audio" preload="auto" src="../sounds/xiii.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="again_audio" preload="auto" src="../sounds/again.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="different_audio" preload="auto" src="../sounds/different.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="began_audio" preload="auto" src="../sounds/began.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="45_audio" preload="auto" src="../sounds/45.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="also_audio" preload="auto" src="../sounds/also.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="caesar_audio" preload="auto" src="../sounds/caesar.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="5_audio" preload="auto" src="../sounds/5.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="fairly_audio" preload="auto" src="../sounds/fairly.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="used_audio" preload="auto" src="../sounds/used.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="measures_audio" preload="auto" src="../sounds/measures.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="islamic_audio" preload="auto" src="../sounds/islamic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="29_audio" preload="auto" src="../sounds/29.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cycle_audio" preload="auto" src="../sounds/cycle.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="off_audio" preload="auto" src="../sounds/off.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bce_audio" preload="auto" src="../sounds/bce.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="orbit_audio" preload="auto" src="../sounds/orbit.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2000_audio" preload="auto" src="../sounds/2000.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rome_audio" preload="auto" src="../sounds/rome.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="time_audio" preload="auto" src="../sounds/time.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>

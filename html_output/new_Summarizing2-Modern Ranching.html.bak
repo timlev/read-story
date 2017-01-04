@@ -1,0 +1,1063 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Summarizing2-Modern Ranching
+  </title>
+  <meta content="LibreOffice 5.2.2.2 (Linux)" name="generator"/>
+  <meta content="2016-12-10T16:55:02.882866413" name="created"/>
+  <meta content="2016-12-10T16:56:57.637286322" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p align="center" style="margin-bottom: 0in; font-variant: normal; font-style: normal; line-height: 138%; text-decoration: none">
+   <span id="01_modern" onclick="play(this)">
+    Modern
+   </span>
+   <span id="02_ranching" onclick="play(this)">
+    Ranching
+   </span>
+  </p>
+  <p align="center" style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="21_1" onclick="play(this)">
+    1
+   </span>
+   <span id="22_in" onclick="play(this)">
+    In
+   </span>
+   <span id="23_some" onclick="play(this)">
+    some
+   </span>
+   <span id="24_ways" onclick="play(this)">
+    ways,
+   </span>
+   <span id="25_ranching" onclick="play(this)">
+    ranching
+   </span>
+   <span id="26_is" onclick="play(this)">
+    is
+   </span>
+   <span id="27_the" onclick="play(this)">
+    the
+   </span>
+   <span id="28_same" onclick="play(this)">
+    same
+   </span>
+   <span id="29_as" onclick="play(this)">
+    as
+   </span>
+   <span id="210_it" onclick="play(this)">
+    it
+   </span>
+   <span id="211_was" onclick="play(this)">
+    was
+   </span>
+   <span id="212_years" onclick="play(this)">
+    years
+   </span>
+   <span id="213_ago" onclick="play(this)">
+    ago.
+   </span>
+   <span id="214_cattle" onclick="play(this)">
+    Cattle
+   </span>
+   <span id="215_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="216_still" onclick="play(this)">
+    still
+   </span>
+   <span id="217_ride" onclick="play(this)">
+    ride
+   </span>
+   <span id="218_horses" onclick="play(this)">
+    horses
+   </span>
+   <span id="219_and" onclick="play(this)">
+    and
+   </span>
+   <span id="220_round" onclick="play(this)">
+    round
+   </span>
+   <span id="221_up" onclick="play(this)">
+    up
+   </span>
+   <span id="222_cattle" onclick="play(this)">
+    cattle.
+   </span>
+   <span id="223_many" onclick="play(this)">
+    Many
+   </span>
+   <span id="224_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="225_still" onclick="play(this)">
+    still
+   </span>
+   <span id="226_use" onclick="play(this)">
+    use
+   </span>
+   <span id="227_a" onclick="play(this)">
+    a
+   </span>
+   <span id="228_rope" onclick="play(this)">
+    rope
+   </span>
+   <span id="229_to" onclick="play(this)">
+    to
+   </span>
+   <span id="230_catch" onclick="play(this)">
+    catch
+   </span>
+   <span id="231_stray" onclick="play(this)">
+    stray
+   </span>
+   <span id="232_cows" onclick="play(this)">
+    cows
+   </span>
+   <span id="233_or" onclick="play(this)">
+    or
+   </span>
+   <span id="234_calves" onclick="play(this)">
+    calves.
+   </span>
+   <span id="235_but" onclick="play(this)">
+    But
+   </span>
+   <span id="236_during" onclick="play(this)">
+    during
+   </span>
+   <span id="237_the" onclick="play(this)">
+    the
+   </span>
+   <span id="238_past" onclick="play(this)">
+    past
+   </span>
+   <span id="239_150" onclick="play(this)">
+    150
+   </span>
+   <span id="240_years" onclick="play(this)">
+    years,
+   </span>
+   <span id="241_ranching" onclick="play(this)">
+    ranching
+   </span>
+   <span id="242_has" onclick="play(this)">
+    has
+   </span>
+   <span id="243_changed" onclick="play(this)">
+    changed
+   </span>
+   <span id="244_a" onclick="play(this)">
+    a
+   </span>
+   <span id="245_great" onclick="play(this)">
+    great
+   </span>
+   <span id="246_deal" onclick="play(this)">
+    deal.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="41_2" onclick="play(this)">
+    2
+   </span>
+   <span id="42_one" onclick="play(this)">
+    One
+   </span>
+   <span id="43_of" onclick="play(this)">
+    of
+   </span>
+   <span id="44_the" onclick="play(this)">
+    the
+   </span>
+   <span id="45_biggest" onclick="play(this)">
+    biggest
+   </span>
+   <span id="46_changes" onclick="play(this)">
+    changes
+   </span>
+   <span id="47_is" onclick="play(this)">
+    is
+   </span>
+   <span id="48_that" onclick="play(this)">
+    that
+   </span>
+   <span id="49_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="410_now" onclick="play(this)">
+    now
+   </span>
+   <span id="411_drive" onclick="play(this)">
+    drive
+   </span>
+   <span id="412_trucks" onclick="play(this)">
+    trucks.
+   </span>
+   <span id="413_for" onclick="play(this)">
+    For
+   </span>
+   <span id="414_some" onclick="play(this)">
+    some
+   </span>
+   <span id="415_ranchers" onclick="play(this)">
+    ranchers,
+   </span>
+   <span id="416_the" onclick="play(this)">
+    the
+   </span>
+   <span id="417_pickup" onclick="play(this)">
+    pickup
+   </span>
+   <span id="418_truck" onclick="play(this)">
+    truck
+   </span>
+   <span id="419_has" onclick="play(this)">
+    has
+   </span>
+   <span id="420_replaced" onclick="play(this)">
+    replaced
+   </span>
+   <span id="421_the" onclick="play(this)">
+    the
+   </span>
+   <span id="422_horse" onclick="play(this)">
+    horse.
+   </span>
+   <span id="423_some" onclick="play(this)">
+    Some
+   </span>
+   <span id="424_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="425_even" onclick="play(this)">
+    even
+   </span>
+   <span id="426_fly" onclick="play(this)">
+    fly
+   </span>
+   <span id="427_planes" onclick="play(this)">
+    planes
+   </span>
+   <span id="428_to" onclick="play(this)">
+    to
+   </span>
+   <span id="429_find" onclick="play(this)">
+    find
+   </span>
+   <span id="430_and" onclick="play(this)">
+    and
+   </span>
+   <span id="431_move" onclick="play(this)">
+    move
+   </span>
+   <span id="432_cattle" onclick="play(this)">
+    cattle.
+   </span>
+   <span id="433_this" onclick="play(this)">
+    This
+   </span>
+   <span id="434_can" onclick="play(this)">
+    can
+   </span>
+   <span id="435_be" onclick="play(this)">
+    be
+   </span>
+   <span id="436_useful" onclick="play(this)">
+    useful
+   </span>
+   <span id="437_when" onclick="play(this)">
+    when
+   </span>
+   <span id="438_a" onclick="play(this)">
+    a
+   </span>
+   <span id="439_ranch" onclick="play(this)">
+    ranch
+   </span>
+   <span id="440_is" onclick="play(this)">
+    is
+   </span>
+   <span id="441_very" onclick="play(this)">
+    very
+   </span>
+   <span id="442_large" onclick="play(this)">
+    large.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="61_3" onclick="play(this)">
+    3
+   </span>
+   <span id="62_another" onclick="play(this)">
+    Another
+   </span>
+   <span id="63_new" onclick="play(this)">
+    new
+   </span>
+   <span id="64_thing" onclick="play(this)">
+    thing
+   </span>
+   <span id="65_in" onclick="play(this)">
+    in
+   </span>
+   <span id="66_ranching" onclick="play(this)">
+    ranching
+   </span>
+   <span id="67_is" onclick="play(this)">
+    is
+   </span>
+   <span id="68_the" onclick="play(this)">
+    the
+   </span>
+   <span id="69_internet" onclick="play(this)">
+    Internet.
+   </span>
+   <span id="610_computers" onclick="play(this)">
+    Computers
+   </span>
+   <span id="611_are" onclick="play(this)">
+    are
+   </span>
+   <span id="612_now" onclick="play(this)">
+    now
+   </span>
+   <span id="613_a" onclick="play(this)">
+    a
+   </span>
+   <span id="614_part" onclick="play(this)">
+    part
+   </span>
+   <span id="615_of" onclick="play(this)">
+    of
+   </span>
+   <span id="616_ranching" onclick="play(this)">
+    ranching.
+   </span>
+   <span id="617_ranchers" onclick="play(this)">
+    Ranchers
+   </span>
+   <span id="618_can" onclick="play(this)">
+    can
+   </span>
+   <span id="619_find" onclick="play(this)">
+    find
+   </span>
+   <span id="620_out" onclick="play(this)">
+    out
+   </span>
+   <span id="621_about" onclick="play(this)">
+    about
+   </span>
+   <span id="622_different" onclick="play(this)">
+    different
+   </span>
+   <span id="623_breeds" onclick="play(this)">
+    breeds,
+   </span>
+   <span id="624_or" onclick="play(this)">
+    or
+   </span>
+   <span id="625_types" onclick="play(this)">
+    types,
+   </span>
+   <span id="626_of" onclick="play(this)">
+    of
+   </span>
+   <span id="627_cows" onclick="play(this)">
+    cows.
+   </span>
+   <span id="628_they" onclick="play(this)">
+    They
+   </span>
+   <span id="629_can" onclick="play(this)">
+    can
+   </span>
+   <span id="630_also" onclick="play(this)">
+    also
+   </span>
+   <span id="631_find" onclick="play(this)">
+    find
+   </span>
+   <span id="632_good" onclick="play(this)">
+    good
+   </span>
+   <span id="633_deals" onclick="play(this)">
+    deals
+   </span>
+   <span id="634_on" onclick="play(this)">
+    on
+   </span>
+   <span id="635_feed" onclick="play(this)">
+    feed
+   </span>
+   <span id="636_and" onclick="play(this)">
+    and
+   </span>
+   <span id="637_the" onclick="play(this)">
+    the
+   </span>
+   <span id="638_best" onclick="play(this)">
+    best
+   </span>
+   <span id="639_prices" onclick="play(this)">
+    prices
+   </span>
+   <span id="640_for" onclick="play(this)">
+    for
+   </span>
+   <span id="641_their" onclick="play(this)">
+    their
+   </span>
+   <span id="642_beef" onclick="play(this)">
+    beef.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="81_4" onclick="play(this)">
+    4
+   </span>
+   <span id="82_there" onclick="play(this)">
+    There
+   </span>
+   <span id="83_are" onclick="play(this)">
+    are
+   </span>
+   <span id="84_web" onclick="play(this)">
+    Web
+   </span>
+   <span id="85_sites" onclick="play(this)">
+    sites
+   </span>
+   <span id="86_on" onclick="play(this)">
+    on
+   </span>
+   <span id="87_the" onclick="play(this)">
+    the
+   </span>
+   <span id="88_internet" onclick="play(this)">
+    Internet
+   </span>
+   <span id="89_with" onclick="play(this)">
+    with
+   </span>
+   <span id="810_information" onclick="play(this)">
+    information
+   </span>
+   <span id="811_for" onclick="play(this)">
+    for
+   </span>
+   <span id="812_ranchers" onclick="play(this)">
+    ranchers.
+   </span>
+   <span id="813_groups" onclick="play(this)">
+    Groups
+   </span>
+   <span id="814_post" onclick="play(this)">
+    post
+   </span>
+   <span id="815_facts" onclick="play(this)">
+    facts
+   </span>
+   <span id="816_about" onclick="play(this)">
+    about
+   </span>
+   <span id="817_the" onclick="play(this)">
+    the
+   </span>
+   <span id="818_many" onclick="play(this)">
+    many
+   </span>
+   <span id="819_different" onclick="play(this)">
+    different
+   </span>
+   <span id="820_topics" onclick="play(this)">
+    topics
+   </span>
+   <span id="821_that" onclick="play(this)">
+    that
+   </span>
+   <span id="822_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="823_discuss" onclick="play(this)">
+    discuss
+   </span>
+   <span id="824_with" onclick="play(this)">
+    with
+   </span>
+   <span id="825_one" onclick="play(this)">
+    one
+   </span>
+   <span id="826_another" onclick="play(this)">
+    another.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="101_5" onclick="play(this)">
+    5
+   </span>
+   <span id="102_transportation" onclick="play(this)">
+    Transportation
+   </span>
+   <span id="103_is" onclick="play(this)">
+    is
+   </span>
+   <span id="104_another" onclick="play(this)">
+    another
+   </span>
+   <span id="105_big" onclick="play(this)">
+    big
+   </span>
+   <span id="106_change" onclick="play(this)">
+    change
+   </span>
+   <span id="107_in" onclick="play(this)">
+    in
+   </span>
+   <span id="108_ranching" onclick="play(this)">
+    ranching.
+   </span>
+   <span id="109_ranchers" onclick="play(this)">
+    Ranchers
+   </span>
+   <span id="1010_no" onclick="play(this)">
+    no
+   </span>
+   <span id="1011_longer" onclick="play(this)">
+    longer
+   </span>
+   <span id="1012_have" onclick="play(this)">
+    have
+   </span>
+   <span id="1013_to" onclick="play(this)">
+    to
+   </span>
+   <span id="1014_drive" onclick="play(this)">
+    drive
+   </span>
+   <span id="1015_their" onclick="play(this)">
+    their
+   </span>
+   <span id="1016_cattle" onclick="play(this)">
+    cattle
+   </span>
+   <span id="1017_to" onclick="play(this)">
+    to
+   </span>
+   <span id="1018_market" onclick="play(this)">
+    market.
+   </span>
+   <span id="1019_now" onclick="play(this)">
+    Now
+   </span>
+   <span id="1020_trucks" onclick="play(this)">
+    trucks
+   </span>
+   <span id="1021_drive" onclick="play(this)">
+    drive
+   </span>
+   <span id="1022_right" onclick="play(this)">
+    right
+   </span>
+   <span id="1023_to" onclick="play(this)">
+    to
+   </span>
+   <span id="1024_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1025_ranch" onclick="play(this)">
+    ranch
+   </span>
+   <span id="1026_where" onclick="play(this)">
+    where
+   </span>
+   <span id="1027_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1028_cowhands" onclick="play(this)">
+    cowhands
+   </span>
+   <span id="1029_load" onclick="play(this)">
+    load
+   </span>
+   <span id="1030_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1031_cattle" onclick="play(this)">
+    cattle
+   </span>
+   <span id="1032_to" onclick="play(this)">
+    to
+   </span>
+   <span id="1033_be" onclick="play(this)">
+    be
+   </span>
+   <span id="1034_taken" onclick="play(this)">
+    taken
+   </span>
+   <span id="1035_away" onclick="play(this)">
+    away.
+   </span>
+  </p>
+  <p style="line-height: 138%">
+  </p>
+  <p style="margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+   <span id="121_6" onclick="play(this)">
+    6
+   </span>
+   <span id="122_these" onclick="play(this)">
+    These
+   </span>
+   <span id="123_are" onclick="play(this)">
+    are
+   </span>
+   <span id="124_only" onclick="play(this)">
+    only
+   </span>
+   <span id="125_some" onclick="play(this)">
+    some
+   </span>
+   <span id="126_of" onclick="play(this)">
+    of
+   </span>
+   <span id="127_the" onclick="play(this)">
+    the
+   </span>
+   <span id="128_ways" onclick="play(this)">
+    ways
+   </span>
+   <span id="129_that" onclick="play(this)">
+    that
+   </span>
+   <span id="1210_ranching" onclick="play(this)">
+    ranching
+   </span>
+   <span id="1211_has" onclick="play(this)">
+    has
+   </span>
+   <span id="1212_changed" onclick="play(this)">
+    changed.
+   </span>
+   <span id="1213_in" onclick="play(this)">
+    In
+   </span>
+   <span id="1214_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1215_old" onclick="play(this)">
+    old
+   </span>
+   <span id="1216_days" onclick="play(this)">
+    days
+   </span>
+   <span id="1217_of" onclick="play(this)">
+    of
+   </span>
+   <span id="1218_cattle" onclick="play(this)">
+    cattle
+   </span>
+   <span id="1219_drives" onclick="play(this)">
+    drives,
+   </span>
+   <span id="1220_cowhands" onclick="play(this)">
+    cowhands
+   </span>
+   <span id="1221_only" onclick="play(this)">
+    only
+   </span>
+   <span id="1222_rode" onclick="play(this)">
+    rode
+   </span>
+   <span id="1223_horses" onclick="play(this)">
+    horses.
+   </span>
+   <span id="1224_they" onclick="play(this)">
+    They
+   </span>
+   <span id="1225_did" onclick="play(this)">
+    did
+   </span>
+   <span id="1226_everything" onclick="play(this)">
+    everything
+   </span>
+   <span id="1227_by" onclick="play(this)">
+    by
+   </span>
+   <span id="1228_hand" onclick="play(this)">
+    hand,
+   </span>
+   <span id="1229_and" onclick="play(this)">
+    and
+   </span>
+   <span id="1230_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1231_work" onclick="play(this)">
+    work
+   </span>
+   <span id="1232_was" onclick="play(this)">
+    was
+   </span>
+   <span id="1233_very" onclick="play(this)">
+    very
+   </span>
+   <span id="1234_hard" onclick="play(this)">
+    hard.
+   </span>
+   <span id="1235_today" onclick="play(this)">
+    Today
+   </span>
+   <span id="1236_the" onclick="play(this)">
+    the
+   </span>
+   <span id="1237_work" onclick="play(this)">
+    work
+   </span>
+   <span id="1238_is" onclick="play(this)">
+    is
+   </span>
+   <span id="1239_still" onclick="play(this)">
+    still
+   </span>
+   <span id="1240_hard" onclick="play(this)">
+    hard,
+   </span>
+   <span id="1241_but" onclick="play(this)">
+    but
+   </span>
+   <span id="1242_ranchers" onclick="play(this)">
+    ranchers
+   </span>
+   <span id="1243_have" onclick="play(this)">
+    have
+   </span>
+   <span id="1244_many" onclick="play(this)">
+    many
+   </span>
+   <span id="1245_high-" onclick="play(this)">
+    high-
+   </span>
+   <span id="1246_and" onclick="play(this)">
+    and
+   </span>
+   <span id="1247_low-tech" onclick="play(this)">
+    low-tech
+   </span>
+   <span id="1248_machines" onclick="play(this)">
+    machines
+   </span>
+   <span id="1249_to" onclick="play(this)">
+    to
+   </span>
+   <span id="1250_help" onclick="play(this)">
+    help
+   </span>
+   <span id="1251_them" onclick="play(this)">
+    them.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+  </p>
+  <audio id="load_audio" preload="auto" src="../sounds/load.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="help_audio" preload="auto" src="../sounds/help.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="move_audio" preload="auto" src="../sounds/move.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="years_audio" preload="auto" src="../sounds/years.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="prices_audio" preload="auto" src="../sounds/prices.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="facts_audio" preload="auto" src="../sounds/facts.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="still_audio" preload="auto" src="../sounds/still.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="find_audio" preload="auto" src="../sounds/find.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="web_audio" preload="auto" src="../sounds/web.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="low-tech_audio" preload="auto" src="../sounds/low-tech.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="stray_audio" preload="auto" src="../sounds/stray.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pickup_audio" preload="auto" src="../sounds/pickup.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="only_audio" preload="auto" src="../sounds/only.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="4_audio" preload="auto" src="../sounds/4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="has_audio" preload="auto" src="../sounds/has.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="them_audio" preload="auto" src="../sounds/them.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="good_audio" preload="auto" src="../sounds/good.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="very_audio" preload="auto" src="../sounds/very.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="big_audio" preload="auto" src="../sounds/big.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="they_audio" preload="auto" src="../sounds/they.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="during_audio" preload="auto" src="../sounds/during.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="now_audio" preload="auto" src="../sounds/now.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="discuss_audio" preload="auto" src="../sounds/discuss.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="trucks_audio" preload="auto" src="../sounds/trucks.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="did_audio" preload="auto" src="../sounds/did.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="large_audio" preload="auto" src="../sounds/large.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="these_audio" preload="auto" src="../sounds/these.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="where_audio" preload="auto" src="../sounds/where.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="round_audio" preload="auto" src="../sounds/round.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="right_audio" preload="auto" src="../sounds/right.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="old_audio" preload="auto" src="../sounds/old.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="deal_audio" preload="auto" src="../sounds/deal.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hard_audio" preload="auto" src="../sounds/hard.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="some_audio" preload="auto" src="../sounds/some.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cowhands_audio" preload="auto" src="../sounds/cowhands.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="past_audio" preload="auto" src="../sounds/past.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="are_audio" preload="auto" src="../sounds/are.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cattle_audio" preload="auto" src="../sounds/cattle.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="best_audio" preload="auto" src="../sounds/best.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="out_audio" preload="auto" src="../sounds/out.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="even_audio" preload="auto" src="../sounds/even.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="deals_audio" preload="auto" src="../sounds/deals.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ways_audio" preload="auto" src="../sounds/ways.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="away_audio" preload="auto" src="../sounds/away.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sites_audio" preload="auto" src="../sounds/sites.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="everything_audio" preload="auto" src="../sounds/everything.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="3_audio" preload="auto" src="../sounds/3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="internet_audio" preload="auto" src="../sounds/internet.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="new_audio" preload="auto" src="../sounds/new.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="be_audio" preload="auto" src="../sounds/be.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="transportation_audio" preload="auto" src="../sounds/transportation.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="of_audio" preload="auto" src="../sounds/of.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="horse_audio" preload="auto" src="../sounds/horse.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="groups_audio" preload="auto" src="../sounds/groups.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="post_audio" preload="auto" src="../sounds/post.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="by_audio" preload="auto" src="../sounds/by.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="change_audio" preload="auto" src="../sounds/change.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="great_audio" preload="auto" src="../sounds/great.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="many_audio" preload="auto" src="../sounds/many.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="computers_audio" preload="auto" src="../sounds/computers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="days_audio" preload="auto" src="../sounds/days.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="thing_audio" preload="auto" src="../sounds/thing.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ranching_audio" preload="auto" src="../sounds/ranching.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="changes_audio" preload="auto" src="../sounds/changes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="or_audio" preload="auto" src="../sounds/or.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="feed_audio" preload="auto" src="../sounds/feed.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="useful_audio" preload="auto" src="../sounds/useful.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ranchers_audio" preload="auto" src="../sounds/ranchers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="one_audio" preload="auto" src="../sounds/one.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="another_audio" preload="auto" src="../sounds/another.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="market_audio" preload="auto" src="../sounds/market.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="use_audio" preload="auto" src="../sounds/use.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="beef_audio" preload="auto" src="../sounds/beef.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="there_audio" preload="auto" src="../sounds/there.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="their_audio" preload="auto" src="../sounds/their.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2_audio" preload="auto" src="../sounds/2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="6_audio" preload="auto" src="../sounds/6.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="biggest_audio" preload="auto" src="../sounds/biggest.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="was_audio" preload="auto" src="../sounds/was.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="topics_audio" preload="auto" src="../sounds/topics.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="today_audio" preload="auto" src="../sounds/today.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="horses_audio" preload="auto" src="../sounds/horses.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ago_audio" preload="auto" src="../sounds/ago.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="that_audio" preload="auto" src="../sounds/that.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="about_audio" preload="auto" src="../sounds/about.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="but_audio" preload="auto" src="../sounds/but.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="taken_audio" preload="auto" src="../sounds/taken.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="part_audio" preload="auto" src="../sounds/part.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="catch_audio" preload="auto" src="../sounds/catch.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="with_audio" preload="auto" src="../sounds/with.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="fly_audio" preload="auto" src="../sounds/fly.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="this_audio" preload="auto" src="../sounds/this.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ride_audio" preload="auto" src="../sounds/ride.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="work_audio" preload="auto" src="../sounds/work.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="up_audio" preload="auto" src="../sounds/up.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rope_audio" preload="auto" src="../sounds/rope.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="replaced_audio" preload="auto" src="../sounds/replaced.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="can_audio" preload="auto" src="../sounds/can.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="planes_audio" preload="auto" src="../sounds/planes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="breeds_audio" preload="auto" src="../sounds/breeds.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="150_audio" preload="auto" src="../sounds/150.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="changed_audio" preload="auto" src="../sounds/changed.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="modern_audio" preload="auto" src="../sounds/modern.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rode_audio" preload="auto" src="../sounds/rode.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="it_audio" preload="auto" src="../sounds/it.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="as_audio" preload="auto" src="../sounds/as.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="high-_audio" preload="auto" src="../sounds/high-.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="have_audio" preload="auto" src="../sounds/have.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cows_audio" preload="auto" src="../sounds/cows.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="information_audio" preload="auto" src="../sounds/information.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="different_audio" preload="auto" src="../sounds/different.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="no_audio" preload="auto" src="../sounds/no.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="when_audio" preload="auto" src="../sounds/when.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="same_audio" preload="auto" src="../sounds/same.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="also_audio" preload="auto" src="../sounds/also.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="5_audio" preload="auto" src="../sounds/5.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="machines_audio" preload="auto" src="../sounds/machines.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="drives_audio" preload="auto" src="../sounds/drives.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hand_audio" preload="auto" src="../sounds/hand.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="types_audio" preload="auto" src="../sounds/types.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="calves_audio" preload="auto" src="../sounds/calves.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="longer_audio" preload="auto" src="../sounds/longer.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ranch_audio" preload="auto" src="../sounds/ranch.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="drive_audio" preload="auto" src="../sounds/drive.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="truck_audio" preload="auto" src="../sounds/truck.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
