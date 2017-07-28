@@ -1,0 +1,3 @@
+bedrooms
+perminder
+bathrooms
