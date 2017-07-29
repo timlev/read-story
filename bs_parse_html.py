@@ -30,7 +30,7 @@ def buildAllAudio(master_word_list):
         #print audio
         body.append(audio)
 
-    
+
 def buildSpan(word, token, pnum, wnum):
     spanID = str(pnum) + str(wnum) + "_" + token
     tag = soup.new_tag("span", id=spanID, onclick="play(this)")
@@ -62,6 +62,7 @@ parser.add_argument("input", nargs='+')
 parser.add_argument("--output_dir", default="./html_output")
 parser.add_argument("--index", default="./index.html")
 parser.add_argument("--skip_sounds", action="store_true")
+parser.add_arugment("--skip_index", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
 allfilenames = args.input
@@ -166,17 +167,19 @@ for filename in allfilenames:
     print "File saved at", newfile
 
     #Add to Index
-    #index = BeautifulSoup(open(args.index), "lxml")
-    #new_link = index.new_tag('a', href = newfile)
-    #new_link.string = short_name
-    #index.body.append(index.new_tag('br'))
-    #index.body.append(new_link)
+    if not args.skip_index:
+        index = BeautifulSoup(open(args.index), "html5lib")
+        new_link = index.new_tag('a', href = newfile)
+        new_link.string = short_name
+        index.body.append(index.new_tag('br'))
+        index.body.append(new_link)
 
-    #Write Index file
-    #print "Updating index.html..."
-    #with open(args.index, "wb") as wb:
-      #wb.write(index.prettify(formatter="html"))
-    #print "File saved at index.html"
+        #Write Index file
+        print "Updating index.html..."
+        with open(args.index, "wb") as wb:
+          wb.write(index.prettify(formatter="html"))
+        print "File saved at " + args.index
+
     #Download Words
     if not args.skip_sounds:
         download_sound_files(master_word_list)
