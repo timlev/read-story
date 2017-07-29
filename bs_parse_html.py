@@ -74,8 +74,9 @@ for filename in allfilenames:
     base_name = os.path.basename(filename)
     short_name = os.path.splitext(base_name)[0]
 
-    soup = BeautifulSoup(open(filename), "lxml")
-    #soup = BeautifulSoup(open(filename))
+    #soup = BeautifulSoup(open(filename), "lxml")
+    #soup = BeautifulSoup(open(filename), "html.parser")
+    soup = BeautifulSoup(open(filename), "html5lib")
     paragraphs = soup.findAll('p')
 
     orig_header = soup.find('head')
