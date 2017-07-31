@@ -1,18 +1,24 @@
 # -*- coding: utf-8 -*-
 
-import os, argparse, sys
+import os, argparse, sys, platform
 
 parser = argparse.ArgumentParser()
 parser.add_argument("input", nargs='+')
+parser.add_argument("--output_dir", default="./sounds")
 #parser.add_argument("--skip_sounds", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
 print args.input
 
-def record(word, directory = "./"):
+def record(word, directory = args.output_dir):
     os.system('rec "' + os.path.join(directory, word) + '.wav"')
 def convert(word, directory = "./"):
-    os.system('avconv -i "' + os.path.join(directory, word) + '.wav" "' + os.path.join(directory, word) + '.mp3"')
+    wavpath = os.path.join(directory, word) + '.wav'
+    mp3path = os.path.join(directory, word) + '.mp3'
+    if platform.system() == 'Linux':
+        os.system('avconv -i "' + wavpath + '" "' + mp3path + '"')
+    else:
+        os.system('ffmpeg -i "' + wavpath + '" -acodec libmp3lame "' + mp3path + '"')
 def remove_wave(filename, directory = "./"):
     os.remove(os.path.join(directory, filename))
     print "rm " + filename
@@ -26,7 +32,8 @@ def remove_wave(filename, directory = "./"):
 #filename = "missing_words/The One That Got Away.html_missing_words.txt"
 allfilenames = args.input
 for filename in allfilenames:
-    soundsdir = "/home/levtim/GitProjects/read-story/sounds"
+    #soundsdir = "/home/levtim/GitProjects/read-story/sounds"
+    soundsdir = "./sounds"
 
     soundlist = os.listdir(soundsdir)
 
@@ -50,14 +57,14 @@ for filename in allfilenames:
         print word
         print "**********************************************"
         print "\n\n\n\n\n"
-        #record(word, soundsdir)
-        record(word)
+        record(word, soundsdir)
+        #record(word)
 
 
     for word in missing_words:
-        #convert(word, soundsdir)
-        convert(word)
+        convert(word, soundsdir)
+        #convert(word)
 
     for word in missing_words:
-        #remove_wave(word + ".wav", soundsdir)
-        remove_wave(word + ".wav")
+        remove_wave(word + ".wav", soundsdir)
+        #remove_wave(os.path.join(soundsdir, word) + ".wav")
