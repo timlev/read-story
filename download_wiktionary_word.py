@@ -78,7 +78,7 @@ def download_gstatic(word, directory="./"):
         return os.path.join(directory, word + ".mp3")
     except:
         #print "Could not download:", word
-        return 2 
+        return 2
 
 #convert ogg to mp3
 
@@ -90,13 +90,14 @@ def convert_ogg_to_mp3(oggfile, remove_ogg = False):
     mp3path = oggpath.replace(".ogg",".mp3")
     if platform.system() == 'Linux':
         os.system('avconv -i "' + oggpath + '" "' + mp3path + '"')
+    else:
+        os.system('ffmpeg -i "' + oggpath + '" -acodec libmp3lame "' + mp3path + '"')
     if remove_ogg:
         os.remove(oggpath)
     return mp3path
-    
+
 if __name__ == "__main__":
     #if get_wiki("joyful") == 0:
     #    convert_ogg_to_mp3("i'm" + ".ogg", True)
     print download_gstatic("blowhole")
     #print download_gstatic("myword")
-    
