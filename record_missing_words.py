@@ -33,7 +33,8 @@ def remove_wave(filename, directory = "./"):
 allfilenames = args.input
 for filename in allfilenames:
     #soundsdir = "/home/levtim/GitProjects/read-story/sounds"
-    soundsdir = "./sounds"
+    #soundsdir = "./sounds"
+    soundsdir = args.output_dir
 
     soundlist = os.listdir(soundsdir)
 
