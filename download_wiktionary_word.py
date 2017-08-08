@@ -99,5 +99,14 @@ def convert_ogg_to_mp3(oggfile, remove_ogg = False):
 if __name__ == "__main__":
     #if get_wiki("joyful") == 0:
     #    convert_ogg_to_mp3("i'm" + ".ogg", True)
-    print download_gstatic("blowhole")
+    #print download_gstatic("blowhole")
     #print download_gstatic("myword")
+    wordlist = ["zero", "ten", "twenty", "one", "eleven", "twenty-one", "two", "twelve", "twenty-two", "three", "thirteen", "twenty-three", "four", "fourteen", "twenty-four", "five", "fifteen", "twenty-five", "six", "sixteen", "twenty-six", "seven", "seventeen", "twenty-seven", "eight", "eighteen", "twenty-eight", "nine", "nineteen", "twenty-nine", "thirty", "forty", "seventy", "thirty-one", "fifty", "eighty", "thirty-two", "sixty", "ninety"]
+    print len(wordlist)
+    """for word in wordlist:
+        get_wiki(word)
+        try:
+            convert_ogg_to_mp3(word + ".ogg", True)
+        except:
+            print "************\n Problem with " + word + "\n******************\n"
+    """

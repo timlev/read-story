@@ -18,7 +18,8 @@
                  var obj = td_tags[tag];
                  if (obj.innerHTML != null){
                    var id = obj.innerHTML.split(" ")[0];
-                   //console.log(obj, id);
+                   var word = obj.innerHTML.split(" ")[1];
+                   console.log(word);
                    obj.id = id;
                    //obj.onclick = play(obj);
                    if (obj.addEventListener){
