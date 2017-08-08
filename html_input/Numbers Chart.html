@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<script>
+	  window.onload = function(){document.getElementById("status").innerHTML = document.getElementsByTagName("td")[35].innerHTML;
+	}</script>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <title>Numbers Chart</title>
   </head>
   <body>
+	<p id="status">Status</p>
     <table style="width: 100%;" border="1" cellpadding="10">
       <tbody>
         <tr>
