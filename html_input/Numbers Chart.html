@@ -2,13 +2,38 @@
 <html>
   <head>
 	<script>
-	  window.onload = function(){document.getElementById("status").innerHTML = document.getElementsByTagName("td")[35].innerHTML.split(" ")[0];
-	}</script>
+          var play = function(){
+             var word = this.id;
+             //console.log(this.id);
+             audioTag = document.getElementById("audio");
+             audioTag.src = "../sounds/" + word + ".mp3";
+             console.log(audioTag.src);
+             audioTag.play();
+
+          }
+	  window.onload = function(){
+             //document.getElementById("status").innerHTML = document.getElementsByTagName("td")[35].innerHTML.split(" ")[0];
+             var td_tags = document.getElementsByTagName("td");
+             for (tag in td_tags){
+                 var obj = td_tags[tag];
+                 if (obj.innerHTML != null){
+                   var id = obj.innerHTML.split(" ")[0];
+                   //console.log(obj, id);
+                   obj.id = id;
+                   //obj.onclick = play(obj);
+                   if (obj.addEventListener){
+                       obj.addEventListener('click', play, false);
+                   }
+                 }
+             }
+	  }
+        </script>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <title>Numbers Chart</title>
   </head>
   <body>
-	<p id="status">Status</p>
+    <audio id="audio" src=""></audio>
+	<!--<p id="status">Status</p>-->
     <table style="width: 100%;" border="1" cellpadding="10">
       <tbody>
         <tr>

@@ -3,6 +3,7 @@ originalTitle = "";
 function play(obj){
 	word = obj.id;
 	word = word.slice(word.indexOf("_") + 1);
+	console.log(word);
 	if (clickedWords.indexOf(word) == -1){
 		clickedWords.push(word);
 		console.log(clickedWords);
