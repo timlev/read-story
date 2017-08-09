@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+        <style>
+            td {
+                font-family: 'Didact Gothic', sans-serif;
+                padding: 10px;
+                font-size: 2em;
+                text-align: center;
+            }
+            td:hover {
+                cursor: pointer;
+            }
+            .unselectable {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+        </style>
 	<script>
+        function colorBackground(obj, color){
+            obj.style.backgroundColor = color;
+        }
           var play = function(){
+             var obj = this;
              var word = this.id;
              //console.log(this.id);
              audioTag = document.getElementById("audio");
              audioTag.src = "../sounds/" + word + ".mp3";
              console.log(audioTag.src);
+             colorBackground(obj, "yellow");
              audioTag.play();
+             audioTag.addEventListener("ended", function(){
+                 console.log(obj);
+                 obj.style.backgroundColor = "transparent";
+             });
 
           }
 	  window.onload = function(){
@@ -35,7 +64,7 @@
   <body>
     <audio id="audio" src=""></audio>
 	<!--<p id="status">Status</p>-->
-    <table style="width: 100%;" border="1" cellpadding="10">
+    <table style="width: 100%;" border="1" cellpadding="10" class="unselectable">
       <tbody>
         <tr>
           <td style="text-align: left;">0 zero</td>
@@ -91,7 +120,7 @@
     </table>
     <p><br>
     </p>
-    <table style="width: 100%;" border="1" cellpadding="10">
+    <table style="width: 100%;" border="1" cellpadding="10" class="unselectable">
       <tbody>
         <tr>
           <td style="text-align: left;">30 thirty</td>
@@ -110,7 +139,7 @@
         </tr>
       </tbody>
     </table>
-    <p>100 one hundred&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <p class="unselectable">100 one hundred&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp; 1,000 one thousand</p>
   </body>
 </html>
