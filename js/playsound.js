@@ -45,7 +45,7 @@ function increaseFont(){
   else {
 	  fs = fs.replace("em","");
 	  fs = Number(fs);
-	  fs += .2;
+	  fs += .5;
 	  document.body.style.fontSize = fs.toString() + "em";
 	  console.log(fs);
   }
@@ -60,7 +60,7 @@ function decreaseFont(){
   else {
 	  fs = fs.replace("em","");
 	  fs = Number(fs);
-	  fs -= .2;
+	  fs -= .5;
 	  document.body.style.fontSize = fs.toString() + "em";
 	  console.log(fs);
   }
