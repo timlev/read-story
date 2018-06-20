@@ -15,10 +15,11 @@ def record(word, directory = args.output_dir):
 def convert(word, directory = "./"):
     wavpath = os.path.join(directory, word) + '.wav'
     mp3path = os.path.join(directory, word) + '.mp3'
-    if platform.system() == 'Linux':
-        os.system('avconv -i "' + wavpath + '" "' + mp3path + '"')
-    else:
-        os.system('ffmpeg -i "' + wavpath + '" -acodec libmp3lame "' + mp3path + '"')
+    #if platform.system() == 'Linux':
+        #os.system('avconv -i "' + wavpath + '" "' + mp3path + '"')
+   # else:
+    os.system('ffmpeg -i "' + wavpath + '" -acodec libmp3lame "' + mp3path + '"')
+
 def remove_wave(filename, directory = "./"):
     os.remove(os.path.join(directory, filename))
     print "rm " + filename
