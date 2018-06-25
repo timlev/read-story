@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   The Kitchen is Busy
+  </title>
+  <meta content="LibreOffice 6.0.3.2 (Linux)" name="generator"/>
+  <meta content="2018-06-25T07:33:21.823509262" name="created"/>
+  <meta content="2018-06-25T07:34:14.741658318" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="00_the" onclick="play(this)">
+    The
+   </span>
+   <span id="01_kitchen" onclick="play(this)">
+    Kitchen
+   </span>
+   <span id="02_is" onclick="play(this)">
+    is
+   </span>
+   <span id="03_busy" onclick="play(this)">
+    Busy
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="20_look" onclick="play(this)">
+    Look
+   </span>
+   <span id="21_at" onclick="play(this)">
+    at
+   </span>
+   <span id="22_the" onclick="play(this)">
+    the
+   </span>
+   <span id="23_pictures" onclick="play(this)">
+    pictures.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="30_what" onclick="play(this)">
+    What
+   </span>
+   <span id="31_do" onclick="play(this)">
+    do
+   </span>
+   <span id="32_you" onclick="play(this)">
+    you
+   </span>
+   <span id="33_see" onclick="play(this)">
+    see?
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="40_what" onclick="play(this)">
+    What
+   </span>
+   <span id="41_is" onclick="play(this)">
+    is
+   </span>
+   <span id="42_his" onclick="play(this)">
+    his
+   </span>
+   <span id="43_job" onclick="play(this)">
+    job?
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="50_where" onclick="play(this)">
+    Where
+   </span>
+   <span id="51_does" onclick="play(this)">
+    does
+   </span>
+   <span id="52_he" onclick="play(this)">
+    he
+   </span>
+   <span id="53_work" onclick="play(this)">
+    work?
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="70_1" onclick="play(this)">
+    1.
+   </span>
+   <span id="71_this" onclick="play(this)">
+    This
+   </span>
+   <span id="72_is" onclick="play(this)">
+    is
+   </span>
+   <span id="73_tim" onclick="play(this)">
+    Tim.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="80_2" onclick="play(this)">
+    2.
+   </span>
+   <span id="81_tim" onclick="play(this)">
+    Tim
+   </span>
+   <span id="82_is" onclick="play(this)">
+    is
+   </span>
+   <span id="83_a" onclick="play(this)">
+    a
+   </span>
+   <span id="84_cook" onclick="play(this)">
+    cook.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="90_3" onclick="play(this)">
+    3.
+   </span>
+   <span id="91_tim" onclick="play(this)">
+    Tim
+   </span>
+   <span id="92_works" onclick="play(this)">
+    works
+   </span>
+   <span id="93_in" onclick="play(this)">
+    in
+   </span>
+   <span id="94_a" onclick="play(this)">
+    a
+   </span>
+   <span id="95_restaurant" onclick="play(this)">
+    restaurant.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="100_4" onclick="play(this)">
+    4.
+   </span>
+   <span id="101_he" onclick="play(this)">
+    He
+   </span>
+   <span id="102_works" onclick="play(this)">
+    works
+   </span>
+   <span id="103_in" onclick="play(this)">
+    in
+   </span>
+   <span id="104_the" onclick="play(this)">
+    the
+   </span>
+   <span id="105_kitchen" onclick="play(this)">
+    kitchen.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="110_5" onclick="play(this)">
+    5.
+   </span>
+   <span id="111_today" onclick="play(this)">
+    Today,
+   </span>
+   <span id="112_tim" onclick="play(this)">
+    Tim
+   </span>
+   <span id="113_is" onclick="play(this)">
+    is
+   </span>
+   <span id="114_making" onclick="play(this)">
+    making
+   </span>
+   <span id="115_pork" onclick="play(this)">
+    pork.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="120_6" onclick="play(this)">
+    6.
+   </span>
+   <span id="121_rob" onclick="play(this)">
+    Rob
+   </span>
+   <span id="122_is" onclick="play(this)">
+    is
+   </span>
+   <span id="123_a" onclick="play(this)">
+    a
+   </span>
+   <span id="124_prep" onclick="play(this)">
+    prep
+   </span>
+   <span id="125_cook" onclick="play(this)">
+    cook.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="130_7" onclick="play(this)">
+    7.
+   </span>
+   <span id="131_rob" onclick="play(this)">
+    Rob
+   </span>
+   <span id="132_helps" onclick="play(this)">
+    helps
+   </span>
+   <span id="133_in" onclick="play(this)">
+    in
+   </span>
+   <span id="134_the" onclick="play(this)">
+    the
+   </span>
+   <span id="135_kitchen" onclick="play(this)">
+    kitchen.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="140_8" onclick="play(this)">
+    8.
+   </span>
+   <span id="141_it" onclick="play(this)">
+    It
+   </span>
+   <span id="142_is" onclick="play(this)">
+    is
+   </span>
+   <span id="143_very" onclick="play(this)">
+    very
+   </span>
+   <span id="144_busy" onclick="play(this)">
+    busy.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="150_9" onclick="play(this)">
+    9.
+   </span>
+   <span id="151_tim" onclick="play(this)">
+    Tim
+   </span>
+   <span id="152_says" onclick="play(this)">
+    says,
+   </span>
+   <span id="153_i" onclick="play(this)">
+    "I
+   </span>
+   <span id="154_need" onclick="play(this)">
+    need
+   </span>
+   <span id="155_more" onclick="play(this)">
+    more
+   </span>
+   <span id="156_rice" onclick="play(this)">
+    rice."
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="160_10" onclick="play(this)">
+    10.
+   </span>
+   <span id="161_please" onclick="play(this)">
+    "Please
+   </span>
+   <span id="162_get" onclick="play(this)">
+    get
+   </span>
+   <span id="163_a" onclick="play(this)">
+    a
+   </span>
+   <span id="164_bag" onclick="play(this)">
+    bag
+   </span>
+   <span id="165_of" onclick="play(this)">
+    of
+   </span>
+   <span id="166_rice" onclick="play(this)">
+    rice."
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="170_11" onclick="play(this)">
+    11.
+   </span>
+   <span id="171_rob" onclick="play(this)">
+    Rob
+   </span>
+   <span id="172_looks" onclick="play(this)">
+    looks
+   </span>
+   <span id="173_at" onclick="play(this)">
+    at
+   </span>
+   <span id="174_the" onclick="play(this)">
+    the
+   </span>
+   <span id="175_shelf" onclick="play(this)">
+    shelf.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="180_12" onclick="play(this)">
+    12.
+   </span>
+   <span id="181_he" onclick="play(this)">
+    He
+   </span>
+   <span id="182_sees" onclick="play(this)">
+    sees
+   </span>
+   <span id="183_cans" onclick="play(this)">
+    cans
+   </span>
+   <span id="184_of" onclick="play(this)">
+    of
+   </span>
+   <span id="185_green" onclick="play(this)">
+    green
+   </span>
+   <span id="186_beans" onclick="play(this)">
+    beans.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="190_13" onclick="play(this)">
+    13.
+   </span>
+   <span id="191_he" onclick="play(this)">
+    He
+   </span>
+   <span id="192_sees" onclick="play(this)">
+    sees
+   </span>
+   <span id="193_bags" onclick="play(this)">
+    bags
+   </span>
+   <span id="194_of" onclick="play(this)">
+    of
+   </span>
+   <span id="195_onions" onclick="play(this)">
+    onions.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="200_14" onclick="play(this)">
+    14.
+   </span>
+   <span id="201_he" onclick="play(this)">
+    He
+   </span>
+   <span id="202_sees" onclick="play(this)">
+    sees
+   </span>
+   <span id="203_bags" onclick="play(this)">
+    bags
+   </span>
+   <span id="204_of" onclick="play(this)">
+    of
+   </span>
+   <span id="205_rice" onclick="play(this)">
+    rice.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="210_15" onclick="play(this)">
+    15.
+   </span>
+   <span id="211_he" onclick="play(this)">
+    He
+   </span>
+   <span id="212_gets" onclick="play(this)">
+    gets
+   </span>
+   <span id="213_a" onclick="play(this)">
+    a
+   </span>
+   <span id="214_bag" onclick="play(this)">
+    bag
+   </span>
+   <span id="215_of" onclick="play(this)">
+    of
+   </span>
+   <span id="216_rice" onclick="play(this)">
+    rice.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="220_16" onclick="play(this)">
+    16.
+   </span>
+   <span id="221_he" onclick="play(this)">
+    He
+   </span>
+   <span id="222_gives" onclick="play(this)">
+    gives
+   </span>
+   <span id="223_the" onclick="play(this)">
+    the
+   </span>
+   <span id="224_rice" onclick="play(this)">
+    rice
+   </span>
+   <span id="225_to" onclick="play(this)">
+    to
+   </span>
+   <span id="226_tim" onclick="play(this)">
+    Tim.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="230_17" onclick="play(this)">
+    17.
+   </span>
+   <span id="231_here" onclick="play(this)">
+    "Here
+   </span>
+   <span id="232_is" onclick="play(this)">
+    is
+   </span>
+   <span id="233_the" onclick="play(this)">
+    the
+   </span>
+   <span id="234_rice" onclick="play(this)">
+    rice,"
+   </span>
+   <span id="235_rob" onclick="play(this)">
+    Rob
+   </span>
+   <span id="236_says" onclick="play(this)">
+    says.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="240_18" onclick="play(this)">
+    18.
+   </span>
+   <span id="241_good" onclick="play(this)">
+    "Good.
+   </span>
+   <span id="242_now" onclick="play(this)">
+    Now
+   </span>
+   <span id="243_go" onclick="play(this)">
+    go
+   </span>
+   <span id="244_cut" onclick="play(this)">
+    cut
+   </span>
+   <span id="245_the" onclick="play(this)">
+    the
+   </span>
+   <span id="246_pork" onclick="play(this)">
+    pork,"
+   </span>
+   <span id="247_says" onclick="play(this)">
+    says
+   </span>
+   <span id="248_tim" onclick="play(this)">
+    Tim.
+   </span>
+  </p>
+  <audio id="pork_audio" preload="auto" src="../sounds/pork.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="says_audio" preload="auto" src="../sounds/says.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bags_audio" preload="auto" src="../sounds/bags.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="it_audio" preload="auto" src="../sounds/it.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="go_audio" preload="auto" src="../sounds/go.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="see_audio" preload="auto" src="../sounds/see.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="good_audio" preload="auto" src="../sounds/good.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="at_audio" preload="auto" src="../sounds/at.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="need_audio" preload="auto" src="../sounds/need.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sees_audio" preload="auto" src="../sounds/sees.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="onions_audio" preload="auto" src="../sounds/onions.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="gives_audio" preload="auto" src="../sounds/gives.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="11_audio" preload="auto" src="../sounds/11.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="what_audio" preload="auto" src="../sounds/what.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="busy_audio" preload="auto" src="../sounds/busy.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bag_audio" preload="auto" src="../sounds/bag.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cans_audio" preload="auto" src="../sounds/cans.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pictures_audio" preload="auto" src="../sounds/pictures.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cut_audio" preload="auto" src="../sounds/cut.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="please_audio" preload="auto" src="../sounds/please.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="tim_audio" preload="auto" src="../sounds/tim.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="3_audio" preload="auto" src="../sounds/3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="does_audio" preload="auto" src="../sounds/does.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="5_audio" preload="auto" src="../sounds/5.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="4_audio" preload="auto" src="../sounds/4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="7_audio" preload="auto" src="../sounds/7.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="6_audio" preload="auto" src="../sounds/6.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="9_audio" preload="auto" src="../sounds/9.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="8_audio" preload="auto" src="../sounds/8.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="you_audio" preload="auto" src="../sounds/you.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="kitchen_audio" preload="auto" src="../sounds/kitchen.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rob_audio" preload="auto" src="../sounds/rob.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="today_audio" preload="auto" src="../sounds/today.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="helps_audio" preload="auto" src="../sounds/helps.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="do_audio" preload="auto" src="../sounds/do.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="his_audio" preload="auto" src="../sounds/his.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="get_audio" preload="auto" src="../sounds/get.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="very_audio" preload="auto" src="../sounds/very.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="shelf_audio" preload="auto" src="../sounds/shelf.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="here_audio" preload="auto" src="../sounds/here.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="more_audio" preload="auto" src="../sounds/more.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="job_audio" preload="auto" src="../sounds/job.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="12_audio" preload="auto" src="../sounds/12.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="beans_audio" preload="auto" src="../sounds/beans.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cook_audio" preload="auto" src="../sounds/cook.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2_audio" preload="auto" src="../sounds/2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="now_audio" preload="auto" src="../sounds/now.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="17_audio" preload="auto" src="../sounds/17.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="gets_audio" preload="auto" src="../sounds/gets.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="he_audio" preload="auto" src="../sounds/he.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="10_audio" preload="auto" src="../sounds/10.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="13_audio" preload="auto" src="../sounds/13.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="rice_audio" preload="auto" src="../sounds/rice.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="15_audio" preload="auto" src="../sounds/15.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="look_audio" preload="auto" src="../sounds/look.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="14_audio" preload="auto" src="../sounds/14.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="restaurant_audio" preload="auto" src="../sounds/restaurant.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="this_audio" preload="auto" src="../sounds/this.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="of_audio" preload="auto" src="../sounds/of.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="work_audio" preload="auto" src="../sounds/work.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="prep_audio" preload="auto" src="../sounds/prep.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="i_audio" preload="auto" src="../sounds/i.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="16_audio" preload="auto" src="../sounds/16.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="green_audio" preload="auto" src="../sounds/green.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="18_audio" preload="auto" src="../sounds/18.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="making_audio" preload="auto" src="../sounds/making.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="works_audio" preload="auto" src="../sounds/works.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="where_audio" preload="auto" src="../sounds/where.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="looks_audio" preload="auto" src="../sounds/looks.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
