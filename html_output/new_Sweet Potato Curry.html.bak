@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Sweet Potato Curry
+  </title>
+  <meta content="LibreOffice 6.0.3.2 (Linux)" name="generator"/>
+  <meta content="2018-06-24T21:21:00.562560600" name="created"/>
+  <meta content="2018-06-24T21:21:31.557634784" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
+   <span id="00_sweet" onclick="play(this)">
+    Sweet
+   </span>
+   <span id="01_potato" onclick="play(this)">
+    Potato
+   </span>
+   <span id="02_curry" onclick="play(this)">
+    Curry
+   </span>
+  </p>
+  <p align="left" style="margin-bottom: 0in; line-height: 100%">
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="20_instructions" onclick="play(this)">
+    Instructions
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="30_1" onclick="play(this)">
+    1.
+   </span>   <span id="32_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="33_oil" onclick="play(this)">
+    oil
+   </span>
+   <span id="34_in" onclick="play(this)">
+    in
+   </span>
+   <span id="35_the" onclick="play(this)">
+    the
+   </span>
+   <span id="36_hot" onclick="play(this)">
+    hot
+   </span>
+   <span id="37_pot" onclick="play(this)">
+    pot.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="40_2" onclick="play(this)">
+    2.
+   </span>   <span id="42_cut" onclick="play(this)">
+    Cut
+   </span>
+   <span id="43_onions" onclick="play(this)">
+    onions
+   </span>
+   <span id="44_and" onclick="play(this)">
+    and
+   </span>
+   <span id="45_peppers" onclick="play(this)">
+    peppers.
+   </span>
+   <span id="46_cook" onclick="play(this)">
+    Cook
+   </span>
+   <span id="47_for" onclick="play(this)">
+    for
+   </span>
+   <span id="48_3" onclick="play(this)">
+    3
+   </span>
+   <span id="49_minutes" onclick="play(this)">
+    minutes.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="50_3" onclick="play(this)">
+    3.
+   </span>   <span id="52_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="53_ginger" onclick="play(this)">
+    ginger
+   </span>
+   <span id="54_and" onclick="play(this)">
+    and
+   </span>
+   <span id="55_garlic" onclick="play(this)">
+    garlic
+   </span>
+   <span id="56_in" onclick="play(this)">
+    in
+   </span>
+   <span id="57_the" onclick="play(this)">
+    the
+   </span>
+   <span id="58_pot" onclick="play(this)">
+    pot.
+   </span>
+   <span id="59_cook" onclick="play(this)">
+    Cook
+   </span>
+   <span id="510_for" onclick="play(this)">
+    for
+   </span>
+   <span id="511_2" onclick="play(this)">
+    2
+   </span>
+   <span id="512_minutes" onclick="play(this)">
+    minutes.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="60_4" onclick="play(this)">
+    4.
+   </span>   <span id="62_peel" onclick="play(this)">
+    Peel
+   </span>
+   <span id="63_sweet" onclick="play(this)">
+    sweet
+   </span>
+   <span id="64_potatoes" onclick="play(this)">
+    potatoes.
+   </span>
+   <span id="65_cut" onclick="play(this)">
+    Cut
+   </span>
+   <span id="66_sweet" onclick="play(this)">
+    sweet
+   </span>
+   <span id="67_potatoes" onclick="play(this)">
+    potatoes
+   </span>
+   <span id="68_and" onclick="play(this)">
+    and
+   </span>
+   <span id="69_zucchini" onclick="play(this)">
+    zucchini.
+   </span>
+   <span id="610_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="611_them" onclick="play(this)">
+    them
+   </span>
+   <span id="612_in" onclick="play(this)">
+    in
+   </span>
+   <span id="613_the" onclick="play(this)">
+    the
+   </span>
+   <span id="614_pot" onclick="play(this)">
+    pot.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="70_5" onclick="play(this)">
+    5.
+   </span>   <span id="72_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="73_spices" onclick="play(this)">
+    spices
+   </span>
+   <span id="74_in" onclick="play(this)">
+    in
+   </span>
+   <span id="75_the" onclick="play(this)">
+    the
+   </span>
+   <span id="76_pot" onclick="play(this)">
+    pot.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="80_6" onclick="play(this)">
+    6.
+   </span>   <span id="82_open" onclick="play(this)">
+    Open
+   </span>
+   <span id="83_the" onclick="play(this)">
+    the
+   </span>
+   <span id="84_tomato" onclick="play(this)">
+    tomato
+   </span>
+   <span id="85_can" onclick="play(this)">
+    can.
+   </span>
+   <span id="86_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="87_tomatoes" onclick="play(this)">
+    tomatoes
+   </span>
+   <span id="88_in" onclick="play(this)">
+    in
+   </span>
+   <span id="89_the" onclick="play(this)">
+    the
+   </span>
+   <span id="810_pot" onclick="play(this)">
+    pot.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="90_7" onclick="play(this)">
+    7.
+   </span>   <span id="92_open" onclick="play(this)">
+    Open
+   </span>
+   <span id="93_the" onclick="play(this)">
+    the
+   </span>
+   <span id="94_coconut" onclick="play(this)">
+    coconut
+   </span>
+   <span id="95_milk" onclick="play(this)">
+    milk
+   </span>
+   <span id="96_can" onclick="play(this)">
+    can.
+   </span>
+   <span id="97_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="98_the" onclick="play(this)">
+    the
+   </span>
+   <span id="99_coconut" onclick="play(this)">
+    coconut
+   </span>
+   <span id="910_in" onclick="play(this)">
+    in
+   </span>
+   <span id="911_the" onclick="play(this)">
+    the
+   </span>
+   <span id="912_pot" onclick="play(this)">
+    pot.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="100_8" onclick="play(this)">
+    8.
+   </span>   <span id="102_mix" onclick="play(this)">
+    Mix
+   </span>
+   <span id="103_everything" onclick="play(this)">
+    everything
+   </span>
+   <span id="104_together" onclick="play(this)">
+    together.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="110_9" onclick="play(this)">
+    9.
+   </span>   <span id="112_cook" onclick="play(this)">
+    Cook
+   </span>
+   <span id="113_for" onclick="play(this)">
+    for
+   </span>
+   <span id="114_5" onclick="play(this)">
+    5
+   </span>
+   <span id="115_minutes" onclick="play(this)">
+    minutes.
+   </span>
+  </p>
+  <p style="margin-bottom: 0in; line-height: 100%">
+   <span id="120_10" onclick="play(this)">
+    10.
+   </span>   <span id="122_put" onclick="play(this)">
+    Put
+   </span>
+   <span id="123_cilantro" onclick="play(this)">
+    cilantro
+   </span>
+   <span id="124_in" onclick="play(this)">
+    in
+   </span>
+   <span id="125_the" onclick="play(this)">
+    the
+   </span>
+   <span id="126_soup" onclick="play(this)">
+    soup.
+   </span>
+  </p>
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="coconut_audio" preload="auto" src="../sounds/coconut.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sweet_audio" preload="auto" src="../sounds/sweet.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pot_audio" preload="auto" src="../sounds/pot.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ginger_audio" preload="auto" src="../sounds/ginger.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="put_audio" preload="auto" src="../sounds/put.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="onions_audio" preload="auto" src="../sounds/onions.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="milk_audio" preload="auto" src="../sounds/milk.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cilantro_audio" preload="auto" src="../sounds/cilantro.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cut_audio" preload="auto" src="../sounds/cut.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="everything_audio" preload="auto" src="../sounds/everything.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="open_audio" preload="auto" src="../sounds/open.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hot_audio" preload="auto" src="../sounds/hot.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="mix_audio" preload="auto" src="../sounds/mix.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="3_audio" preload="auto" src="../sounds/3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2_audio" preload="auto" src="../sounds/2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="5_audio" preload="auto" src="../sounds/5.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="4_audio" preload="auto" src="../sounds/4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="7_audio" preload="auto" src="../sounds/7.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="6_audio" preload="auto" src="../sounds/6.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="peppers_audio" preload="auto" src="../sounds/peppers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="8_audio" preload="auto" src="../sounds/8.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="tomatoes_audio" preload="auto" src="../sounds/tomatoes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="zucchini_audio" preload="auto" src="../sounds/zucchini.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="them_audio" preload="auto" src="../sounds/them.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="oil_audio" preload="auto" src="../sounds/oil.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="peel_audio" preload="auto" src="../sounds/peel.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="9_audio" preload="auto" src="../sounds/9.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="garlic_audio" preload="auto" src="../sounds/garlic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cook_audio" preload="auto" src="../sounds/cook.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="instructions_audio" preload="auto" src="../sounds/instructions.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="tomato_audio" preload="auto" src="../sounds/tomato.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="10_audio" preload="auto" src="../sounds/10.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="potato_audio" preload="auto" src="../sounds/potato.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="curry_audio" preload="auto" src="../sounds/curry.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="together_audio" preload="auto" src="../sounds/together.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="soup_audio" preload="auto" src="../sounds/soup.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="can_audio" preload="auto" src="../sounds/can.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="potatoes_audio" preload="auto" src="../sounds/potatoes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spices_audio" preload="auto" src="../sounds/spices.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="minutes_audio" preload="auto" src="../sounds/minutes.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
