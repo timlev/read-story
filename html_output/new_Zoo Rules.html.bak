@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; ; text-align: left; orphans: 2; widows: 2 }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Zoo Rules
+  </title>
+  <meta content="LibreOffice 5.1.6.2 (Linux)" name="generator"/>
+  <meta content="levtim" name="author"/>
+  <meta content="00:00:00" name="created"/>
+  <meta content="2017-07-13T13:18:21.372222962" name="changed"/>
+  <meta content="14.0000" name="AppVersion"/>
+  <meta content="0" name="DocSecurity"/>
+  <meta content="false" name="HyperlinksChanged"/>
+  <meta content="false" name="LinksUpToDate"/>
+  <meta content="false" name="ScaleCrop"/>
+  <meta content="false" name="ShareDoc"/>
+  <meta content="2015-07-07T22:23:00" name="created"/>
+  <meta content="Tim" name="changedby"/>
+  <meta content="2017-07-12T03:49:00" name="changed"/>
+  <style type="text/css">
+   @page { margin: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
+  </style>
+ </head>
+ <body dir="ltr" lang="en-US" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p style="margin-bottom: 0.14in; line-height: 115%">
+   <span id="00_we" onclick="play(this)">
+    We
+   </span>
+   <span id="01_are" onclick="play(this)">
+    are
+   </span>
+   <span id="02_very" onclick="play(this)">
+    very
+   </span>
+   <span id="03_happy" onclick="play(this)">
+    happy
+   </span>
+   <span id="04_to" onclick="play(this)">
+    to
+   </span>
+   <span id="05_go" onclick="play(this)">
+    go
+   </span>
+   <span id="06_to" onclick="play(this)">
+    to
+   </span>
+   <span id="07_the" onclick="play(this)">
+    the
+   </span>
+   <span id="08_zoo" onclick="play(this)">
+    zoo
+   </span>
+   <span id="09_on" onclick="play(this)">
+    on
+   </span>
+   <span id="010_monday" onclick="play(this)">
+    Monday.
+   </span>
+   <span id="011_there" onclick="play(this)">
+    There
+   </span>
+   <span id="012_are" onclick="play(this)">
+    are
+   </span>
+   <span id="013_three" onclick="play(this)">
+    three
+   </span>
+   <span id="014_important" onclick="play(this)">
+    important
+   </span>
+   <span id="015_things" onclick="play(this)">
+    things
+   </span>
+   <span id="016_to" onclick="play(this)">
+    to
+   </span>
+   <span id="017_remember" onclick="play(this)">
+    remember.
+   </span>
+  </p>
+  <p style="margin-bottom: 0.14in; line-height: 115%">
+  </p>
+  <ol>
+   <li>
+   </li>
+   <p style="margin-bottom: 0.14in; line-height: 115%">
+    <span id="21_wear" onclick="play(this)">
+     Wear
+    </span>
+    <span id="22_good" onclick="play(this)">
+     good
+    </span>
+    <span id="23_shoes" onclick="play(this)">
+     shoes
+    </span>
+    <span id="24_for" onclick="play(this)">
+     for
+    </span>
+    <span id="25_walking" onclick="play(this)">
+     walking.
+    </span>
+    <span id="26_we" onclick="play(this)">
+     We
+    </span>
+    <span id="27_will" onclick="play(this)">
+     will
+    </span>
+    <span id="28_be" onclick="play(this)">
+     be
+    </span>
+    <span id="29_walking" onclick="play(this)">
+     walking
+    </span>
+    <span id="210_a" onclick="play(this)">
+     a
+    </span>
+    <span id="211_long" onclick="play(this)">
+     long
+    </span>
+    <span id="212_time" onclick="play(this)">
+     time,
+    </span>
+    <span id="213_so" onclick="play(this)">
+     so
+    </span>
+    <span id="214_you" onclick="play(this)">
+     you
+    </span>
+    <span id="215_will" onclick="play(this)">
+     will
+    </span>
+    <span id="216_need" onclick="play(this)">
+     need
+    </span>
+    <span id="217_to" onclick="play(this)">
+     to
+    </span>
+    <span id="218_wear" onclick="play(this)">
+     wear
+    </span>
+    <span id="219_comfortable" onclick="play(this)">
+     comfortable
+    </span>
+    <span id="220_shoes" onclick="play(this)">
+     shoes.
+    </span>
+   </p>
+  </ol>
+  <p style="margin-left: 0.5in; margin-bottom: 0.14in; line-height: 115%">
+  </p>
+  <ol start="2">
+   <li>
+   </li>
+   <p style="margin-bottom: 0.14in; line-height: 115%">
+    <span id="40_stay" onclick="play(this)">
+     Stay
+    </span>
+    <span id="41_together" onclick="play(this)">
+     together
+    </span>
+    <span id="42_with" onclick="play(this)">
+     with
+    </span>
+    <span id="43_your" onclick="play(this)">
+     your
+    </span>
+    <span id="44_group" onclick="play(this)">
+     group.
+    </span>
+    <span id="45_it" onclick="play(this)">
+     It
+    </span>
+    <span id="46_is" onclick="play(this)">
+     is
+    </span>
+    <span id="47_easy" onclick="play(this)">
+     easy
+    </span>
+    <span id="48_to" onclick="play(this)">
+     to
+    </span>
+    <span id="49_get" onclick="play(this)">
+     get
+    </span>
+    <span id="410_lost" onclick="play(this)">
+     lost
+    </span>
+    <span id="411_in" onclick="play(this)">
+     in
+    </span>
+    <span id="412_the" onclick="play(this)">
+     the
+    </span>
+    <span id="413_zoo" onclick="play(this)">
+     zoo,
+    </span>
+    <span id="414_so" onclick="play(this)">
+     so
+    </span>
+    <span id="415_be" onclick="play(this)">
+     be
+    </span>
+    <span id="416_careful" onclick="play(this)">
+     careful
+    </span>
+    <span id="417_and" onclick="play(this)">
+     and
+    </span>
+    <span id="418_stay" onclick="play(this)">
+     stay
+    </span>
+    <span id="419_with" onclick="play(this)">
+     with
+    </span>
+    <span id="420_your" onclick="play(this)">
+     your
+    </span>
+    <span id="421_group" onclick="play(this)">
+     group.
+    </span>
+    <span id="422_if" onclick="play(this)">
+     If
+    </span>
+    <span id="423_you" onclick="play(this)">
+     you
+    </span>
+    <span id="424_need" onclick="play(this)">
+     need
+    </span>
+    <span id="425_to" onclick="play(this)">
+     to
+    </span>
+    <span id="426_take" onclick="play(this)">
+     take
+    </span>
+    <span id="427_a" onclick="play(this)">
+     a
+    </span>
+    <span id="428_break" onclick="play(this)">
+     break,
+    </span>
+    <span id="429_tell" onclick="play(this)">
+     tell
+    </span>
+    <span id="430_your" onclick="play(this)">
+     your
+    </span>
+    <span id="431_teacher" onclick="play(this)">
+     teacher
+    </span>
+    <span id="432_and" onclick="play(this)">
+     and
+    </span>
+    <span id="433_everyone" onclick="play(this)">
+     everyone
+    </span>
+    <span id="434_can" onclick="play(this)">
+     can
+    </span>
+    <span id="435_take" onclick="play(this)">
+     take
+    </span>
+    <span id="436_a" onclick="play(this)">
+     a
+    </span>
+    <span id="437_break" onclick="play(this)">
+     break.
+    </span>
+   </p>
+  </ol>
+  <p style="margin-left: 0.5in; margin-bottom: 0.14in; line-height: 115%">
+  </p>
+  <ol start="3">
+   <li>
+   </li>
+   <p style="margin-bottom: 0.14in; line-height: 115%">
+    <span id="60_bring" onclick="play(this)">
+     Bring
+    </span>
+    <span id="61_water" onclick="play(this)">
+     water
+    </span>
+    <span id="62_and" onclick="play(this)">
+     and
+    </span>
+    <span id="63_a" onclick="play(this)">
+     a
+    </span>
+    <span id="64_camera" onclick="play(this)">
+     camera.
+    </span>
+    <span id="65_you" onclick="play(this)">
+     You
+    </span>
+    <span id="66_can" onclick="play(this)">
+     can
+    </span>
+    <span id="67_get" onclick="play(this)">
+     get
+    </span>
+    <span id="68_water" onclick="play(this)">
+     water
+    </span>
+    <span id="69_at" onclick="play(this)">
+     at
+    </span>
+    <span id="610_the" onclick="play(this)">
+     the
+    </span>
+    <span id="611_zoo" onclick="play(this)">
+     zoo,
+    </span>
+    <span id="612_but" onclick="play(this)">
+     but
+    </span>
+    <span id="613_it" onclick="play(this)">
+     it
+    </span>
+    <span id="614_is" onclick="play(this)">
+     is
+    </span>
+    <span id="615_a" onclick="play(this)">
+     a
+    </span>
+    <span id="616_good" onclick="play(this)">
+     good
+    </span>
+    <span id="617_idea" onclick="play(this)">
+     idea
+    </span>
+    <span id="618_to" onclick="play(this)">
+     to
+    </span>
+    <span id="619_bring" onclick="play(this)">
+     bring
+    </span>
+    <span id="620_a" onclick="play(this)">
+     a
+    </span>
+    <span id="621_water" onclick="play(this)">
+     water
+    </span>
+    <span id="622_bottle" onclick="play(this)">
+     bottle.
+    </span>
+    <span id="623_you" onclick="play(this)">
+     You
+    </span>
+    <span id="624_can" onclick="play(this)">
+     can
+    </span>
+    <span id="625_take" onclick="play(this)">
+     take
+    </span>
+    <span id="626_pictures" onclick="play(this)">
+     pictures
+    </span>
+    <span id="627_at" onclick="play(this)">
+     at
+    </span>
+    <span id="628_the" onclick="play(this)">
+     the
+    </span>
+    <span id="629_zoo" onclick="play(this)">
+     zoo
+    </span>
+    <span id="630_and" onclick="play(this)">
+     and
+    </span>
+    <span id="631_show" onclick="play(this)">
+     show
+    </span>
+    <span id="632_them" onclick="play(this)">
+     them
+    </span>
+    <span id="633_to" onclick="play(this)">
+     to
+    </span>
+    <span id="634_your" onclick="play(this)">
+     your
+    </span>
+    <span id="635_friends" onclick="play(this)">
+     friends.
+    </span>
+   </p>
+  </ol>
+  <p style="margin-left: 0.5in; margin-bottom: 0.14in; line-height: 115%">
+   <span id="71_remember" onclick="play(this)">
+    Remember:
+   </span>
+   <span id="72_always" onclick="play(this)">
+    Always
+   </span>
+   <span id="73_ask" onclick="play(this)">
+    ask
+   </span>
+   <span id="74_before" onclick="play(this)">
+    before
+   </span>
+   <span id="75_you" onclick="play(this)">
+    you
+   </span>
+   <span id="76_take" onclick="play(this)">
+    take
+   </span>
+   <span id="77_someone's" onclick="play(this)">
+    someone's
+   </span>
+   <span id="78_picture" onclick="play(this)">
+    picture.
+   </span>
+  </p>
+  <p style="margin-bottom: 0.14in; line-height: 115%">
+  </p>
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="walking_audio" preload="auto" src="../sounds/walking.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="everyone_audio" preload="auto" src="../sounds/everyone.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="shoes_audio" preload="auto" src="../sounds/shoes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="show_audio" preload="auto" src="../sounds/show.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="it_audio" preload="auto" src="../sounds/it.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="comfortable_audio" preload="auto" src="../sounds/comfortable.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="need_audio" preload="auto" src="../sounds/need.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="are_audio" preload="auto" src="../sounds/are.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="go_audio" preload="auto" src="../sounds/go.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="your_audio" preload="auto" src="../sounds/your.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="if_audio" preload="auto" src="../sounds/if.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="idea_audio" preload="auto" src="../sounds/idea.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="group_audio" preload="auto" src="../sounds/group.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="things_audio" preload="auto" src="../sounds/things.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="there_audio" preload="auto" src="../sounds/there.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="water_audio" preload="auto" src="../sounds/water.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="three_audio" preload="auto" src="../sounds/three.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="long_audio" preload="auto" src="../sounds/long.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="zoo_audio" preload="auto" src="../sounds/zoo.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="camera_audio" preload="auto" src="../sounds/camera.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="take_audio" preload="auto" src="../sounds/take.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="easy_audio" preload="auto" src="../sounds/easy.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="you_audio" preload="auto" src="../sounds/you.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="before_audio" preload="auto" src="../sounds/before.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="tell_audio" preload="auto" src="../sounds/tell.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="happy_audio" preload="auto" src="../sounds/happy.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="be_audio" preload="auto" src="../sounds/be.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="we_audio" preload="auto" src="../sounds/we.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="good_audio" preload="auto" src="../sounds/good.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="monday_audio" preload="auto" src="../sounds/monday.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="get_audio" preload="auto" src="../sounds/get.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="very_audio" preload="auto" src="../sounds/very.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="friends_audio" preload="auto" src="../sounds/friends.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="but_audio" preload="auto" src="../sounds/but.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="stay_audio" preload="auto" src="../sounds/stay.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="break_audio" preload="auto" src="../sounds/break.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="important_audio" preload="auto" src="../sounds/important.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="them_audio" preload="auto" src="../sounds/them.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="wear_audio" preload="auto" src="../sounds/wear.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ask_audio" preload="auto" src="../sounds/ask.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="careful_audio" preload="auto" src="../sounds/careful.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="with_audio" preload="auto" src="../sounds/with.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="teacher_audio" preload="auto" src="../sounds/teacher.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="picture_audio" preload="auto" src="../sounds/picture.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="remember_audio" preload="auto" src="../sounds/remember.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lost_audio" preload="auto" src="../sounds/lost.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bring_audio" preload="auto" src="../sounds/bring.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="always_audio" preload="auto" src="../sounds/always.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="together_audio" preload="auto" src="../sounds/together.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="will_audio" preload="auto" src="../sounds/will.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="so_audio" preload="auto" src="../sounds/so.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="can_audio" preload="auto" src="../sounds/can.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bottle_audio" preload="auto" src="../sounds/bottle.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="time_audio" preload="auto" src="../sounds/time.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pictures_audio" preload="auto" src="../sounds/pictures.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="someone's_audio" preload="auto" src="../sounds/someone's.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="at_audio" preload="auto" src="../sounds/at.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
