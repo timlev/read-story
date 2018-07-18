@@ -1,0 +1,8 @@
+toilet
+manager
+leaking
+fridge
+shower
+sink
+locked
+tub
