@@ -1,0 +1,5 @@
+classrooms
+playground
+gaga
+gym
+hallways
