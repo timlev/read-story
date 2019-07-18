@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.5in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Cake - Instant Pot
+  </title>
+  <meta content="LibreOffice 6.0.7.3 (Linux)" name="generator"/>
+  <meta content="00:00:00" name="created"/>
+  <meta content="00:00:00" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.5in }
+		p { margin-bottom: 0.1in; line-height: 115% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p align="center" style="margin-bottom: 0in">
+   <span id="01_cake" onclick="play(this)">
+    Cake
+   </span>
+  </p>
+  <p style="margin-bottom: 0in">
+   <span id="10_we" onclick="play(this)">
+    We
+   </span>
+   <span id="11_need" onclick="play(this)">
+    need
+   </span>
+  </p>
+  <ul>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="20_1" onclick="play(this)">
+      1
+     </span>
+     <span id="21_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="22_flour" onclick="play(this)">
+      flour
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="30_1" onclick="play(this)">
+      1
+     </span>
+     <span id="31_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="32_water" onclick="play(this)">
+      water
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="41_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="42_butter" onclick="play(this)">
+      butter
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="51_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="52_sugar" onclick="play(this)">
+      sugar
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="61_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="62_milk" onclick="play(this)">
+      milk
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="70_1" onclick="play(this)">
+      1
+     </span>
+     <span id="71_egg" onclick="play(this)">
+      egg
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="80_1" onclick="play(this)">
+      1
+     </span>
+     <span id="81_small" onclick="play(this)">
+      small
+     </span>
+     <span id="82_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="83_vanilla" onclick="play(this)">
+      vanilla
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="90_1" onclick="play(this)">
+      1
+     </span>
+     <span id="91_small" onclick="play(this)">
+      small
+     </span>
+     <span id="92_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="93_baking" onclick="play(this)">
+      baking
+     </span>
+     <span id="94_powder" onclick="play(this)">
+      powder
+     </span>
+    </p>
+   </li>
+  </ul>
+  <p style="margin-bottom: 0in">
+  </p>
+  <p style="margin-bottom: 0in">
+  </p>
+  <p style="margin-bottom: 0in">
+   <span id="120_how" onclick="play(this)">
+    How
+   </span>
+   <span id="121_to" onclick="play(this)">
+    to
+   </span>
+   <span id="122_bake" onclick="play(this)">
+    bake:
+   </span>
+  </p>
+  <ol>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="130_mix" onclick="play(this)">
+      Mix
+     </span>
+     <span id="131_flour" onclick="play(this)">
+      flour
+     </span>
+     <span id="132_and" onclick="play(this)">
+      and
+     </span>
+     <span id="133_baking" onclick="play(this)">
+      baking
+     </span>
+     <span id="134_powder" onclick="play(this)">
+      powder.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="140_mix" onclick="play(this)">
+      Mix
+     </span>
+     <span id="141_butter" onclick="play(this)">
+      butter
+     </span>
+     <span id="142_and" onclick="play(this)">
+      and
+     </span>
+     <span id="143_sugar" onclick="play(this)">
+      sugar.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="150_mix" onclick="play(this)">
+      Mix
+     </span>
+     <span id="151_egg" onclick="play(this)">
+      egg
+     </span>
+     <span id="152_and" onclick="play(this)">
+      and
+     </span>
+     <span id="153_vanilla" onclick="play(this)">
+      vanilla.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="160_slowly" onclick="play(this)">
+      Slowly
+     </span>
+     <span id="161_mix" onclick="play(this)">
+      mix
+     </span>
+     <span id="162_together" onclick="play(this)">
+      together.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="170_mix" onclick="play(this)">
+      Mix
+     </span>
+     <span id="171_milk" onclick="play(this)">
+      milk
+     </span>
+     <span id="172_together" onclick="play(this)">
+      together.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="180_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="181_butter" onclick="play(this)">
+      butter
+     </span>
+     <span id="182_on" onclick="play(this)">
+      on
+     </span>
+     <span id="183_a" onclick="play(this)">
+      a
+     </span>
+     <span id="184_pan" onclick="play(this)">
+      pan.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="190_pour" onclick="play(this)">
+      Pour
+     </span>
+     <span id="191_everything" onclick="play(this)">
+      everything
+     </span>
+     <span id="192_in" onclick="play(this)">
+      in
+     </span>
+     <span id="193_the" onclick="play(this)">
+      the
+     </span>
+     <span id="194_pan" onclick="play(this)">
+      pan.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="200_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="201_foil" onclick="play(this)">
+      foil
+     </span>
+     <span id="202_on" onclick="play(this)">
+      on
+     </span>
+     <span id="203_the" onclick="play(this)">
+      the
+     </span>
+     <span id="204_pan" onclick="play(this)">
+      pan.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="210_pour" onclick="play(this)">
+      Pour
+     </span>
+     <span id="211_water" onclick="play(this)">
+      water.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="220_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="221_pan" onclick="play(this)">
+      pan
+     </span>
+     <span id="222_in" onclick="play(this)">
+      in.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="230_cook" onclick="play(this)">
+      Cook
+     </span>
+     <span id="231_for" onclick="play(this)">
+      for
+     </span>
+     <span id="232_30" onclick="play(this)">
+      30
+     </span>
+     <span id="233_minutes" onclick="play(this)">
+      minutes.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="240_wait" onclick="play(this)">
+      Wait
+     </span>
+     <span id="241_10" onclick="play(this)">
+      10
+     </span>
+     <span id="242_minutes" onclick="play(this)">
+      minutes.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="250_take" onclick="play(this)">
+      Take
+     </span>
+     <span id="251_out" onclick="play(this)">
+      out
+     </span>
+     <span id="252_the" onclick="play(this)">
+      the
+     </span>
+     <span id="253_cake" onclick="play(this)">
+      cake.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="260_wait" onclick="play(this)">
+      Wait.
+     </span>
+     <span id="261_the" onclick="play(this)">
+      The
+     </span>
+     <span id="262_cake" onclick="play(this)">
+      cake
+     </span>
+     <span id="263_is" onclick="play(this)">
+      is
+     </span>
+     <span id="264_too" onclick="play(this)">
+      too
+     </span>
+     <span id="265_hot" onclick="play(this)">
+      hot.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in; border: none; padding: 0in">
+     <span id="270_eat" onclick="play(this)">
+      Eat
+     </span>
+     <span id="271_the" onclick="play(this)">
+      the
+     </span>
+     <span id="272_cake" onclick="play(this)">
+      cake.
+     </span>
+    </p>
+   </li>
+  </ol>
+  <p style="margin-bottom: 0in">
+  </p>
+  <audio id="and_audio" preload="auto" src="../sounds/and.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="is_audio" preload="auto" src="../sounds/is.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cook_audio" preload="auto" src="../sounds/cook.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="powder_audio" preload="auto" src="../sounds/powder.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="need_audio" preload="auto" src="../sounds/need.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="small_audio" preload="auto" src="../sounds/small.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bake_audio" preload="auto" src="../sounds/bake.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="milk_audio" preload="auto" src="../sounds/milk.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="out_audio" preload="auto" src="../sounds/out.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="mix_audio" preload="auto" src="../sounds/mix.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="for_audio" preload="auto" src="../sounds/for.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cup_audio" preload="auto" src="../sounds/cup.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sugar_audio" preload="auto" src="../sounds/sugar.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="hot_audio" preload="auto" src="../sounds/hot.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="slowly_audio" preload="auto" src="../sounds/slowly.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pour_audio" preload="auto" src="../sounds/pour.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pan_audio" preload="auto" src="../sounds/pan.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="take_audio" preload="auto" src="../sounds/take.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="we_audio" preload="auto" src="../sounds/we.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="10_audio" preload="auto" src="../sounds/10.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="flour_audio" preload="auto" src="../sounds/flour.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="water_audio" preload="auto" src="../sounds/water.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="how_audio" preload="auto" src="../sounds/how.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spoon_audio" preload="auto" src="../sounds/spoon.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="too_audio" preload="auto" src="../sounds/too.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="put_audio" preload="auto" src="../sounds/put.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="eat_audio" preload="auto" src="../sounds/eat.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="wait_audio" preload="auto" src="../sounds/wait.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="butter_audio" preload="auto" src="../sounds/butter.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="baking_audio" preload="auto" src="../sounds/baking.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="minutes_audio" preload="auto" src="../sounds/minutes.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="vanilla_audio" preload="auto" src="../sounds/vanilla.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="30_audio" preload="auto" src="../sounds/30.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="foil_audio" preload="auto" src="../sounds/foil.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="together_audio" preload="auto" src="../sounds/together.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cake_audio" preload="auto" src="../sounds/cake.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="everything_audio" preload="auto" src="../sounds/everything.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="egg_audio" preload="auto" src="../sounds/egg.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
