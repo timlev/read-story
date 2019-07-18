@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <style>
+   p {font-family: 'Didact Gothic', sans-serif; line-height: 1.5;text-indent: 5%;}
+ span:hover {cursor: pointer;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
+  <style type="text/css">
+   @page { margin: 0.5in }
+		p { margin-bottom: 0.1in;  }
+  </style>
+  <style>
+  </style>
+  <script src="../js/playsound.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Ramen Noodles - Instant Pot
+  </title>
+  <meta content="LibreOffice 6.0.7.3 (Linux)" name="generator"/>
+  <meta content="00:00:00" name="created"/>
+  <meta content="00:00:00" name="changed"/>
+  <style type="text/css">
+   @page { margin: 0.5in }
+		p { margin-bottom: 0.1in; line-height: 115% }
+  </style>
+ </head>
+ <body dir="ltr" lang="en" style="font-size:2em">
+  <img onclick="increaseFont()" src="../images/plus-800px.png"/>
+  <img onclick="decreaseFont()" src="../images/minus-800px.png"/>
+  <audio id="player" preload="auto" type="audio/mpeg">
+  </audio>
+  <p style="margin-bottom: 0in">
+   <span id="01_ramen" onclick="play(this)">
+    Ramen
+   </span>
+   <span id="02_noodles" onclick="play(this)">
+    Noodles
+   </span>
+  </p>
+  <p style="margin-bottom: 0in">
+  </p>
+  <p style="margin-bottom: 0in">
+   <span id="20_we" onclick="play(this)">
+    We
+   </span>
+   <span id="21_need" onclick="play(this)">
+    need
+   </span>
+  </p>
+  <ul>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="30_1" onclick="play(this)">
+      1
+     </span>
+     <span id="31_pack" onclick="play(this)">
+      pack
+     </span>
+     <span id="32_dry" onclick="play(this)">
+      dry
+     </span>
+     <span id="33_ramen" onclick="play(this)">
+      ramen
+     </span>
+     <span id="34_noodles" onclick="play(this)">
+      noodles
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="40_1" onclick="play(this)">
+      1
+     </span>
+     <span id="41_12" onclick="play(this)">
+      1/2
+     </span>
+     <span id="42_cup" onclick="play(this)">
+      cup
+     </span>
+     <span id="43_chicken" onclick="play(this)">
+      chicken
+     </span>
+     <span id="44_stock" onclick="play(this)">
+      stock
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="50_2" onclick="play(this)">
+      2
+     </span>
+     <span id="51_small" onclick="play(this)">
+      small
+     </span>
+     <span id="52_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="53_soy" onclick="play(this)">
+      soy
+     </span>
+     <span id="54_sauce" onclick="play(this)">
+      sauce
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="60_1" onclick="play(this)">
+      1
+     </span>
+     <span id="61_small" onclick="play(this)">
+      small
+     </span>
+     <span id="62_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="63_sesame" onclick="play(this)">
+      sesame
+     </span>
+     <span id="64_oil" onclick="play(this)">
+      oil
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="70_1" onclick="play(this)">
+      1
+     </span>
+     <span id="71_small" onclick="play(this)">
+      small
+     </span>
+     <span id="72_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="73_onion" onclick="play(this)">
+      onion
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="80_1" onclick="play(this)">
+      1
+     </span>
+     <span id="81_small" onclick="play(this)">
+      small
+     </span>
+     <span id="82_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="83_garlic" onclick="play(this)">
+      garlic
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="90_12" onclick="play(this)">
+      1/2
+     </span>
+     <span id="91_small" onclick="play(this)">
+      small
+     </span>
+     <span id="92_spoon" onclick="play(this)">
+      spoon
+     </span>
+     <span id="93_ginger" onclick="play(this)">
+      ginger
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="100_1" onclick="play(this)">
+      1
+     </span>
+     <span id="101_mushroom" onclick="play(this)">
+      mushroom
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="110_green" onclick="play(this)">
+      Green
+     </span>
+     <span id="111_onion" onclick="play(this)">
+      onion
+     </span>
+    </p>
+   </li>
+  </ul>
+  <p style="margin-bottom: 0in">
+  </p>
+  <p style="margin-bottom: 0in">
+   <span id="130_how" onclick="play(this)">
+    How
+   </span>
+   <span id="131_to" onclick="play(this)">
+    to
+   </span>
+   <span id="132_cook" onclick="play(this)">
+    cook
+   </span>
+  </p>
+  <ol>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="140_pour" onclick="play(this)">
+      Pour
+     </span>
+     <span id="141_the" onclick="play(this)">
+      the
+     </span>
+     <span id="142_stock" onclick="play(this)">
+      stock
+     </span>
+     <span id="143_in" onclick="play(this)">
+      in
+     </span>
+     <span id="144_the" onclick="play(this)">
+      the
+     </span>
+     <span id="145_pot" onclick="play(this)">
+      pot.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="150_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="151_the" onclick="play(this)">
+      the
+     </span>
+     <span id="152_ramen" onclick="play(this)">
+      ramen
+     </span>
+     <span id="153_noodles" onclick="play(this)">
+      noodles
+     </span>
+     <span id="154_pack" onclick="play(this)">
+      pack
+     </span>
+     <span id="155_in" onclick="play(this)">
+      in.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="160_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="161_everything" onclick="play(this)">
+      everything
+     </span>
+     <span id="162_on" onclick="play(this)">
+      on
+     </span>
+     <span id="163_top" onclick="play(this)">
+      top
+     </span>
+     <span id="164_of" onclick="play(this)">
+      of
+     </span>
+     <span id="165_the" onclick="play(this)">
+      the
+     </span>
+     <span id="166_ramen" onclick="play(this)">
+      ramen.
+     </span>
+     <span id="167_put" onclick="play(this)">
+      Put
+     </span>
+     <span id="168_the" onclick="play(this)">
+      the
+     </span>
+     <span id="169_lid" onclick="play(this)">
+      lid
+     </span>
+     <span id="1610_on" onclick="play(this)">
+      on
+     </span>
+     <span id="1611_the" onclick="play(this)">
+      the
+     </span>
+     <span id="1612_pot" onclick="play(this)">
+      pot.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="170_set" onclick="play(this)">
+      Set
+     </span>
+     <span id="171_the" onclick="play(this)">
+      the
+     </span>
+     <span id="172_cook" onclick="play(this)">
+      cook
+     </span>
+     <span id="173_time" onclick="play(this)">
+      time
+     </span>
+     <span id="174_to" onclick="play(this)">
+      to
+     </span>
+     <span id="175_1" onclick="play(this)">
+      1
+     </span>
+     <span id="176_minute" onclick="play(this)">
+      minute
+     </span>
+     <span id="177_on" onclick="play(this)">
+      on
+     </span>
+     <span id="178_high" onclick="play(this)">
+      high.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="180_carefully" onclick="play(this)">
+      Carefully
+     </span>
+     <span id="181_open" onclick="play(this)">
+      open
+     </span>
+     <span id="182_the" onclick="play(this)">
+      the
+     </span>
+     <span id="183_pot" onclick="play(this)">
+      pot.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="190_mix" onclick="play(this)">
+      Mix
+     </span>
+     <span id="191_the" onclick="play(this)">
+      the
+     </span>
+     <span id="192_noodles" onclick="play(this)">
+      noodles.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="200_pour" onclick="play(this)">
+      Pour
+     </span>
+     <span id="201_the" onclick="play(this)">
+      the
+     </span>
+     <span id="202_ramen" onclick="play(this)">
+      ramen
+     </span>
+     <span id="203_soup" onclick="play(this)">
+      soup
+     </span>
+     <span id="204_into" onclick="play(this)">
+      into
+     </span>
+     <span id="205_a" onclick="play(this)">
+      a
+     </span>
+     <span id="206_bowl" onclick="play(this)">
+      bowl.
+     </span>
+    </p>
+   </li>
+   <li>
+    <p style="margin-bottom: 0in">
+     <span id="210_eat" onclick="play(this)">
+      Eat.
+     </span>
+    </p>
+   </li>
+  </ol>
+  <audio id="set_audio" preload="auto" src="../sounds/set.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pot_audio" preload="auto" src="../sounds/pot.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ginger_audio" preload="auto" src="../sounds/ginger.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="high_audio" preload="auto" src="../sounds/high.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="need_audio" preload="auto" src="../sounds/need.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="in_audio" preload="auto" src="../sounds/in.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="soy_audio" preload="auto" src="../sounds/soy.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="chicken_audio" preload="auto" src="../sounds/chicken.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="noodles_audio" preload="auto" src="../sounds/noodles.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="open_audio" preload="auto" src="../sounds/open.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="lid_audio" preload="auto" src="../sounds/lid.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="mix_audio" preload="auto" src="../sounds/mix.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cup_audio" preload="auto" src="../sounds/cup.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="top_audio" preload="auto" src="../sounds/top.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bowl_audio" preload="auto" src="../sounds/bowl.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="1_audio" preload="auto" src="../sounds/1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="how_audio" preload="auto" src="../sounds/how.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="2_audio" preload="auto" src="../sounds/2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sauce_audio" preload="auto" src="../sounds/sauce.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="into_audio" preload="auto" src="../sounds/into.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="stock_audio" preload="auto" src="../sounds/stock.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="a_audio" preload="auto" src="../sounds/a.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="we_audio" preload="auto" src="../sounds/we.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="oil_audio" preload="auto" src="../sounds/oil.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="to_audio" preload="auto" src="../sounds/to.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="mushroom_audio" preload="auto" src="../sounds/mushroom.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spoon_audio" preload="auto" src="../sounds/spoon.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="garlic_audio" preload="auto" src="../sounds/garlic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cook_audio" preload="auto" src="../sounds/cook.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="ramen_audio" preload="auto" src="../sounds/ramen.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="eat_audio" preload="auto" src="../sounds/eat.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="minute_audio" preload="auto" src="../sounds/minute.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="dry_audio" preload="auto" src="../sounds/dry.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="on_audio" preload="auto" src="../sounds/on.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="12_audio" preload="auto" src="../sounds/12.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="onion_audio" preload="auto" src="../sounds/onion.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="of_audio" preload="auto" src="../sounds/of.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="put_audio" preload="auto" src="../sounds/put.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pour_audio" preload="auto" src="../sounds/pour.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sesame_audio" preload="auto" src="../sounds/sesame.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="soup_audio" preload="auto" src="../sounds/soup.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="green_audio" preload="auto" src="../sounds/green.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="carefully_audio" preload="auto" src="../sounds/carefully.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="time_audio" preload="auto" src="../sounds/time.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="small_audio" preload="auto" src="../sounds/small.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="everything_audio" preload="auto" src="../sounds/everything.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="the_audio" preload="auto" src="../sounds/the.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="pack_audio" preload="auto" src="../sounds/pack.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
