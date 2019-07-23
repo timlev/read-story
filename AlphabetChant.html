@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>The Alphabet</title>
+<script>
+function play(item){
+	var soundfile = "alphabet_sounds/" + item.id + ".mp3";
+	var audiotag = document.getElementById("audio");
+	audiotag.src = soundfile;
+	audiotag.play();
+}
+</script>
+</head>
+<body>
+<audio id="audio" type="audio/mpeg"> </audio>
+<!-- Create  Mappings -->
+<img src = "images/1 - ABC Chart Filled-Laubach.png" alt = "Alphabet" border = "0" usemap = "#letters"/>
+
+<map name = "letters">
+   <area shape="rect"
+      id="A"
+      coords = "21,34,48,63"
+      alt = "A"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="a"
+      coords = "47,37,74,66"
+      alt = "a"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="apple"
+      coords = "68,29,201,142"
+      alt = "apple"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+
+   <area shape="rect"
+      id="B"
+      coords = "237,34,257,67"
+      alt = "B"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="b"
+      coords = "257,33,277,66"
+      alt = "b"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="bird"
+      coords = "288,21,419,151"
+      alt = "bird"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+
+   <area shape="rect"
+      id="C"
+      coords = "442,33,468,63"
+      alt = "C"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="c"
+      coords = "468,43,485,65"
+      alt = "c"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="cup"
+      coords = "500,24,630,150"
+      alt = "cup"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+
+
+   <area shape="rect"
+      id="D"
+      coords = "658,33,682,67"
+      alt = "D"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="d"
+      coords = "683,33,707,67"
+      alt = "d"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="dish"
+      coords = "730,25,822,149"
+      alt = "dish"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+
+   <area shape="rect"
+      id="E"
+      coords = "870,33,888,65"
+      alt = "E"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="e"
+      coords = "889,34,910,66"
+      alt = "e"
+      target = "_self"
+      onClick = "play(this)"
+      />
+
+   <area shape="rect"
+      id="egg"
+      coords = "920,34,1048,148"
+      alt = "apple"
+      target = "_self"
+      onClick = "play(this)"
+      />
+</map>
+</body>
+</html>
