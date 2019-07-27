@@ -1,12 +1,45 @@
 <html>
 <head>
 <title>The Alphabet</title>
-<script>
-function play(item){
-	var soundobj = document.getElementById(item.id+"_audio");
-	soundobj.play();
+  <script>
+	  clickedWords = [];
+originalTitle = "";
+function play(obj){
+	word = obj.id;
+	word = word.slice(word.indexOf("_") + 1);
+	console.log(word);
+	if (clickedWords.indexOf(word) == -1){
+		clickedWords.push(word);
+		console.log(clickedWords);
+		console.log(clickedWords.length);
+		if (document.title.indexOf("---") == -1){
+			originalTitle = document.title;
+		}
+		
+		document.title = clickedWords.length.toString() + "---" + originalTitle;
+	}
+	var audioTagId = parseId(obj.id);
+	var audioTag = document.getElementById(audioTagId);
+	colorBackground(obj, "yellow");
+	audioTag.play();
+
+
+	audioTag.addEventListener("ended", function(){
+		obj.style.backgroundColor = "transparent";
+	});
+	
 }
-</script>
+
+function colorBackground(obj, color){
+	obj.setAttribute("fill", "rbg(100,100,100)");
+}
+
+function parseId(id){
+	var audioTagId = id.slice(id.indexOf("_") + 1);
+	audioTagId += "_audio";
+	return audioTagId;
+}
+  </script>
 </head>
 <body>
 <!--
@@ -481,7 +514,7 @@ path:hover{
       <g class="com.sun.star.drawing.TableShape">
        <g>
         <rect class="BoundingBox" stroke="none" fill="none" x="476" y="476" width="26942" height="20639"/>
-        <text class="TextShape"><tspan class="TextParagraph" font-family="Didact Gothic, sans-serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="476" y="1361"><tspan fill="rgb(0,0,0)" stroke="none" id="A" onClick="document.getElementById('A_audio').play()">A</tspan><tspan id="A" onClick="document.getElementById('a_audio').play()"> a</tspan></tspan></tspan></text>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Didact Gothic, sans-serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="476" y="1361"><tspan fill="rgb(0,0,0)" stroke="none" id="1_A" onclick="play(this)">A</tspan><tspan id="A" onClick="document.getElementById('a_audio').play()"> a</tspan></tspan></tspan></text>
         <text class="TextShape"><tspan class="TextParagraph" font-family="Didact Gothic, sans-serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="5953" y="1361"><tspan fill="rgb(0,0,0)" stroke="none">B b</tspan></tspan></tspan></text>
         <text class="TextShape"><tspan class="TextParagraph" font-family="Didact Gothic, sans-serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="11319" y="1361"><tspan fill="rgb(0,0,0)" stroke="none">C c</tspan></tspan></tspan></text>
         <text class="TextShape"><tspan class="TextParagraph" font-family="Didact Gothic, sans-serif" font-size="847px" font-weight="400"><tspan class="TextPosition" x="16685" y="1361"><tspan fill="rgb(0,0,0)" stroke="none">D d</tspan></tspan></tspan></text>
