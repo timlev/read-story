@@ -50,12 +50,19 @@ function parseId(id){
 <svg version="1.2" width="279.4mm" height="215.9mm" viewBox="0 0 27940 21590" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
   <defs>
           <style type="text/css">
-              @font-face {
-                  font-family: 'Didact Gothic';
-                  src: url('DidactGothic-Regular.ttf');
-                  src: url('system_san_francisco_display_regular-webfont.eot?#iefix') format('embedded-opentype'), url('system_san_francisco_display_regular-webfont.woff') format('woff'), url('system_san_francisco_display_regular-webfont.ttf') format('truetype'), url('system_san_francisco_display_regular-webfont.svg#sfns_displayregular') format('svg');
-                  font-weight: normal;
-                  font-style: normal; }
+            /* didact-gothic-regular - latin */
+            @font-face {
+              font-family: 'Didact Gothic';
+              font-style: normal;
+              font-weight: 400;
+              src: url('./fonts/didact-gothic-v13-latin-regular.eot'); /* IE9 Compat Modes */
+              src: local('Didact Gothic Regular'), local('DidactGothic-Regular'),
+                   url('./fonts/didact-gothic-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                   url('./fonts/didact-gothic-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                   url('./fonts/didact-gothic-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+                   url('./fonts/didact-gothic-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                   url('./fonts/didact-gothic-v13-latin-regular.svg#DidactGothic') format('svg'); /* Legacy iOS */
+            }
           </style>
       </defs>
  <defs class="ClipPathGroup">
