@@ -8,7 +8,7 @@ parser.add_argument("--output_dir", default="./sounds")
 #parser.add_argument("--skip_sounds", action="store_true")
 args = parser.parse_args(sys.argv[1:])
 
-print args.input
+print(args.input)
 
 def record(word, directory = args.output_dir):
     os.system('rec "' + os.path.join(directory, word) + '.wav"')
@@ -22,7 +22,7 @@ def convert(word, directory = "./"):
 
 def remove_wave(filename, directory = "./"):
     os.remove(os.path.join(directory, filename))
-    print "rm " + filename
+    print("rm " + filename)
 
 
 #filename = "missing_words.txt"
@@ -39,26 +39,25 @@ for filename in allfilenames:
 
     soundlist = os.listdir(soundsdir)
 
-
-    soundlist = [x.replace(".mp3","") for x in soundlist if not x.startswith(".")]
+    soundlist = [x.replace(".mp3","") for x in soundlist if not x.startswith( '.' )]
 
     wordlist = []
 
-    with open(filename, "rb") as fp:
+    with open(filename, "r+") as fp:
         wordlist = fp.readlines()
-
-    wordlist = [x.rstrip() for x in wordlist if not x.startswith(".")]
+    print(wordlist)
+    wordlist = [str(x).rstrip() for x in wordlist if not str(x).startswith( '.' )]
 
 
     missing_words = [x for x in wordlist if x not in soundlist]
 
-    print missing_words
+    print(missing_words)
 
     for word in missing_words:
-        print "\n\n\n\n\n"
-        print word
-        print "**********************************************"
-        print "\n\n\n\n\n"
+        print("\n\n\n\n\n")
+        print(word)
+        print("**********************************************")
+        print("\n\n\n\n\n")
         record(word, soundsdir)
         #record(word)
 
