@@ -14,9 +14,11 @@ def stripID(audioID):
     return chunk
 
 def tokenize_word(word):
-    token = word.lower()
-    token = "".join([x for x in token if x in string.ascii_letters + string.digits     + "-" +"'"])
+    token = str(word).lower()
+    acceptableCharacters = string.ascii_letters + string.digits     + "-" +"'"
+    token = "".join([x for x in token if x in acceptableCharacters])
     if token != "":
+        print(token)
         return token
     else:
         return False
@@ -27,18 +29,20 @@ def buildAllAudio(master_word_list):
         audioID = token + "_audio"
         source = "../sounds/" + token + ".mp3"
         audio = soup.new_tag("audio", id=audioID, src=source, type="audio/mpeg", preload="auto")#, oncanplaythrough="console.log(this)")
-        #print audio
+        #print( audio)
         body.append(audio)
 
 
 def buildSpan(word, token, pnum, wnum):
     spanID = str(pnum) + str(wnum) + "_" + token
     tag = soup.new_tag("span", id=spanID, onclick="play(this)")
+    word += ' '
     tag.insert(0, word)
+    print(tag)
     return tag
 
 def download_sound_files(master_word_list):
-    print "Downloading sound files ..."
+    print( "Downloading sound files ...")
     soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
 
     for word in [word for word in master_word_list if word not in soundfiles]:
@@ -49,12 +53,12 @@ def download_sound_files(master_word_list):
                 download_wiktionary_word.convert_ogg_to_mp3(oggpath, True)
                 downloaded_word = True
         except:
-            print "Could't convert from wiki", word
+            print( "Could't convert from wiki", word)
         if downloaded_word == False:
             try:
                 mp3path = download_wiktionary_word.download_gstatic(word, "./sounds/")
             except:
-                print "Couldn't download from GStatic"
+                print( "Couldn't download from GStatic")
 
 
 parser = argparse.ArgumentParser()
@@ -67,10 +71,10 @@ args = parser.parse_args(sys.argv[1:])
 
 allfilenames = args.input
 
-print "Files to analyze: {}".format(allfilenames)
+print( "Files to analyze: {}".format(allfilenames))
 
 for filename in allfilenames:
-    print "Processing {} ...".format(filename)
+    print( "Processing {} ...".format(filename))
 
     base_name = os.path.basename(filename)
     short_name = os.path.splitext(base_name)[0]
@@ -79,6 +83,7 @@ for filename in allfilenames:
     #soup = BeautifulSoup(open(filename), "html.parser")
     soup = BeautifulSoup(open(filename), "html5lib")
     paragraphs = soup.findAll('p')
+    print(paragraphs)
 
     orig_header = soup.find('head')
     if orig_header is None:
@@ -128,10 +133,11 @@ for filename in allfilenames:
     master_word_list = []
 
     for pnum, p in enumerate(paragraphs):
-        words = p.text.replace("\n"," ").split(" ")
-        #print words
+        words = str(p.text).replace("\n"," ").split(" ")
+        print("enumerate")
+        print( words)
         p.string = ""
-        #print words
+        #print( words)
         for pos, word in enumerate(words):
             if u'\u2019' in word:
                 words[pos] = word.replace(u'\u2019', "'")
@@ -141,13 +147,13 @@ for filename in allfilenames:
                 words[pos] = word.replace(u'\u201d', '"')
             if u'\u2014' in word:
                 words[pos] = word.replace(u'\u2014', '--')
-        words = [x.encode('ascii', errors='ignore') for x in words]
+        #words = [x.encode('ascii', errors='ignore') for x in words]
 
 
         #words = [word.encode('ascii', 'xmlcharrefreplace') for word in words]
-        print words
+        print( words)
         if 'style' in p and "line-height" in p['style']:
-            #print p['style']
+            #print( p['style'])
             p['style'] = re.sub("line-height\s*?:.*?%","", p['style'])
         for wnum, word in enumerate(words):
             token = tokenize_word(word)
@@ -161,10 +167,11 @@ for filename in allfilenames:
 
     #Write out new html file
     newfile = args.output_dir + "/new_" + base_name
-    print "Saving new file ..."
+    print( "Saving new file ...")
+    #print(soup.encode("utf-8"))
     with open(newfile, "wb") as wb:
-      wb.write(soup.prettify(formatter="html"))
-    print "File saved at", newfile
+        wb.write(soup.encode("utf-8"))
+    print( "File saved at", newfile)
 
     #Add to Index
     if not args.skip_index:
@@ -175,10 +182,10 @@ for filename in allfilenames:
         index.body.append(new_link)
 
         #Write Index file
-        print "Updating index.html..."
+        print( "Updating index.html...")
         with open(args.index, "wb") as wb:
-          wb.write(index.prettify(formatter="html"))
-        print "File saved at " + args.index
+          wb.write(index.encode("utf-8"))
+        print( "File saved at " + args.index)
 
     #Download Words
     if not args.skip_sounds:
@@ -187,5 +194,5 @@ for filename in allfilenames:
     soundfiles = [f.replace(".mp3","") for f in os.listdir("./sounds/") if f.endswith(".mp3")]
     missing_words = "\n".join([word for word in master_word_list if word not in soundfiles])
 
-    with open("missing_words/" + base_name + "_missing_words.txt","wb") as wb:
+    with open("missing_words/" + base_name + "_missing_words.txt","w+") as wb:
         wb.write(missing_words)
