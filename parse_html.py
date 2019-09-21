@@ -174,18 +174,18 @@ for filename in allfilenames:
     print( "File saved at", newfile)
 
     #Add to Index
-    if not args.skip_index:
-        index = BeautifulSoup(open(args.index), "html5lib")
-        new_link = index.new_tag('a', href = newfile)
-        new_link.string = short_name
-        index.body.append(index.new_tag('br'))
-        index.body.append(new_link)
-
-        #Write Index file
-        print( "Updating index.html...")
-        with open(args.index, "wb") as wb:
-          wb.write(index.encode("utf-8"))
-        print( "File saved at " + args.index)
+    # if not args.skip_index:
+    #     index = BeautifulSoup(open(args.index), "html5lib")
+    #     new_link = index.new_tag('a', href = newfile)
+    #     new_link.string = short_name
+    #     index.body.append(index.new_tag('br'))
+    #     index.body.append(new_link)
+    #
+    #     #Write Index file
+    #     print( "Updating index.html...")
+    #     with open(args.index, "wb") as wb:
+    #       wb.write(index.encode("utf-8"))
+    #     print( "File saved at " + args.index)
 
     #Download Words
     if not args.skip_sounds:
