@@ -1,4 +1,6 @@
 import urllib
+import urllib.parse
+import urllib.request
 import os
 import tempfile
 import platform
@@ -15,13 +17,15 @@ def check_downloaded_word(word, directory="./"):
 
 def get_wiki(word, directory="./"):
     if check_downloaded_word(word, directory):
+        print(word + " already downloaded")
         return 0
     #search for wiktionary word
     base = "https://en.wiktionary.org/wiki/"
-    query = base + urllib.quote(word)
+    query = base + urllib.parse.quote(word)
     print(query)
     try:
-        response = urllib.urlopen(query)
+        response = urllib.request.urlopen(query)
+        print(response)
     except:
         print("Couldn't find", word)
         return 1
@@ -31,7 +35,12 @@ def get_wiki(word, directory="./"):
     #print(index.find(title=filenameguess))
     #Jump to file wiktionary page
     query = base + filenameguess
-    response = urllib.urlopen(query)
+    try:
+        response = urllib.request.urlopen(query)
+    except:
+        print("HTTP error for " + query)
+        return 2
+    print(response)
     index = bs4.BeautifulSoup(response, "html5lib")
     links = index.find_all("a")
     oggsource = ""
@@ -43,7 +52,7 @@ def get_wiki(word, directory="./"):
     print("Downloading to: " + os.path.join(directory, word + ".ogg"))
     try:
         print("Getting ogg...")
-        getogg = urllib.urlopen(oggsource)
+        getogg = urllib.request.urlopen(oggsource)
         print("Saving file ...")
         ofp = open(os.path.join(directory, word + ".ogg"),'wb')
         print("Writing file ...")
