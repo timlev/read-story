@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+url_string="https://eservices.minnstate.edu/registration/search/advancedSubmit.html?campusid=074&searchrcid=0074&searchcampusid=074&yrtr=20213&subject=CHEM&courseNumber=213&courseId=&openValue=ALL&delivery=ALL&showAdvanced=&starttime=&endtime=&mntransfer=&gened=&credittype=ALL&credits=&instructor=&keyword=&begindate=&site=&resultNumber=250"
+//var request = new XMLHttpRequest();
+//request.open('GET', url_string, true);
+//request.send();
+//console.log('response head: ' + request.responseText.substring(0, 15) + '...');
+
+var client = new XMLHttpRequest();
+client.open("GET", url_string, true);
+client.send();
+client.onreadystatechange = function() {
+  if(this.readyState == this.HEADERS_RECEIVED) {
+    console.log(this.getAllResponseHeaders());
+  }
+}
+</script>
+</head>
+<body>
+Open the console, silly!
+</body>
+</html>
