@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Be Healthy Questions</title>
+<script>
+function check_answer(e){
+  console.log(e.id);
+  if (e.id == "correct"){
+    e.style.backgroundColor = "#03fc41";
+    e.style.borderRadius = "50%";
+  }
+  else {
+    e.style.backgroundColor = "red";
+    e.style.borderRadius = "50%";
+    e.style.color = "white";
+
+  }
+}
+</script>
+ <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+ <style>
+* {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2em;
+}
+.button {
+  background-color: gray;
+}
+.button:hover{
+  background-color: #03dffc;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<a href="html_output/new_BeHealthy.html">Be Healthy Story</a>
+<table>
+<tr>
+  <td>Name: ________________ Date:<span><script> document.write(new Date().toLocaleDateString()); </script></span></td>
+</tr>
+<tr>
+  <td>1. I run.</td> <td onclick="check_answer(this);" class="button">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" id="correct">No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>2. I walk.</td> <td onclick="check_answer(this);" class="button" id="correct">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" >No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>3. I play vegetables.</td> <td onclick="check_answer(this);" class="button" >Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" id="correct">No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>4. I eat fruit.</td> <td onclick="check_answer(this);" class="button" id="correct">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" >No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>5. I eat grains.</td> <td onclick="check_answer(this);" class="button" id="correct">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" >No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>6. I am healthy.</td> <td onclick="check_answer(this);" class="button" id="correct">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" >No</td><td id="status"></td>
+</tr>
+
+<tr>
+  <td>7. I sleep.</td> <td onclick="check_answer(this);" class="button" id="correct">Yes</td><td>&ensp;&ensp;</td><td onclick="check_answer(this);" class="button" >No</td><td id="status"></td>
+</tr>
+</table>
+</body>
+</html>
